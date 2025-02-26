@@ -1,5 +1,5 @@
 // Category
-import { CatInterface, SubCategoryConfig } from '@/config/type';
+import { CatInterface, Cat2SubMap } from '@/config/type';
 import { genImgList } from '@/utils/genImageList'
 
 function genSubCat(subBasePath: string, items: { id: string; title: string; count: string; key: string }[]) {
@@ -28,7 +28,7 @@ export const HomeList: CatInterface[] = [
     { id: "sur", title: "Girl Next Door \n shirouto, しろうと", shorttitle: "Girl Next Door", cover: genImgList("abcat/suren/sc", 5)[0] },
 ];
 
-export const Cat2Sub2Img: SubCategoryConfig = {
+export const Cat2Sub2Img: Cat2SubMap = {
     ycc: genSubCat("abycc", [
         { id: "YCCyf1", title: "Daily Fresh & Hot Trends", count: "20", key: "ycc/yf" },
         { id: "YCCPure", title: "Angelically Innocent", count: "30", key: "pure/pu" },

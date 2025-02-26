@@ -7,7 +7,7 @@ import { CatInterface } from '@/config/type';
 import { Cat2Sub2Img } from '@/data/CatImgList';
 
 const CategoryScreen: React.FC = () => {
-    const { catId } = useLocalSearchParams();   // scene
+    const { catId } = useLocalSearchParams();   // catId is repo
 
     const [subCatList, setSubCatList] = useState<CatInterface[]>([]);
     const [loading, setLoading] = useState(true);
@@ -27,6 +27,8 @@ const CategoryScreen: React.FC = () => {
             pathname: "/cat2img", params: {
                 imgPath:  item.path,
                 count:    item.count,
+                folder:   item.key,
+                repo:     catId,
             }
         });
     };
