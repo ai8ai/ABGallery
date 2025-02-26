@@ -18,7 +18,7 @@ export default function SlideshowScreen() {
 
     const [currentImage, setCurrentImage] = useState(0);
     const [isAutoSlideshow, setIsAutoSlideshow] = useState(false);
-    const [intervalTime, setIntervalTime] = useState(3000); // default 2 seconds
+    const [intervalTime, setIntervalTime] = useState(2000); // default 2 seconds
     const [hasPermission, setHasPermission] = useState(false);
     const intervalRef = useRef<number | null>(null);
 
@@ -31,10 +31,35 @@ export default function SlideshowScreen() {
     const handleSwipeRight = () => { console.log(images[currentImage]); goToPrevImage(); };
 
     // auto
+    const scaleAnim = useRef(new Animated.Value(1)).current;
+    
+    const goToNextImageWithEffect = () => {
+        // Shrink the image first
+        Animated.timing(scaleAnim, {
+            toValue: 0.7, // Shrink the current image
+            duration: 300, // Shrink speed
+            useNativeDriver: true,
+        }).start(() => {
+            // After shrinking, switch to the next image
+            setCurrentImage((prevIndex) => (prevIndex + 1) % images.length);
+    
+            // Restore the image to its original size
+            Animated.timing(scaleAnim, {
+                toValue: 1, // Restore to original size
+                duration: 300, // Grow back to normal size
+                useNativeDriver: true,
+            }).start(() => {
+                // Start auto slideshow after the animation completes
+                startAutoSlideshow(); 
+            });
+        });
+    };
+
+    
     const startAutoSlideshow = () => {
         setIsAutoSlideshow(true);
         intervalRef.current = window.setInterval(() => {
-            goToNextImage();
+            goToNextImageWithEffect();
         }, intervalTime);
     };
 
@@ -57,35 +82,10 @@ export default function SlideshowScreen() {
         };
     }, [parentNavi]);
 
-    // toggle
-    const scaleAnim = useRef(new Animated.Value(1)).current;
-
     const toggleSlideshow = () => {
         if (isAutoSlideshow) {
-            // Stop autoplay immediately
             stopAutoSlideshow();
-
-            // Restore image size smoothly
-            Animated.timing(scaleAnim, {
-                toValue: 1,
-                duration: 300,
-                useNativeDriver: true
-            }).start();
-        } else {
-            // Shrink before starting autoplay
-            Animated.timing(scaleAnim, {
-                toValue: 0.3,
-                duration: 2500,
-                useNativeDriver: true
-            }).start(() => {
-                startAutoSlideshow(); // Start autoplay after animation
-                Animated.timing(scaleAnim, {
-                    toValue: 1, // Restore original size
-                    duration: 300,
-                    useNativeDriver: true
-                }).start();
-            });
-        }
+        } else { startAutoSlideshow(); }
     };
 
     const showToast = (message: string) => {
@@ -131,14 +131,27 @@ export default function SlideshowScreen() {
     return (
         <View style={styles.sliderContainer}>
             {!isAutoSlideshow && (
-                <TouchableOpacity onPress={downloadImage} style={{ position: 'absolute', top: 20, right: 20, backgroundColor: 'rgba(0, 0, 0, 0.3)', padding: 10, borderRadius: 20, zIndex: 10 }}                >
+                <TouchableOpacity
+                    onPress={downloadImage}
+                    style={{
+                        position: 'absolute',
+                        top: 20,
+                        right: 20,
+                        backgroundColor: 'rgba(0, 0, 0, 0.3)',
+                        padding: 10,
+                        borderRadius: 20,
+                        zIndex: 10
+                    }}
+                >
                     <MaterialCommunityIcons name="download" size={24} color="white" />
                 </TouchableOpacity>
             )}
             <TouchableOpacity onPress={toggleSlideshow} style={{ position: 'absolute', width: '100%', height: '100%' }}>
-                <Animated.View style={{ transform: [{ scale: scaleAnim }] }}>
-                    <Image source={{ uri: images[currentImage] }} style={styles.sliderImage} />
-                </Animated.View>
+                {/* <Image source={{ uri: images[currentImage] }} style={styles.sliderImage} /> */}
+                <Animated.Image
+                    source={{ uri: images[currentImage] }}
+                    style={[styles.sliderImage, { transform: [{ scale: scaleAnim }] }]}
+                />
             </TouchableOpacity>
 
             {!isAutoSlideshow && (
