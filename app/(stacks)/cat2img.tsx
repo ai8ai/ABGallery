@@ -20,7 +20,7 @@ const GITHUB_RAW_URL = (repo: string, folder: string) =>    `https://raw.githubu
 export default function SlideshowScreen() {
     const navigation = useNavigation();
     const parentNavi = navigation.getParent();
-    const { imgPath, count, repo, folder } = useLocalSearchParams();
+    const { repo, folder } = useLocalSearchParams();
 
     const [images, setImages] = useState<string[]>([]);
     const [currentImage, setCurrentImage] = useState(0);
