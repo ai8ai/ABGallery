@@ -9,33 +9,57 @@ import * as MediaLibrary from 'expo-media-library';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import styles from '@/config/styles';
-import { genImgList } from '@/utils/genImageList'
+
+const GITHUB_API_URL = 'https://api.github.com/repos/ai8ai/abycc/contents/pure';
+const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/ai8ai/abycc/main/pure/'; // Adjust branch name if needed
 
 export default function SlideshowScreen() {
     const navigation = useNavigation();
     const parentNavi = navigation.getParent();
     const { imgPath, count } = useLocalSearchParams();
 
+    const [images, setImages] = useState<string[]>([]);
     const [currentImage, setCurrentImage] = useState(0);
     const [isAutoSlideshow, setIsAutoSlideshow] = useState(false);
-    const [intervalTime, setIntervalTime] = useState(3000); // default 2 seconds
     const [hasPermission, setHasPermission] = useState(false);
     const intervalRef = useRef<number | null>(null);
 
-    const images = genImgList(imgPath as string, Number(count));
+    useEffect(() => {
+        console.log("Current Image:", images[currentImage]);
+    }, [currentImage]);
+    
+    // Fetch image list dynamically from GitHub API
+    useEffect(() => {
+        const fetchImageList = async () => {
+            try {
+                const response = await fetch(GITHUB_API_URL);
+                if (!response.ok) throw new Error("Failed to fetch image list");
+                const files = await response.json();
 
-    // manual
-    const goToNextImage = () => { setCurrentImage((prevIndex) => (prevIndex + 1) % images.length); };
-    const goToPrevImage = () => { setCurrentImage((prevIndex) => (prevIndex - 1 + images.length) % images.length); };
-    const handleSwipeLeft = () => { console.log(images[currentImage]); goToNextImage(); };
-    const handleSwipeRight = () => { console.log(images[currentImage]); goToPrevImage(); };
+                // Filter only image files (e.g., .jpg, .png, .jpeg)
+                const imageFiles = files
+                    .filter((file: any) => file.type === 'file' && /\.(jpg|jpeg|png|webp|gif)$/i.test(file.name))
+                    .map((file: any) => GITHUB_RAW_URL + file.name);
 
-    // auto
+                setImages(imageFiles);
+            } catch (error) {
+                console.error("Error fetching image list:", error);
+            }
+        };
+
+        fetchImageList();
+    }, []);
+
+    // Manual navigation
+    const goToNextImage = () => { setCurrentImage((prev) => (prev + 1) % images.length); };
+    const goToPrevImage = () => { setCurrentImage((prev) => (prev - 1 + images.length) % images.length); };
+
+    // Auto slideshow
     const startAutoSlideshow = () => {
         setIsAutoSlideshow(true);
         intervalRef.current = window.setInterval(() => {
             goToNextImage();
-        }, intervalTime);
+        }, 3000);
     };
 
     const stopAutoSlideshow = () => {
@@ -46,48 +70,41 @@ export default function SlideshowScreen() {
         setIsAutoSlideshow(false);
     };
 
-    useEffect(() => {
-        if (parentNavi) {
-            parentNavi.setOptions({ headerShown: false }); // Hide Drawer header
-        }
-        return () => {
-            if (parentNavi) {
-                parentNavi.setOptions({ headerShown: true }); // Restore Drawer header on exit
-            }
-        };
-    }, [parentNavi]);
-
-    // toggle
+    // Scale animation for toggle
     const scaleAnim = useRef(new Animated.Value(1)).current;
-
     const toggleSlideshow = () => {
         if (isAutoSlideshow) {
-            // Stop autoplay immediately
             stopAutoSlideshow();
-
-            // Restore image size smoothly
-            Animated.timing(scaleAnim, {
-                toValue: 1,
-                duration: 300,
-                useNativeDriver: true
-            }).start();
+            Animated.timing(scaleAnim, { toValue: 1, duration: 300, useNativeDriver: true }).start();
         } else {
-            // Shrink before starting autoplay
-            Animated.timing(scaleAnim, {
-                toValue: 0.3,
-                duration: 2500,
-                useNativeDriver: true
-            }).start(() => {
-                startAutoSlideshow(); // Start autoplay after animation
-                Animated.timing(scaleAnim, {
-                    toValue: 1, // Restore original size
-                    duration: 300,
-                    useNativeDriver: true
-                }).start();
+            Animated.timing(scaleAnim, { toValue: 0.3, duration: 2500, useNativeDriver: true }).start(() => {
+                startAutoSlideshow();
+                Animated.timing(scaleAnim, { toValue: 1, duration: 300, useNativeDriver: true }).start();
             });
         }
     };
 
+    useEffect(() => {
+        // Hide Drawer header
+        if (parentNavi) {
+            parentNavi.setOptions({ headerShown: false });
+        }
+        return () => {
+            if (parentNavi) {
+                parentNavi.setOptions({ headerShown: true });
+            }
+        };
+    }, [parentNavi]);
+
+    // Request media permissions
+    useEffect(() => {
+        (async () => {
+            const { status } = await MediaLibrary.requestPermissionsAsync();
+            setHasPermission(status === 'granted');
+        })();
+    }, []);
+
+    // Toast message
     const showToast = (message: string) => {
         if (Platform.OS === 'android') {
             ToastAndroid.show(message, ToastAndroid.SHORT);
@@ -96,14 +113,7 @@ export default function SlideshowScreen() {
         }
     };
 
-    useEffect(() => {
-        // Request permission to save files
-        (async () => {
-            const { status } = await MediaLibrary.requestPermissionsAsync();
-            setHasPermission(status === 'granted');
-        })();
-    }, []);
-
+    // Download Image
     const downloadImage = async () => {
         if (!hasPermission) {
             showToast("Please grant media access to save images.");
@@ -112,10 +122,9 @@ export default function SlideshowScreen() {
 
         try {
             const imageUrl = images[currentImage];
-            const fileName = imageUrl.split('/').pop(); // Get the file name from URL
+            const fileName = imageUrl.split('/').pop();
             const fileUri = `${FileSystem.documentDirectory}${fileName}`;
 
-            // Download the image
             const { uri } = await FileSystem.downloadAsync(imageUrl, fileUri);
             const asset = await MediaLibrary.createAssetAsync(uri);
             await MediaLibrary.createAlbumAsync("Downloaded Images", asset, false);
@@ -127,11 +136,14 @@ export default function SlideshowScreen() {
         }
     };
 
+    if (images.length === 0) {
+        return <View><Text>Loading images...</Text></View>;
+    }
 
     return (
         <View style={styles.sliderContainer}>
             {!isAutoSlideshow && (
-                <TouchableOpacity onPress={downloadImage} style={{ position: 'absolute', top: 20, right: 20, backgroundColor: 'rgba(0, 0, 0, 0.3)', padding: 10, borderRadius: 20, zIndex: 10 }}                >
+                <TouchableOpacity onPress={downloadImage} style={{ position: 'absolute', top: 20, right: 20, backgroundColor: 'rgba(0, 0, 0, 0.3)', padding: 10, borderRadius: 20, zIndex: 10 }}>
                     <MaterialCommunityIcons name="download" size={24} color="white" />
                 </TouchableOpacity>
             )}
@@ -143,14 +155,14 @@ export default function SlideshowScreen() {
 
             {!isAutoSlideshow && (
                 <View style={styles.sliderNavigation}>
-                    <TouchableOpacity onPress={handleSwipeRight} style={styles.sliderNavButton}>
-                        <Text style={[styles.sliderNavText]}>←</Text>
+                    <TouchableOpacity onPress={goToPrevImage} style={styles.sliderNavButton}>
+                        <Text style={styles.sliderNavText}>←</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={handleSwipeLeft} style={styles.sliderNavButton}>
-                        <Text style={[styles.sliderNavText]}>→</Text>
+                    <TouchableOpacity onPress={goToNextImage} style={styles.sliderNavButton}>
+                        <Text style={styles.sliderNavText}>→</Text>
                     </TouchableOpacity>
                 </View>
             )}
         </View>
-    )
-};
+    );
+}
