@@ -36,13 +36,15 @@ export default function SlideshowScreen() {
     useEffect(() => {
         const fetchImageList = async () => {
             try {
+                console.log(repo + " - " + folder )
                 const response = await fetch(GITHUB_API_URL(repo as string, folder as string));
                 if (!response.ok) throw new Error("Failed to fetch image list");
                 const files = await response.json();
 
+
                 // Filter only image files (e.g., .jpg, .png, .jpeg)
                 const imageFiles = files
-                    .filter((file: any) => file.type === 'file' && /\.(jpg|jpeg|webp|png|gif)$/i.test(file.name))
+                    .filter((file: any) => file.type === 'file' && /\.(jpg|jpeg|webp|png|gif|JPG|JPEG|PNG|WEBP)$/i.test(file.name))
                     .map((file: any) => GITHUB_RAW_URL(repo as string, folder as string) + file.name);
 
                 const shuffledImages = imageFiles.sort(() => Math.random() - 0.5);

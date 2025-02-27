@@ -9,7 +9,7 @@ export const HomeList: CatInterface[] = [
     { id: "igif", title: "GIF MP4", shorttitle: "GIF", cover: genGifList("aicat/gif/gc", 5)[0] },
     { id: "abwxy", title: "Wang Xinyao \n Yanni 王馨瑶", shorttitle: "Wang Xinyao", cover: genJpgList("abcat/wxy/wc", 5)[0] },
     { id: "abkele", title: "Kele Vicky", shorttitle: "Kele Vicky", cover: genJpgList("abcat/kele/kc", 5)[0] },
-    { id: "abanr", title: "Anran 安然", shorttitle: "Anran", cover: genJpgList("abcat/anran/ac", 5)[0] },
+    { id: "abanran", title: "Anran 安然", shorttitle: "Anran", cover: genJpgList("abcat/anran/ac", 5)[0] },
     { id: "abxlz", title: "Xu Lizhi Booty \n 徐莉芝", shorttitle: "Xu Lizhi", cover: genJpgList("abcat/xlz/xc", 5)[0] },
     { id: "abccc", title: "Cheng Chengcheng 程程程", shorttitle: "Cheng Chengcheng", cover: genJpgList("abcat/ccc/cc", 5)[0] },
     { id: "abdxy", title: "Du Xiaoyu 杜小雨", shorttitle: "Du Xiaoyu", cover: genJpgList("abcat/dxy/dc", 5)[0] },
@@ -128,7 +128,7 @@ export const Cat2Sub2Img: Cat2SubMap = {
         { id: "holWal", title: "Elegant Wallpaper", key: "wallpaper", cover: genJpgList("abholiday/wallpaper/wa", 5)[0] },
     ],
 
-    abanr: [
+    abanran: [
         { id: "anrStunning", title: "Daily Fresh & Hot Trends", key: "stunning", cover: genJpgList("abanran/stunning/st", 5)[0] },
         { id: "anrSto", title: "Silken Allure & Enchanting Legs", key: "stockings", cover: genJpgList("abanran/stockings/st", 5)[0] },
         { id: "anrOff", title: "Chic at Work", key: "office", cover: genJpgList("abanran/office/of", 5)[0] },
@@ -141,9 +141,9 @@ export const Cat2Sub2Img: Cat2SubMap = {
     abcel: [
         { id: "cel1", title: "Dong Liya", key: "dongliya", cover: genJpgList("abcel/dongliya/do", 5)[0] },
         { id: "cel2", title: "Jing Tian", key: "jingtian", cover: genJpgList("abcel/jingtian/ji", 5)[0] },
-        { id: "cel3", title: "Annonymous",key: "others", cover: genJpgList("abcel/others/ot", 5)[0] },
-        { id: "cel4", title: "Da Mi Mi", key: "Yang Mi", cover: genJpgList("abcel/yangmi/ya", 5)[0] },
-        { id: "cel5", title: "Zhang Yuyi", key: "Raincoat Zhang", cover: genJpgList("abcel/zhangyuyi/zh", 5)[0] },
+        { id: "cel3", title: "Annonymous",key: "others",   cover: genJpgList("abcel/others/ot", 5)[0] },
+        { id: "cel4", title: "Da Mi Mi", key: "yangmi",   cover: genJpgList("abcel/yangmi/ya", 5)[0] },
+        { id: "cel5", title: "Raincoat Zhang", key: "zhangyuyi", cover: genJpgList("abcel/zhangyuyi/zh", 5)[0] },
     ],
 
     isce: [
@@ -177,10 +177,10 @@ export const Cat2Sub2Img: Cat2SubMap = {
         { id: "surDog", title: "Friend Forever", key: "dog", cover: genJpgList("absuren/dog/do", 5)[0] },
         { id: "surDot", title: "Mystic in Dot", key: "dot", cover: genJpgList("absuren/dot/do", 5)[0] },
         { id: "surFace", title: "Enchanting in Face", key: "face", cover: genJpgList("absuren/face/fa", 5)[0] },
-        { id: "surFlo", title: "Flirty Floral Charms", key: "floralskirt", cover: genJpgList("absuren/floralskirt/fl", 5)[0] },
+        { id: "surFlo", title: "Flirty Floral Charms", key: "floral", cover: genJpgList("absuren/floral/fl", 5)[0] },
         { id: "surOff", title: "Chic at Work", key: "office", cover: genJpgList("absuren/office/of", 5)[0] },
         { id: "surPure", title: "Angelically Innocent", key: "pure", cover: genJpgList("absuren/pure/pu", 5)[0] },
-        { id: "surSpa", title: "Sultry Spaghetti Straps", key: "spaghetti", cover: genJpgList("absuren/spaghetti/sp", 5)[0] },
+        { id: "surSpa", title: "Sultry Spaghetti Straps", key: "spagatti", cover: genJpgList("absuren/spagatti/sp", 5)[0] },
         { id: "surSee", title: "Seethrough ...", key: "seethrough", cover: genJpgList("absuren/seethrough/se", 5)[0] },
     ],
 };
