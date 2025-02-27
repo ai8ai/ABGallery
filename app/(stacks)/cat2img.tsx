@@ -14,8 +14,8 @@ import styles from '@/config/styles';
 // const repo = "abycc";  // You can dynamically change this
 // const folder = "pure"; // The folder inside the repo
 
-const GITHUB_API_URL = (repo: string, folder: string) =>    `https://api.github.com/repos/ai8ai/${repo}/contents/${folder}`;
-const GITHUB_RAW_URL = (repo: string, folder: string) =>    `https://raw.githubusercontent.com/ai8ai/${repo}/main/${folder}/`; 
+const GITHUB_API_URL = (repo: string, folder: string) => `https://api.github.com/repos/ai8ai/${repo}/contents/${folder}`;
+const GITHUB_RAW_URL = (repo: string, folder: string) => `https://raw.githubusercontent.com/ai8ai/${repo}/main/${folder}/`;
 
 export default function SlideshowScreen() {
     const navigation = useNavigation();
@@ -45,7 +45,8 @@ export default function SlideshowScreen() {
                     .filter((file: any) => file.type === 'file' && /\.(jpg|jpeg|webp|png|gif)$/i.test(file.name))
                     .map((file: any) => GITHUB_RAW_URL(repo as string, folder as string) + file.name);
 
-                setImages(imageFiles);
+                const shuffledImages = imageFiles.sort(() => Math.random() - 0.5);
+                setImages(shuffledImages);
             } catch (error) {
                 console.error("Error fetching image list:", error);
             }

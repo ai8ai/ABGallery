@@ -9,7 +9,7 @@ import * as MediaLibrary from 'expo-media-library';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import styles from '@/config/styles';
-import { genImgList } from '@/utils/genImageList'
+import { genJpgList } from '@/utils/genImageList'
 
 export default function SlideshowScreen() {
     const navigation = useNavigation();
@@ -22,7 +22,7 @@ export default function SlideshowScreen() {
     const [hasPermission, setHasPermission] = useState(false);
     const intervalRef = useRef<number | null>(null);
 
-    const images = genImgList(imgPath as string, Number(count));
+    const images = genJpgList(imgPath as string, Number(count));
 
     // manual
     const goToNextImage = () => { setCurrentImage((prevIndex) => (prevIndex + 1) % images.length); };
