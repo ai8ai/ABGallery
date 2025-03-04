@@ -64,7 +64,13 @@ const styles = StyleSheet.create({
         height: '100%',
         resizeMode: 'cover',
     },
- 
+
+    loadingContainer: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+
     // modalContainer: {
     //     flex: 1,
     //     justifyContent: 'flex-end',
@@ -199,11 +205,6 @@ const styles = StyleSheet.create({
     //     fontSize: 16,
     //     flex: 1,
     //     marginRight: 18,
-    // },
-    // loadingContainer: {
-    //     flex: 1,
-    //     justifyContent: 'center',
-    //     alignItems: 'center',
     // },
     // errorContainer: {
     //     flex: 1,

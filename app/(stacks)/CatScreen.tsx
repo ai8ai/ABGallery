@@ -27,7 +27,7 @@ const CategoryScreen: React.FC = () => {
             pathname: "/cat2img", params: {
                 imgPath:  item.path,
                 count:    item.count,
-                folder:   item.key,
+                folder:   item.folder,
                 repo:     catId,
             }
         });
