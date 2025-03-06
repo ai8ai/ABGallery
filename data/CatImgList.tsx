@@ -19,11 +19,9 @@ export const HomeList: CatInterface[] = [
     { id: "abholiday", title: "Holidays", shorttitle: "Holidays", cover: genJpgList("abcat/holiday/hc", 5)[0] },
     { id: "abspecialtaste", title: "Special Taste", shorttitle: "Special Taste", cover: genJpgList("abcat/special/sc", 5)[0] },
     { id: "absketch", title: "Sketch & Hand-drawing", shorttitle: "Sketch & Hand-drawing", cover: genJpgList("abcat/sketch/sc", 5)[0] },
-    { id: "isce", title: "Asian Scene", shorttitle: "Asican Scene", cover: genJpgList("aicat/scene/sc", 5)[0] },
     { id: "abmini", title: "Modern Minimalist", shorttitle: "Modern Minimalist", cover: genJpg5("abcat/mini")[0] },
     { id: "abss",   title: "Signature Styles", shorttitle: "Signature Styles", cover: genJpg5("abcat/ss")[0] },
-    { id: "abbbs",   title: "Cozy & Seductive Moments", shorttitle: "Bed Bath Sofa", cover: genJpg5("abcat/bbs")[0] },
-    { id: "abschool",   title: "School", shorttitle: "School", cover: genJpg5("abcat/school")[0] },
+    { id: "abplaces",   title: "Places", shorttitle: "Places", cover: genJpg5("abcat/places")[0] },
     { id: "abpast",   title: "Past Year Collection", shorttitle: "past", cover: genJpg5("abcat/past")[0] },
 ];
 
@@ -89,7 +87,9 @@ export const Cat2Sub2Img: Cat2SubMap = {
 
     abstunning: [
         { id: "abs1", title: "Top 10",              folder: "top10", cover: genJpg5("abstunning/top10")[0] },
-        { id: "abs2", title: "Bare & Beautiful",    folder: "pending", cover: genJpg5("abstunning/pending")[0] },
+        { id: "abs3", title: "Top 20",              folder: "top20", cover: genJpg5("abstunning/top20")[0] },
+        { id: "abs2", title: "Bare & Beautiful",    folder: "sultry", cover: genJpg5("abstunning/sultry")[0] },
+        { id: "abs4", title: "Lovely",    folder: "lovely", cover: genJpg5("abstunning/lovely")[0] },
     ],
 
 
@@ -122,6 +122,9 @@ export const Cat2Sub2Img: Cat2SubMap = {
 
     abspecialtaste: [
         { id: "speStunning", title: "Daily Fresh & Hot Trends", folder: "stunning", cover: genJpgList("abspecialtaste/stunning/st", 5)[0] },
+        { id: "as1", title: "Mask", folder: "mask", cover: genJpg5("abspecialtaste/mask", 5)[0] },
+        { id: "as2", title: "Face", folder: "face", cover: genJpg5("abspecialtaste/face", 5)[0] },
+        { id: "as3", title: "Back & Butt", folder: "backbutt", cover: genJpg5("abspecialtaste/backbutt", 5)[0] },
         { id: "speBack", title: "Elegance from Behind", folder: "back", cover: genJpgList("abspecialtaste/back/ba", 5)[0] },
         { id: "speButt", title: "Curves & Confidence", folder: "butt", cover: genJpgList("abspecialtaste/butt/bu", 5)[0] },
         { id: "speFinger", title: "Graceful Fingertips", folder: "finger", cover: genJpgList("abspecialtaste/finger/fi", 5)[0] },
@@ -155,12 +158,6 @@ export const Cat2Sub2Img: Cat2SubMap = {
         { id: "cel8", title: "Du Xiaoyu", folder: "duxiaoyu", cover: genJpg5("abcel/duxiaoyu")[0] },
     ],
 
-    isce: [
-        { id: "sc1", title: "Sea", folder: "sea", cover: genJpgList("isce/sea/se", 5)[0] },
-        { id: "sc2", title: "Lone", folder: "lone", cover: genJpgList("isce/lone/lo", 5)[0] },
-        { id: "sc3", title: "Land", folder: "land", cover: genJpgList("isce/land/la", 5)[0] },
-    ],
-
     igif: [
         { id: "sc1", title: "GIF", folder: "gif", cover: genGifList("igif/gif/gi", 5)[0] },
     ],
@@ -181,16 +178,18 @@ export const Cat2Sub2Img: Cat2SubMap = {
     ],
 
     absuren: [
-        { id: "surChu", title: "Fantasy & Queens", folder: "chubby", cover: genJpgList("absuren/chubby/ch", 5)[0] },
-        { id: "surDeco", title: "Sublime Décolleté", folder: "deco", cover: genJpgList("absuren/deco/de", 5)[0] },
-        { id: "surDog", title: "Friend Forever", folder: "dog", cover: genJpgList("absuren/dog/do", 5)[0] },
-        { id: "surDot", title: "Mystic in Dot", folder: "dot", cover: genJpgList("absuren/dot/do", 5)[0] },
-        { id: "surFace", title: "Enchanting in Face", folder: "face", cover: genJpgList("absuren/face/fa", 5)[0] },
-        { id: "surFlo", title: "Flirty Floral Charms", folder: "floral", cover: genJpgList("absuren/floral/fl", 5)[0] },
-        { id: "surOff", title: "Chic at Work", folder: "office", cover: genJpgList("absuren/office/of", 5)[0] },
-        { id: "surPure", title: "Angelically Innocent", folder: "pure", cover: genJpgList("absuren/pure/pu", 5)[0] },
-        { id: "surSpa", title: "Sultry Spaghetti Straps", folder: "spagatti", cover: genJpgList("absuren/spagatti/sp", 5)[0] },
-        { id: "surSee", title: "Seethrough ...", folder: "seethrough", cover: genJpgList("absuren/seethrough/se", 5)[0] },
+        { id: "surOff", title: "Stunning", folder: "stunning", cover: genJpg5("absuren/stunning")[0] },
+        { id: "surPure", title: "Angelically Innocent", folder: "pure", cover: genJpg5("absuren/pure")[0] },
+        { id: "surFlo", title: "Flirty Socialite", folder: "socialite", cover: genJpg5("absuren/socialite")[0] },
+        { id: "surChu", title: "Fantasy & Queens", folder: "chubby", cover: genJpg5("absuren/chubby")[0] },
+        { id: "surDog", title: "Friend Forever", folder: "dog", cover: genJpg5("absuren/dog")[0] },
+        { id: "surDeco", title: "Middle Age", folder: "mid", cover: genJpg5("absuren/mid")[0] },
+        { id: "surDot", title: "Next Door Girls", folder: "nextdoor", cover: genJpg5("absuren/nextdoor")[0] },
+        { id: "surFace", title: "Somebody 1", folder: "sb1", cover: genJpg5("absuren/sb1")[0] },
+        { id: "surFace3", title: "Somebody 2", folder: "sb2", cover: genJpg5("absuren/sb2")[0] },
+        { id: "surFace2", title: "Somebody 3", folder: "sb9", cover: genJpg5("absuren/sb9")[0] },
+        { id: "ire1", title: "Bakunyuu", folder: "bakunyuu", cover: genJpg5("absuren/bakunyuu")[0] },
+
     ],
 
     abmini: [
@@ -214,17 +213,11 @@ export const Cat2Sub2Img: Cat2SubMap = {
         { id: "fl5", title: "Elegant in Cheongsam", folder: "cheongsam", cover: genJpg5("abss/cheongsam")[0] },
     ],
 
-    abbbs: [
-        { id: "cccBri", title: "Bed",  folder: "bed", cover: genJpg5("abbbs/bed", 5)[0] },
-        { id: "cccSexy", title: "Bath", folder: "bath", cover: genJpg5("abbbs/bath")[0] },
-        { id: "cccSexy", title: "Sofa", folder: "sofa", cover: genJpg5("abbbs/sofa")[0] },
-    ],
-
-    abschool: [
-        { id: "sch1", title: "Teacher", folder: "teacher", cover: genJpg5("abschool/teacher")[0] },
-        { id: "sch2", title: "student",                folder: "student", cover: genJpg5("abschool/student")[0] },
-        { id: "sch3", title: "glass",           folder: "glass", cover: genJpg5("abschool/glass")[0] },
-        { id: "sch4", title: "playground",           folder: "playground", cover: genJpg5("abschool/playground")[0] },
+    abplaces: [
+        { id: "sch1", title: "School", folder: "school", cover: genJpg5("abplaces/school")[0] },
+        { id: "sch2", title: "Office", folder: "office", cover: genJpg5("abplaces/office")[0] },
+        { id: "sch3", title: "Home",   folder: "home", cover: genJpg5("abplaces/home")[0] },
+        { id: "sch4", title: "Night",           folder: "night", cover: genJpg5("abplaces/night")[0] },
     ],
 
     abpast: [
@@ -238,5 +231,15 @@ export const Cat2Sub2Img: Cat2SubMap = {
         { id: "sch47", title: "2017",   folder: "2017", cover: genJpg5("abpast/2017")[0] },
         { id: "sch46", title: "2016",   folder: "2016", cover: genJpg5("abpast/2016")[0] },
         { id: "sch45", title: "2015",   folder: "2015", cover: genJpg5("abpast/2015")[0] },
+    ],
+
+    abzyx: [
+        { id: "az2", title: "bodycon", folder: "bodycon", cover: genJpg5("abzyx/bodycon")[0] },
+        { id: "az3", title: "Elegant in Cheongsam", folder: "cheongsam", cover: genJpg5("abzyx/cheongsam")[0] },
+        { id: "wxyHalt", title: "Allure en Halter", folder: "haltertop", cover: genJpg5("abzyx/haltertop")[0] },
+        { id: "SYZLace", title: "Timeless Grace in Silk & Lace", folder: "lace", cover: genJpg5("abzyx/lace")[0] },
+        { id: "YCCSpa", title: "Sultry Spaghetti Straps", folder: "spa", cover: genJpg5("abzyx/spa")[0] },
+
+
     ],
 };
