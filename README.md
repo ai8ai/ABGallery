@@ -44,3 +44,15 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+
+Sultry Sirens – Bold, intense, and captivating beauty.
+Ethereal Elegance – Dreamy, soft, and angelic portraits.
+Urban Chic – Trendy, stylish, and modern fashion photography.
+Golden Hour Glow – Warm, natural, and outdoor beauty in sunlight.
+Celestial Muses – Fantasy, mystical, and otherworldly aesthetics.
+Vintage Vixens – Classic Hollywood glam, retro, and nostalgic vibes.
+Femme Fatale – Strong, confident, and seductive poses.
+Bohemian Bliss – Free-spirited, artistic, and nature-infused beauty.
+Velvet Noir – Moody, dramatic, and black-and-white elegance.
+Sporty & Fierce – Athletic, active, and empowered looks.
