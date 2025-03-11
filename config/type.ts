@@ -7,6 +7,7 @@ export interface CatInterface {
     cover?: string;
     count?: string;
     path?: string;
+    repo?: string;
 }
 
 export type Cat2SubMap = Record<string, CatInterface[]>;

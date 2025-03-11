@@ -47,15 +47,19 @@ export const Cat2Sub2Img: Cat2SubMap = {
         { id: "cc25", repo:"bycc", title: "Bare & Beautiful & Strapless", folder: "strapless" },
         { id: "cc23", repo:"bycc", title: "Sultry Spaghetti Straps", folder: "spaghetti" },
         { id: "cc43", repo:"bycc", title: "Split", folder: "split" },
-        { id: "cp25", repo:"bycc24", title: "2025 Collection", folder: "2025" },
-        { id: "cp24", repo:"bycc24", title: "2024 Collection", folder: "2024" },
-        { id: "cp23", repo:"bycc23", title: "2023 Collection", folder: "2023" },
-        { id: "cp22", repo:"bycc23", title: "2022 Collection", folder: "2022" },
-        { id: "cp21", repo:"bycc23", title: "2021 Collection", folder: "2021" },
+        { id: "cp24", repo:"bycc", title: "2025 Collection", folder: "2025" },
+        { id: "cp24", repo:"bycc", title: "2024 Collection", folder: "2024" },
+        { id: "cp23", repo:"bycc", title: "2023 Collection", folder: "2023" },
+        { id: "cp23", repo:"bycc", title: "2022 Collection", folder: "2022" },
+        { id: "cp23", repo:"bycc", title: "2021 Collection", folder: "2021" },
     ].map(item => ({
         ...item,
         ghname: "aidres8",
-        cover: genJpg8(`${item.repo}/${item.folder}`)[0]
+        cover:
+            item.id.startsWith("cp24")
+                ? genJpg8(`bycc24/${item.folder}`)[0] :
+                item.id.startsWith("cp23")
+                    ? genJpg8(`bycc23/${item.folder}`)[0] : genJpg8(`bycc/${item.folder}`)[0]
     })),
 
     absyz: [

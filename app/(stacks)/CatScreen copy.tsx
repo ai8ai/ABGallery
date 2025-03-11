@@ -28,7 +28,7 @@ const CategoryScreen: React.FC = () => {
                 imgPath:  item.path,
                 count:    item.count,
                 folder:   item.folder,
-                repo:     item.repo,      //repo
+                repo:     item.id,      //repo
                 ghname:   ghname,
             }
         });
