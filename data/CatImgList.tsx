@@ -1,60 +1,82 @@
 // Category
 import { CatInterface, Cat2SubMap } from '@/config/type';
-import { genJpg5, genGifList, genJpgList } from '@/utils/genImageList'
+import { genJpg8, genJpg5, genGifList, genJpgList } from '@/utils/genImageList'
 
 export const HomeList: CatInterface[] = [
-    { id: "abstunning", title: "Stunning", shorttitle: "Stunning", cover: genJpg5("abcat/stunning")[0] },
-    { id: "abycc", title: "Yang Chenchen \n Yome Sugar 杨晨晨", shorttitle: "Yang Chenchen", cover: genJpgList("abcat/ycc/yc", 5)[0] },
-    { id: "absyz", title: "Son Yoon Joo \n 손윤주 孙允珠", shorttitle: "Son Yoon Joo", cover: genJpgList("abcat/syz/sc", 5)[0] },
-    { id: "absuren", title: "Girl Next Door \n shirouto素人しろうと", shorttitle: "Girl Next Door", cover: genJpgList("abcat/suren/sc", 5)[0] },
-    { id: "igif", title: "GIF MP4", shorttitle: "GIF", cover: genGifList("aicat/gif/gc", 5)[0] },
-    { id: "abwxy", title: "Wang Xinyao \n Yanni 王馨瑶", shorttitle: "Wang Xinyao", cover: genJpgList("abcat/wxy/wc", 5)[0] },
-    { id: "abkele", title: "Kele Vicky", shorttitle: "Kele Vicky", cover: genJpgList("abcat/kele/kc", 5)[0] },
-    { id: "abanran", title: "Anran 安然", shorttitle: "Anran", cover: genJpgList("abcat/anran/ac", 5)[0] },
-    { id: "abzyx",   title: "Carol 周妍希", shorttitle: "Carol周妍希", cover: genJpg5("abcat/zyx")[0] },
-    { id: "abxlz", title: "Xu Lizhi Booty \n 徐莉芝", shorttitle: "Xu Lizhi", cover: genJpgList("abcat/xlz/xc", 5)[0] },
-    { id: "abccc", title: "Cheng Chengcheng 程程程", shorttitle: "Cheng Chengcheng", cover: genJpgList("abcat/ccc/cc", 5)[0] },
-    { id: "ablxl", title: "Lin Xinglan 林星阑", shorttitle: "Lin Xinglan", cover: genJpgList("abcat/lxl/lc", 5)[0] },
-    { id: "abcel", title: "Celebrities", shorttitle: "Celebrities", cover: genJpgList("abcat/cel/cc", 5)[0] },
-    { id: "abholiday", title: "Holidays", shorttitle: "Holidays", cover: genJpgList("abcat/holiday/hc", 5)[0] },
-    { id: "abspecialtaste", title: "Special Taste", shorttitle: "Special Taste", cover: genJpgList("abcat/special/sc", 5)[0] },
-    { id: "absketch", title: "Sketch & Hand-drawing", shorttitle: "Sketch & Hand-drawing", cover: genJpgList("abcat/sketch/sc", 5)[0] },
-    { id: "abmini", title: "Modern Minimalist", shorttitle: "Modern Minimalist", cover: genJpg5("abcat/mini")[0] },
-    { id: "abss",   title: "Signature Styles", shorttitle: "Signature Styles", cover: genJpg5("abcat/ss")[0] },
-    { id: "abplaces",   title: "Places", shorttitle: "Places", cover: genJpg5("abcat/places")[0] },
-    { id: "abpast",   title: "Past Year Collection", shorttitle: "past", cover: genJpg5("abcat/past")[0] },
+    { id: "abstunning", ghname:"ai8ai"     , title: "Stunning", shorttitle: "Stunning", cover: genJpg5("abcat/stunning")[0] },
+    { id: "bycc",       ghname:"aidres8"     , title: "Yang Chenchen \n Yome Sugar 杨晨晨", shorttitle: "Yang Chenchen", cover: genJpgList("abcat/ycc/yc", 5)[0] },
+    { id: "absyz",      ghname:"ai8ai"     , title: "Son Yoon Joo \n 손윤주 孙允珠", shorttitle: "Son Yoon Joo", cover: genJpgList("abcat/syz/sc", 5)[0] },
+    { id: "absuren",    ghname:"ai8ai"     , title: "Girl Next Door \n shirouto素人しろうと", shorttitle: "Girl Next Door", cover: genJpgList("abcat/suren/sc", 5)[0] },
+    { id: "igif",       ghname:"ai8ai"     , title: "GIF MP4", shorttitle: "GIF", cover: genGifList("aicat/gif/gc", 5)[0] },
+    { id: "abwxy",      ghname:"ai8ai"     , title: "Wang Xinyao \n Yanni 王馨瑶", shorttitle: "Wang Xinyao", cover: genJpgList("abcat/wxy/wc", 5)[0] },
+    { id: "abkele",     ghname:"ai8ai"     , title: "Kele Vicky", shorttitle: "Kele Vicky", cover: genJpgList("abcat/kele/kc", 5)[0] },
+    { id: "abanran",    ghname:"ai8ai"     , title: "Anran 安然", shorttitle: "Anran", cover: genJpgList("abcat/anran/ac", 5)[0] },
+    { id: "abzyx",ghname:"ai8ai"     , title: "Carol 周妍希", shorttitle: "Carol周妍希", cover: genJpg5("abcat/zyx")[0] },
+    { id: "abxlz",ghname:"ai8ai"     , title: "Xu Lizhi Booty \n 徐莉芝", shorttitle: "Xu Lizhi", cover: genJpgList("abcat/xlz/xc", 5)[0] },
+    { id: "abccc",ghname:"ai8ai"     , title: "Cheng Chengcheng 程程程", shorttitle: "Cheng Chengcheng", cover: genJpgList("abcat/ccc/cc", 5)[0] },
+    { id: "ablxl",ghname:"ai8ai"     , title: "Lin Xinglan 林星阑", shorttitle: "Lin Xinglan", cover: genJpgList("abcat/lxl/lc", 5)[0] },
+    { id: "abcel",ghname:"ai8ai"     , title: "Celebrities", shorttitle: "Celebrities", cover: genJpgList("abcat/cel/cc", 5)[0] },
+    { id: "abholiday",ghname:"ai8ai"     , title: "Holidays", shorttitle: "Holidays", cover: genJpgList("abcat/holiday/hc", 5)[0] },
+    { id: "abspecialtaste",ghname:"ai8ai"     , title: "Special Taste", shorttitle: "Special Taste", cover: genJpgList("abcat/special/sc", 5)[0] },
+    { id: "absketch",ghname:"ai8ai"     , title: "Sketch & Hand-drawing", shorttitle: "Sketch & Hand-drawing", cover: genJpgList("abcat/sketch/sc", 5)[0] },
+    { id: "abmini",ghname:"ai8ai"     , title: "Modern Minimalist", shorttitle: "Modern Minimalist", cover: genJpg5("abcat/mini")[0] },
+    { id: "abss",ghname:"ai8ai"     , title: "Signature Styles", shorttitle: "Signature Styles", cover: genJpg5("abcat/ss")[0] },
+    { id: "abplaces",ghname:"ai8ai"     , title: "Places", shorttitle: "Places", cover: genJpg5("abcat/places")[0] },
+    { id: "abpast",ghname:"ai8ai"     , title: "Past Year Collection", shorttitle: "past", cover: genJpg5("abcat/past")[0] },
 ];
 
 export const Cat2Sub2Img: Cat2SubMap = {
-    abycc: [
-        { id: "YCCyf1", title: "Daily Fresh & Hot Trends", count: "20", folder: "ycc", cover: genJpgList("abycc/ycc/yf", 5)[0] },
-        { id: "YCCPure", title: "Angelically Innocent", count: "30", folder: "pure", cover: genJpgList("abycc/pure/pu", 5)[0] },
-        { id: "YCCSpa", title: "Sultry Spaghetti Straps", count: "40", folder: "spaghetti", cover: genJpgList("abycc/spaghetti/sp", 5)[0] },
-        { id: "YCCChe", title: "Elegant in Cheongsam", count: "50", folder: "cheongsam", cover: genJpgList("abycc/cheongsam/ch", 5)[0] },
-        { id: "YCCStr", title: "Bare & Beautiful & Strapless", count: "40", folder: "strapless", cover: genJpgList("abycc/strapless/st", 5)[0] },
-        { id: "YCCBed", title: "Cozy & Seductive Moments in Bed", count: "30", folder: "bedbathsofa", cover: genJpgList("abycc/bedbathsofa/be", 5)[0] },
-        { id: "YCCSeq", title: "Dazzling in Sequins", count: "40", folder: "sequins", cover: genJpgList("abycc/sequins/se", 5)[0] },
-        { id: "YCCBlue", title: "Mystic in Blue", count: "50", folder: "blue", cover: genJpgList("abycc/blue/bl", 5)[0] },
-        { id: "YCCFlo", title: "Flirty Floral Charms", count: "60", folder: "floralskirt", cover: genJpgList("abycc/floralskirt/fl", 5)[0] },
-        { id: "YCCGlass", title: "Sensual in Glasses", count: "30", folder: "glass", cover: genJpgList("abycc/glass/gl", 5)[0] },
-        { id: "YCCGreen", title: "Enchanting in Green", count: "60", folder: "green", cover: genJpgList("abycc/green/gr", 5)[0] },
-        { id: "YCCDenim", title: "Casual Chic in Denim", count: "50", folder: "demins", cover: genJpgList("abycc/demins/de", 5)[0] },
-        { id: "YCCPink", title: "Pretty in Pink", count: "20", folder: "pinkgirl", cover: genJpgList("abycc/pinkgirl/pi", 5)[0] },
-        { id: "YCCCos", title: "Fantasy & Cosplay Queens", count: "40", folder: "cosplay", cover: genJpgList("abycc/cosplay/co", 5)[0] },
-    ],
-
+    bycc: [
+        { id: "bycc", title: "Daily Fresh & Hot Trends", folder: "stunning" },
+        { id: "bycc", title: "Angelically Innocent", folder: "pure" },
+        { id: "bycc", title: "Girl Next Door", folder: "nextdoor" },
+        { id: "bycc", title: "Mystic in Blue", folder: "blue" },
+        { id: "bycc", title: "Elegant in Cheongsam", folder: "cheongsam" },
+        { id: "bycc", title: "Flirty Floral Charms", folder: "floral" },
+        { id: "bycc", title: "Cozy & Seductive Moments in Bed", folder: "bed" },
+        { id: "bycc", title: "Cozy & Seductive Moments in Bath", folder: "bath" },
+        { id: "bycc", title: "School", folder: "school" },
+        { id: "bycc", title: "Sensual in Glasses", folder: "glass" },
+        { id: "bycc", title: "Casual Chic in Demin", folder: "demin" },
+        { id: "bycc", title: "Enchanting in Green", folder: "green" },
+        { id: "bycc", title: "Pretty in Pink", folder: "pink" },
+        { id: "bycc", title: "Mystic in Red", folder: "red" },
+        { id: "bycc", title: "Fantasy & Cosplay Queens", folder: "cos" },
+        { id: "bycc", title: "Dazzling in Sequins", folder: "sparkling" },
+        { id: "bycc", title: "Wedding", folder: "wedding" },
+        { id: "bycc", title: "Bare & Beautiful & Strapless", folder: "strapless" },
+        { id: "bycc", title: "Sultry Spaghetti Straps", folder: "spaghetti" },
+        { id: "bycc", title: "Split", folder: "split" },
+        { id: "bycc24", title: "2025 Collection", folder: "2025" },
+        { id: "bycc24", title: "2024 Collection", folder: "2024" },
+        { id: "bycc23", title: "2023 Collection", folder: "2023" },
+        { id: "bycc23", title: "2022 Collection", folder: "2022" },
+        { id: "bycc23", title: "2021 Collection", folder: "2021" },
+    ].map(item => ({
+        ...item,
+        ghname: "aidres8",
+        cover:
+            item.id.startsWith("bycc24")
+                ? genJpg8(`bycc24/${item.folder}`)[0] :
+                item.id.startsWith("cp23")
+                    ? genJpg8(`bycc23/${item.folder}`)[0] : genJpg8(`bycc/${item.folder}`)[0]
+    })),
 
     absyz: [
-        { id: "SYZStunning", title: "Daily Fresh & Hot Trends", count: "10", folder: "stunning", cover: genJpgList("absyz/stunning/st", 5)[0] },
-        { id: "SYZBed", title: "Cozy & Seductive Moments", count: "10", folder: "bbs", cover: genJpgList("absyz/bbs/be", 5)[0] },
-        { id: "SYZDeco", title: "Sublime Décolleté", count: "10", folder: "decollete", cover: genJpgList("absyz/decollete/de", 5)[0] },
-        { id: "SYZFlo", title: "Flirty Floral Charms", count: "10", folder: "floral", cover: genJpgList("absyz/floral/fl", 5)[0] },
-        { id: "SYZLace", title: "Timeless Grace in Silk & Lace", count: "10", folder: "lace", cover: genJpgList("absyz/lace/la", 5)[0] },
-        { id: "SYZOne", title: "Fantasy & Queens", count: "10", folder: "oneshoulder", cover: genJpgList("absyz/oneshoulder/on", 5)[0] },
-        { id: "SYZOff", title: "Chic at Work", count: "10", folder: "office", cover: genJpgList("absyz/office/of", 5)[0] },
-        { id: "SYZSpa", title: "Sultry Spaghetti Straps", count: "10", folder: "spaghetti", cover: genJpgList("absyz/spaghetti/sp", 5)[0] },
-        { id: "SYZStr", title: "Bare & Beautiful", count: "10", folder: "strapless", cover: genJpgList("absyz/strapless/st", 5)[0] },
-    ],
+        { id: "SYZStunning", title: "Daily Fresh & Hot Trends", folder: "stunning" },
+        { id: "SYZBed", title: "Cozy & Seductive Moments", folder: "bbs" },
+        { id: "SYZDeco", title: "Sublime Décolleté", folder: "decollete" },
+        { id: "SYZFlo", title: "Flirty Floral Charms", folder: "floral", },
+        { id: "SYZLace", title: "Timeless Grace in Silk & Lace", folder: "lace" },
+        { id: "SYZOne", title: "Fantasy & Queens", folder: "oneshoulder" },
+        { id: "SYZOff", title: "Chic at Work", folder: "office" },
+        { id: "SYZSpa", title: "Sultry Spaghetti Straps", folder: "spaghetti" },
+        { id: "SYZStr", title: "Bare & Beautiful", folder: "strapless" },
+    ].map(item => ({
+        ...item,
+        ghname: "ai8ai",
+        cover: genJpg5(`absyz/${item.folder}`)[0]   // Use `folder` for `cover`
+    })),
 
 
 
@@ -86,10 +108,10 @@ export const Cat2Sub2Img: Cat2SubMap = {
     ],
 
     abstunning: [
-        { id: "abs1", title: "Top 10",              folder: "top10", cover: genJpg5("abstunning/top10")[0] },
-        { id: "abs3", title: "Top 20",              folder: "top20", cover: genJpg5("abstunning/top20")[0] },
-        { id: "abs2", title: "Bare & Beautiful",    folder: "sultry", cover: genJpg5("abstunning/sultry")[0] },
-        { id: "abs4", title: "Lovely",    folder: "lovely", cover: genJpg5("abstunning/lovely")[0] },
+        { id: "abs1", title: "Top 10", folder: "top10", cover: genJpg5("abstunning/top10")[0] },
+        { id: "abs3", title: "Top 20", folder: "top20", cover: genJpg5("abstunning/top20")[0] },
+        { id: "abs2", title: "Bare & Beautiful", folder: "sultry", cover: genJpg5("abstunning/sultry")[0] },
+        { id: "abs4", title: "Lovely", folder: "lovely", cover: genJpg5("abstunning/lovely")[0] },
     ],
 
 
@@ -106,7 +128,7 @@ export const Cat2Sub2Img: Cat2SubMap = {
         { id: "kelSto", title: "Silken Allure & Enchanting Legs", count: "20", folder: "stockings", cover: genJpgList("abkele/stockings/st", 5)[0] },
         { id: "kelStunning", title: "Daily Fresh & Hot Trends", count: "10", folder: "stunning", cover: genJpgList("abkele/stunning/st", 5)[0] },
     ],
-    
+
 
     ablxl: [
         { id: "lxlBed", title: "Cozy & Seductive Moments", count: "10", folder: "bedbathsofa", cover: genJpgList("ablxl/bedbathsofa/be", 5)[0] },
@@ -150,8 +172,8 @@ export const Cat2Sub2Img: Cat2SubMap = {
     abcel: [
         { id: "cel1", title: "Dong Liya", folder: "dongliya", cover: genJpg5("abcel/dongliya", 5)[0] },
         { id: "cel2", title: "Jing Tian", folder: "jingtian", cover: genJpg5("abcel/jingtian", 5)[0] },
-        { id: "cel3", title: "Annonymous",folder: "others",   cover: genJpg5("abcel/others", 5)[0] },
-        { id: "cel4", title: "Da Mi Mi", folder: "yangmi",   cover: genJpg5("abcel/yangmi", 5)[0] },
+        { id: "cel3", title: "Annonymous", folder: "others", cover: genJpg5("abcel/others", 5)[0] },
+        { id: "cel4", title: "Da Mi Mi", folder: "yangmi", cover: genJpg5("abcel/yangmi", 5)[0] },
         { id: "cel5", title: "Raincoat Zhang", folder: "zhangyuyi", cover: genJpg5("abcel/zhangyuyi", 5)[0] },
         { id: "cel6", title: "Liu Yan", folder: "liuyan", cover: genJpg5("abcel/liuyan")[0] },
         { id: "cel7", title: "Yang Mi", folder: "yangmi", cover: genJpg5("abcel/yangmi")[0] },
@@ -207,30 +229,30 @@ export const Cat2Sub2Img: Cat2SubMap = {
 
     abss: [
         { id: "flo1", title: "black heart", folder: "heart", cover: genJpg5("abss/heart")[0] },
-        { id: "flo2", title: "high-neck halter",folder: "highneckhalter", cover: genJpg5("abss/highneckhalter")[0] },
-        { id: "flo3", title: "Leopard",           folder: "leopard", cover: genJpg5("abss/leopard")[0] },
-        { id: "flo4", title: "turtle neck",           folder: "turtleneck", cover: genJpg5("abss/turtleneck")[0] },
+        { id: "flo2", title: "high-neck halter", folder: "highneckhalter", cover: genJpg5("abss/highneckhalter")[0] },
+        { id: "flo3", title: "Leopard", folder: "leopard", cover: genJpg5("abss/leopard")[0] },
+        { id: "flo4", title: "turtle neck", folder: "turtleneck", cover: genJpg5("abss/turtleneck")[0] },
         { id: "fl5", title: "Elegant in Cheongsam", folder: "cheongsam", cover: genJpg5("abss/cheongsam")[0] },
     ],
 
     abplaces: [
         { id: "sch1", title: "School", folder: "school", cover: genJpg5("abplaces/school")[0] },
         { id: "sch2", title: "Office", folder: "office", cover: genJpg5("abplaces/office")[0] },
-        { id: "sch3", title: "Home",   folder: "home", cover: genJpg5("abplaces/home")[0] },
-        { id: "sch4", title: "Night",           folder: "night", cover: genJpg5("abplaces/night")[0] },
+        { id: "sch3", title: "Home", folder: "home", cover: genJpg5("abplaces/home")[0] },
+        { id: "sch4", title: "Night", folder: "night", cover: genJpg5("abplaces/night")[0] },
     ],
 
     abpast: [
         { id: "sch1", title: "2024", folder: "2024", cover: genJpg5("abpast/2024")[0] },
-        { id: "sch2", title: "2023",    folder: "2023", cover: genJpg5("abpast/2023")[0] },
-        { id: "sch3", title: "2022",    folder: "2022", cover: genJpg5("abpast/2022")[0] },
-        { id: "sch4", title: "2021",    folder: "2021", cover: genJpg5("abpast/2021")[0] },
-        { id: "sch41", title: "2020",   folder: "2020", cover: genJpg5("abpast/2020")[0] },
-        { id: "sch42", title: "2019",   folder: "2019", cover: genJpg5("abpast/2019")[0] },
-        { id: "sch43", title: "2018",   folder: "2018", cover: genJpg5("abpast/2018")[0] },
-        { id: "sch47", title: "2017",   folder: "2017", cover: genJpg5("abpast/2017")[0] },
-        { id: "sch46", title: "2016",   folder: "2016", cover: genJpg5("abpast/2016")[0] },
-        { id: "sch45", title: "2015",   folder: "2015", cover: genJpg5("abpast/2015")[0] },
+        { id: "sch2", title: "2023", folder: "2023", cover: genJpg5("abpast/2023")[0] },
+        { id: "sch3", title: "2022", folder: "2022", cover: genJpg5("abpast/2022")[0] },
+        { id: "sch4", title: "2021", folder: "2021", cover: genJpg5("abpast/2021")[0] },
+        { id: "sch41", title: "2020", folder: "2020", cover: genJpg5("abpast/2020")[0] },
+        { id: "sch42", title: "2019", folder: "2019", cover: genJpg5("abpast/2019")[0] },
+        { id: "sch43", title: "2018", folder: "2018", cover: genJpg5("abpast/2018")[0] },
+        { id: "sch47", title: "2017", folder: "2017", cover: genJpg5("abpast/2017")[0] },
+        { id: "sch46", title: "2016", folder: "2016", cover: genJpg5("abpast/2016")[0] },
+        { id: "sch45", title: "2015", folder: "2015", cover: genJpg5("abpast/2015")[0] },
     ],
 
     abzyx: [

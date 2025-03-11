@@ -4,7 +4,7 @@
         "slug": "asianbeauty-ycc",
         "version": "3.3.3",
         "orientation": "portrait",
-        "icon": "./assets/images/icon.png",
+        "icon": "./assets/images/icon.jpg",
         "scheme": "myapp",
         "userInterfaceStyle": "automatic",
         "newArchEnabled": true,

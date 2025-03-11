@@ -6,45 +6,50 @@ Asian Beauty is a [collection](https://aidres.com) of Asian beautiful women incl
 
 1. Download the demo published at: [googleplay](https://play.google.com/store/apps/details?id=com.aixpertlab.asianbeautyycc)
   
-2. The App is based on expo-router.
+Top 10 Stunning Women Categories (十大绝色女神榜)
+不朽女神 (Bùxiǔ nǚshén) – Eternal Goddesses (Most Iconic Supermodels)
+银幕尤物 (Yínmù yóuwù) – Silver Screen Enchantresses (Hottest Hollywood Actresses)
+新世代缪斯 (Xīn shìdài miùsī) – New-Gen Muses (Rising Instagram Models)
+烈焰海滩 (Lièyàn hǎitān) – Flaming Shores (Bikini Bombshells)
+丝绸女王 (Sīchóu nǚwáng) – Silk Empress (Lingerie Queens)
+性感战士 (Xìnggǎn zhànshì) – Sensual Warriors (Fitness Goddesses)
+暗夜玫瑰 (Ànyè méiguī) – Midnight Rose (Tattooed Beauties)
+异域芳华 (Yìyù fānghuá) – Exotic Grace (Exotic & International)
+天生尤物 (Tiānshēng yóuwù) – Naturally Seductive (Curvy & Confident)
+红毯皇后 (Hóngtǎn huánghòu) – Red Carpet Queen (Glam & Red Carpet Stars)
 
-   ```bash
-    npx expo 
-   ```
+传奇超模 (Chuánqí chāomó) – Most Iconic Supermodels
+性感好莱坞 (Xìnggǎn Hǎoláiwù) – Hottest Hollywood Actresses
+新晋网络红人 (Xīnjìn wǎngluò hóngrén) – Rising Instagram Models
+比基尼炸弹 (Bǐjīní zhàdàn) – Bikini Bombshells
+内衣女王 (Nèiyī nǚwáng) – Lingerie Queens
+健身女神 (Jiànshēn nǚshén) – Fitness Goddesses
+性感纹身 (Xìnggǎn wénshēn) – Tattooed Beauties
+异国风情 (Yìguó fēngqíng) – Exotic & International
+曲线女王 (Qūxiàn nǚwáng) – Curvy & Confident
+红毯女神 (Hóngtǎn nǚshén) – Glam & Red Carpet Stars
 
-In the output, you'll find options to open the app in a
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+魅惑写真 (Mèihuò xiězhēn) – Enchanting Glamour
+海滩女神 (Hǎitān nǚshén) – Beach Goddess
+蕾丝密语 (Léisi mìyǔ) – Lace Whisper (Lingerie & Boudoir)
+都市风情 (Dūshì fēngqíng) – Urban Elegance (Street & Casual)
+力量之美 (Lìliàng zhī měi) – The Beauty of Strength (Fitness & Athletic)
+神秘幻想 (Shénmì huànxiǎng) – Mystical Fantasy (Exotic & Fantasy)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+魅力写真 (Mèilì xiězhēn) – Glamour Shots
+比基尼女神 (Bǐjīní nǚshén) – Bikini & Swimwear
+内衣与闺房 (Nèiyī yǔ guīfáng) – Lingerie & Boudoir
+街拍潮流 (Jiēpāi cháoliú) – Street & Casual
+健身女神 (Jiànshēn nǚshén) – Fitness & Athletic
+异域与幻想 (Yìyù yǔ huànxiǎng) – Exotic & Fantasy
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-
+精英女王 (Jīngyīng Nǚwáng) – Elite Queen (Powerful women in business)
+霸气女总裁 (Bàqì Nǚ Zǒngcái) – Dominant CEO Goddess (Strong, independent women in leadership)
+智慧女神 (Zhìhuì Nǚshén) – Goddess of Wisdom (Women who exude intelligence and charm)
+职场尤物 (Zhíchǎng Yóuwù) – Workplace Enchantress (Chic, stylish professionals)
+西装杀手 (Xīzhuāng Shāshǒu) – Suit Killer (Women who look stunning in formal attire)
+干练女神 (Gànliàn Nǚshén) – Sharp & Capable Goddess (Confident and professional women)
 
 Sultry Sirens – Bold, intense, and captivating beauty.
 Ethereal Elegance – Dreamy, soft, and angelic portraits.

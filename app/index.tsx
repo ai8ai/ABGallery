@@ -11,9 +11,10 @@ const HomeScreen = () => {
         router.push({
             pathname: "/CatScreen",
             params: {
-                catId: item.id, 
-                catTitle: item.title,
-                catShortTitle: item.shorttitle
+                catId: item.id,         // repo
+                ghname: item.ghname,
+                catTitle: item.title,           // for updating the title of stack 
+                catShortTitle: item.shorttitle  // for updating the title of drawer
             },
         });
     };
