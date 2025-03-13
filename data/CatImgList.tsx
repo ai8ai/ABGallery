@@ -3,12 +3,14 @@ import { CatInterface, Cat2SubMap } from '@/config/type';
 import { genJpg8, genJpg5, genGifList, genJpgList } from '@/utils/genImageList'
 
 export const HomeList: CatInterface[] = [
-    { id: "abstunning", ghname:"ai8ai"     , title: "Stunning", shorttitle: "Stunning", cover: genJpg5("abcat/stunning")[0] },
+    { id: "abstunning", ghname:"ai8ai"     , title: "Hot & Stunning", shorttitle: "Hot & Stunning", cover: genJpg5("abcat/stunning")[0] },
     { id: "bycc",       ghname:"aidres8"     , title: "Yang Chenchen \n Yome Sugar 杨晨晨", shorttitle: "Yang Chenchen", cover: genJpgList("abcat/ycc/yc", 5)[0] },
+    { id: "bwxy",       ghname:"aidres8"    , title: "Wang Xinyao \n Yanni 王馨瑶", shorttitle: "Wang Xinyao", cover: genJpgList("abcat/wxy/wc", 5)[0] },
+    { id: "bcmy",       ghname:"aidres8"     , title: "Chu Mengyao 初梦瑶", shorttitle: "Chu Mengyao 初梦瑶", cover: genJpgList("abcat/cmy/bb", 5)[0] },
+    { id: "bnabi",      ghname:"aidres8"     , title: "Yeon 娜比", shorttitle: "Yeon 娜比", cover: genJpgList("abcat/nabi/bb", 5)[0] },
+    { id: "b2",         ghname:"aidres8"     , title: "Group", shorttitle: "Group", cover: genJpgList("abcat/b2/bb", 5)[0] },
     { id: "absyz",      ghname:"ai8ai"     , title: "Son Yoon Joo \n 손윤주 孙允珠", shorttitle: "Son Yoon Joo", cover: genJpgList("abcat/syz/sc", 5)[0] },
     { id: "absuren",    ghname:"ai8ai"     , title: "Girl Next Door \n shirouto素人しろうと", shorttitle: "Girl Next Door", cover: genJpgList("abcat/suren/sc", 5)[0] },
-    { id: "igif",       ghname:"ai8ai"     , title: "GIF MP4", shorttitle: "GIF", cover: genGifList("aicat/gif/gc", 5)[0] },
-    { id: "bwxy",      ghname:"aidres8"    , title: "Wang Xinyao \n Yanni 王馨瑶", shorttitle: "Wang Xinyao", cover: genJpgList("abcat/wxy/wc", 5)[0] },
     { id: "abkele",     ghname:"ai8ai"     , title: "Kele Vicky", shorttitle: "Kele Vicky", cover: genJpgList("abcat/kele/kc", 5)[0] },
     { id: "abanran",    ghname:"ai8ai"     , title: "Anran 安然", shorttitle: "Anran", cover: genJpgList("abcat/anran/ac", 5)[0] },
     { id: "abzyx",ghname:"ai8ai"     , title: "Carol 周妍希", shorttitle: "Carol周妍希", cover: genJpg5("abcat/zyx")[0] },
@@ -22,31 +24,33 @@ export const HomeList: CatInterface[] = [
     { id: "abmini",ghname:"ai8ai"     , title: "Modern Minimalist", shorttitle: "Modern Minimalist", cover: genJpg5("abcat/mini")[0] },
     { id: "abss",ghname:"ai8ai"     , title: "Signature Styles", shorttitle: "Signature Styles", cover: genJpg5("abcat/ss")[0] },
     { id: "abplaces",ghname:"ai8ai"     , title: "Places", shorttitle: "Places", cover: genJpg5("abcat/places")[0] },
+    { id: "igif",       ghname:"ai8ai"     , title: "GIF MP4", shorttitle: "GIF", cover: genGifList("aicat/gif/gc", 5)[0] },
     { id: "abpast",ghname:"ai8ai"     , title: "Past Year Collection", shorttitle: "past", cover: genJpg5("abcat/past")[0] },
 ];
 
 export const Cat2Sub2Img: Cat2SubMap = {
     bycc: [
-        { id: "cc1", repo:"bycc", title: "Daily Fresh & Hot Trends", folder: "stunning" },
-        { id: "cc2", repo:"bycc", title: "Angelically Innocent", folder: "pure" },
-        { id: "cc3", repo:"bycc", title: "Girl Next Door", folder: "nextdoor" },
-        { id: "cc8", repo:"bycc", title: "Mystic in Blue", folder: "blue" },
-        { id: "cc4", repo:"bycc", title: "Elegant in Cheongsam", folder: "cheongsam" },
-        { id: "cc5", repo:"bycc", title: "Flirty Floral Charms", folder: "floral" },
-        { id: "cc6", repo:"bycc", title: "Cozy & Seductive Moments in Bed", folder: "bed" },
-        { id: "cc7", repo:"bycc", title: "Cozy & Seductive Moments in Bath", folder: "bath" },
-        { id: "cc8", repo:"bycc", title: "School", folder: "school" },
-        { id: "cc10", repo:"bycc", title: "Sensual in Glasses", folder: "glass" },
-        { id: "cc12", repo:"bycc", title: "Casual Chic in Demin", folder: "demin" },
-        { id: "cc11", repo:"bycc", title: "Enchanting in Green", folder: "green" },
-        { id: "cc13", repo:"bycc", title: "Pretty in Pink", folder: "pink" },
-        { id: "cc38", repo:"bycc", title: "Mystic in Red", folder: "red" },
-        { id: "cc14", repo:"bycc", title: "Fantasy & Cosplay Queens", folder: "cos" },
-        { id: "cc15", repo:"bycc", title: "Dazzling in Sequins", folder: "sparkling" },
-        { id: "cc16", repo:"bycc", title: "Wedding", folder: "wedding" },
-        { id: "cc25", repo:"bycc", title: "Bare & Beautiful & Strapless", folder: "strapless" },
-        { id: "cc23", repo:"bycc", title: "Sultry Spaghetti Straps", folder: "spaghetti" },
-        { id: "cc43", repo:"bycc", title: "Split", folder: "split" },
+        { id: "cc1", repo:"bycc", title: "Hot & Stunning", folder: "stunning" },
+        { id: "cc2", repo:"bycc", title: "Angel's Temptation", folder: "pure" },
+        { id: "cc3", repo:"bycc", title: "Irresistible Charm", folder: "nextdoor" },
+        { id: "cc8", repo:"bycc", title: "Mystic Blue", folder: "blue" },
+        { id: "cc4", repo:"bycc", title: "Grace in Cheongsam", folder: "cheongsam" },
+        { id: "cc5", repo:"bycc", title: "Flirty Florals", folder: "floral" },
+        { id: "cc6", repo:"bycc", title: "Seduction in Bed", folder: "bed" },
+        { id: "cc7", repo:"bycc", title: "Steamy in the Bath", folder: "bath" },
+        { id: "cc8", repo:"bycc", title: "School Seduction", folder: "school" },
+        { id: "cc10", repo:"bycc", title: "Sensual Vision", folder: "glass" },
+        { id: "cc12", repo:"bycc", title: "Casual Seduction", folder: "demin" },
+        { id: "cc11", repo:"bycc", title: "Enchanting Green", folder: "green" },
+        { id: "cc13", repo:"bycc", title: "Soft Allure", folder: "pink" },
+        { id: "cc38", repo:"bycc", title: "Mystic Red", folder: "red" },
+        { id: "cc14", repo:"bycc", title: "Cosplay Fantasy", folder: "cos" },
+        { id: "cc15", repo:"bycc", title: "Dazzling Sparkle", folder: "sparkling" },
+        { id: "cc16", repo:"bycc", title: "Bridal Desire", folder: "wedding" },
+        { id: "cc25", repo:"bycc", title: "Bare & Bold", folder: "strapless" },
+        { id: "cc23", repo:"bycc", title: "Slender Straps", folder: "spaghetti" },
+        { id: "cc43", repo:"bycc", title: "Sultry Split", folder: "split" },
+        { id: "cc44", repo:"bycc", title: "New", folder: "new" },
         { id: "cp25", repo:"bycc24", title: "2025 Collection", folder: "2025" },
         { id: "cp24", repo:"bycc24", title: "2024 Collection", folder: "2024" },
         { id: "cp23", repo:"bycc23", title: "2023 Collection", folder: "2023" },
@@ -61,8 +65,8 @@ export const Cat2Sub2Img: Cat2SubMap = {
 
     bwxy: [
         { id: "w01", repo:"bwxy",  title: "Daily Fresh & Hot Trends",   folder: "stunning"},     
-        { id: "w02", repo:"bwxy",  title: "Night Life",            		folder: "bar"},                 
-        { id: "w03", repo:"bwxy",  title: "Cozy & Seductive Bath",   folder: "bath"},          
+        { id: "w02", repo:"bwxy",  title: "Sultry Evenings Under the Lights",            		folder: "bar"},                 
+        { id: "w03", repo:"bwxy",  title: "Cozy & Seductive Bath Moments",   folder: "bath"},          
         { id: "w04", repo:"bwxy",  title: "Elegant in Cheongsam",       folder: "cheongsam"},        
         { id: "w05", repo:"bwxy",  title: "Sassy in Croptops",          folder: "croptop"},             
         { id: "w06", repo:"bwxy",  title: "Sublime Décolleté",          folder: "decollete"},           
@@ -73,33 +77,47 @@ export const Cat2Sub2Img: Cat2SubMap = {
         { id: "w11", repo:"bwxy",  title: "Chic at Work",               folder: "office"},                   
         { id: "w12", repo:"bwxy",  title: "Breeze & Beyond",            folder: "outdoor"},               
         { id: "w13", repo:"bwxy",  title: "Chic in Motion",             folder: "pants"},                  
-        { id: "w14", repo:"bwxy",  title: "Seethrough ...",             folder: "seethrough"},             
+        { id: "w14", repo:"bwxy",  title: "Teasing Transparency",             folder: "seethrough"},             
         { id: "w15", repo:"bwxy",  title: "Sultry Spaghetti Straps",    folder: "spaghetti"},   
         { id: "w16", repo:"bwxy",  title: "Mystic in Uniform",          folder: "uniform"},             
-        { id: "vio", repo:"bwxy",  title: "Violet",       folder: "violet" },
+        { id: "vio", repo:"bwxy",  title: "A Royal Seduction",       folder: "violet" },
         { id: "spar", repo:"bwxy", title: "Dazzling in Sparkling", folder: "sparkling" },
         { id: "che", repo:"bwxy",  title: "Elegant in Cheongsam",       folder: "cheongsam" },
-        { id: "bod", repo:"bwxy",  title: "Bodycon",       folder: "bodycon" },
-        { id: "coa", repo:"bwxy",  title: "Coat",       folder: "coat" },
+        { id: "bod", repo:"bwxy",  title: "Curves in Command",       folder: "bodycon" },
+        { id: "coa", repo:"bwxy",  title: "Wrapped in Elegance",       folder: "coat" },
         { id: "cos", repo:"bwxy",  title: "Fantasy & Cosplay Queens", folder: "cos" },
         { id: "hom", repo:"bwxy",  title: "Cozy Chic & Homely Elegance", folder: "home" },
-        { id: "nex", repo:"bwxy",  title: "Next Door Girl", folder: "nextdoor" },
-        { id: "sof", repo:"bwxy", title: "Sofa", folder: "sofa" },
-        { id: "cc8", repo:"bwxy", title: "School", folder: "school" },
+        { id: "nex", repo:"bwxy",  title: "The Girl Next Door", folder: "nextdoor" },
+        { id: "sof", repo:"bwxy", title: "Relaxed Allure", folder: "sofa" },
+        { id: "cc8", repo:"bwxy", title: "Classroom Charm", folder: "school" },
         { id: "c25", repo:"bwxy", title: "Bare & Beautiful & Strapless", folder: "strapless" },
         { id: "c12", repo:"bwxy", title: "Casual Chic in Demin", folder: "demin" },
-        { id: "c13", repo:"bwxy", title: "Pretty in Pink", folder: "pink" },
-        { id: "c38", repo:"bwxy", title: "Mystic in Red", folder: "red" },
-        { id: "c43", repo:"bwxy", title: "Split", folder: "split" },
-        { id: "sul", repo:"bwxy", title: "Just Beautiful", folder: "sultry" },
+        { id: "c13", repo:"bwxy", title: "Blush of Desire", folder: "pink" },
+        { id: "c38", repo:"bwxy", title: "Passionate Hues", folder: "red" },
+        { id: "c43", repo:"bwxy", title: "Daring Affair", folder: "split" },
+        { id: "sul", repo:"bwxy", title: "Simply Irresistible", folder: "sultry" },
+    ].map(item => ({...item,        ghname: "aidres8",        cover: genJpg8(`${item.repo}/${item.folder}`)[0]    })),
 
-    ].map(item => ({
-        ...item,
-        ghname: "aidres8",
-        cover: genJpg8(`${item.repo}/${item.folder}`)[0]
-    })),
 
-   
+    b2: [
+        { id: "w01", repo: "b2", title: "Twice the Temptation", folder: "two" },     
+        { id: "w02", repo: "b2", title: "Craving More", folder: "more" },                  
+    ].map(item => ({...item,        ghname: "aidres8",        cover: genJpg8(`${item.repo}/${item.folder}`)[0]    })),
+
+    bnabi: [
+        { id: "s01", title: "Dazzling in Sparkling", folder: "sparkling" },
+        { id: "w02", title: "Timeless Gown Beauty",  folder: "gown"},                 
+        { id: "bod", title: "Curves in Command",       folder: "bodycon" },
+    ].map(item => ({...item,ghname: "aidres8",    repo: "bnabi", cover: genJpg8(`bnabi/${item.folder}`)[0]    })),
+
+    bcmy: [
+        { id: "s01", title: "Pure Temptation", folder: "white" },
+        { id: "w02", title: "Dark Desire",  folder: "black"},                 
+        { id: "bod", title: "Golden Glow",       folder: "yellow" },
+        { id: "spar",title: "Dazzling in Sparkling", folder: "sparkling" },
+    ].map(item => ({...item,ghname: "aidres8",    repo: "bcmy", cover: genJpg8(`bcmy/${item.folder}`)[0]    })),
+
+
     absyz: [
         { id: "SYZStunning", title: "Daily Fresh & Hot Trends", folder: "stunning" },
         { id: "SYZBed", title: "Cozy & Seductive Moments", folder: "bbs" },
@@ -118,8 +136,8 @@ export const Cat2Sub2Img: Cat2SubMap = {
     })),
 
     abstunning: [
-        { id: "abs3", title: "Top 20", folder: "top20", cover: genJpg5("abstunning/top20")[0] },
-        { id: "abs1", title: "Top 100", folder: "top100", cover: genJpg5("abstunning/top100")[0] },
+        { id: "abs3", title: "Forever Divine", folder: "forever_divine", cover: genJpg5("abstunning/forever_divine")[0] },
+        { id: "abs1", title: "Blooming Beauty", folder: "blooming_beauty", cover: genJpg5("abstunning/blooming_beauty")[0] },
         { id: "abs2", title: "Bare & Beautiful", folder: "sultry", cover: genJpg5("abstunning/sultry")[0] },
         { id: "abs4", title: "Lovely", folder: "lovely", cover: genJpg5("abstunning/lovely")[0] },
     ].map(item => ({...item,ghname: "ai8ai",    repo: "abstunning",})),
@@ -168,6 +186,7 @@ export const Cat2Sub2Img: Cat2SubMap = {
         { id: "holLuneryear", title: "Chinese New Year", folder: "luneryear", cover: genJpgList("abholiday/luneryear/lu", 5)[0] },
         { id: "holDeco", title: "Sublime Décolleté", folder: "deco", cover: genJpgList("abholiday/deco/de", 5)[0] },
         { id: "holWal", title: "Elegant Wallpaper", folder: "wallpaper", cover: genJpgList("abholiday/wallpaper/wa", 5)[0] },
+        { id: "hol", title: "Weddings", folder: "weddings", cover: genJpgList("abholiday/weddings/bb", 5)[0] },
     ].map(item => ({...item,ghname: "ai8ai",    repo: "abholiday",})),
 
 
@@ -182,12 +201,13 @@ export const Cat2Sub2Img: Cat2SubMap = {
 
     abanran: [
         { id: "anrStunning", title: "Daily Fresh & Hot Trends", folder: "stunning", cover: genJpgList("abanran/stunning/st", 5)[0] },
-        { id: "anrSto", title: "Silken Allure & Enchanting Legs", folder: "stockings", cover: genJpgList("abanran/stockings/st", 5)[0] },
+        { id: "anrSto", title: "Dazzling in Sparkling", folder: "sparkling", cover: genJpg5("abanran/sparkling", 5)[0] },
         { id: "anrOff", title: "Chic at Work", folder: "office", cover: genJpgList("abanran/office/of", 5)[0] },
         { id: "anrHotel", title: "Luxe Escapes & Midnight Whispers", folder: "hotel", cover: genJpgList("abanran/hotel/ho", 5)[0] },
         { id: "anrDenim", title: "Casual Chic in Denim", folder: "denims", cover: genJpgList("abanran/demins/de", 5)[0] },
         { id: "anrClass", title: "Enchanting in Class", folder: "classroom", cover: genJpgList("abanran/classroom/cl", 5)[0] },
-        { id: "anr8k", title: "8K", folder: "k8", cover: genJpgList("abanran/k8/k8", 5)[0] },
+        { id: "bod", title: "Sculpted Seduction", folder: "bodycon", cover: genJpg5("abanran/bodycon")[0] },
+
     ].map(item => ({...item,ghname: "ai8ai",    repo: "abanran",})),
 
 
@@ -200,6 +220,8 @@ export const Cat2Sub2Img: Cat2SubMap = {
         { id: "cel6", title: "Liu Yan", folder: "liuyan", cover: genJpg5("abcel/liuyan")[0] },
         { id: "cel7", title: "Yang Mi", folder: "yangmi", cover: genJpg5("abcel/yangmi")[0] },
         { id: "cel8", title: "Du Xiaoyu", folder: "duxiaoyu", cover: genJpg5("abcel/duxiaoyu")[0] },
+        { id: "cel9", title: "Xu Dongdong", folder: "xudongdong", cover: genJpg5("abcel/xudongdong")[0] },
+        { id: "ce19", title: "Yue Yue 玥儿玥", folder: "yey", cover: genJpg5("abcel/yey")[0] },
     ].map(item => ({...item,ghname: "ai8ai",    repo: "abcel",})),
 
 
@@ -227,31 +249,31 @@ export const Cat2Sub2Img: Cat2SubMap = {
 
     absuren: [
         { id: "surOff", title: "Stunning", folder: "stunning", cover: genJpg5("absuren/stunning")[0] },
+        { id: "ire1", title: "Bakunyuu", folder: "bakunyuu", cover: genJpg5("absuren/bakunyuu")[0] },
+        { id: "surChu", title: "Fantasy & Queens", folder: "chubby", cover: genJpg5("absuren/chubby")[0] },
+        { id: "surDeco", title: "Middle Age", folder: "mid", cover: genJpg5("absuren/mid")[0] },
+        { id: "mie", title: "Middle East", folder: "middleeast", cover: genJpg5("absuren/middleeast")[0] },
+        { id: "surDot", title: "Next Door Girls", folder: "nextdoor", cover: genJpg5("absuren/nextdoor")[0] },
         { id: "surPure", title: "Angelically Innocent", folder: "pure", cover: genJpg5("absuren/pure")[0] },
         { id: "surFlo", title: "Flirty Socialite", folder: "socialite", cover: genJpg5("absuren/socialite")[0] },
-        { id: "surChu", title: "Fantasy & Queens", folder: "chubby", cover: genJpg5("absuren/chubby")[0] },
-        { id: "surDog", title: "Friend Forever", folder: "dog", cover: genJpg5("absuren/dog")[0] },
-        { id: "surDeco", title: "Middle Age", folder: "mid", cover: genJpg5("absuren/mid")[0] },
-        { id: "surDot", title: "Next Door Girls", folder: "nextdoor", cover: genJpg5("absuren/nextdoor")[0] },
-        { id: "surFace", title: "Somebody 1", folder: "sb1", cover: genJpg5("absuren/sb1")[0] },
+        { id: "squ", title: "Square", folder: "square", cover: genJpg5("absuren/square")[0] },
+        { id: "surFace", title: "Travel", folder: "travel", cover: genJpg5("absuren/travel")[0] },
         { id: "surFace3", title: "Somebody 2", folder: "sb2", cover: genJpg5("absuren/sb2")[0] },
-        { id: "surFace2", title: "Somebody 3", folder: "sb9", cover: genJpg5("absuren/sb9")[0] },
-        { id: "ire1", title: "Bakunyuu", folder: "bakunyuu", cover: genJpg5("absuren/bakunyuu")[0] },
-
+        { id: "surFace2", title: "Somebody 3", folder: "sb3", cover: genJpg5("absuren/sb3")[0] },
     ].map(item => ({...item,ghname: "ai8ai",    repo: "absuren",})),
 
 
     abmini: [
-        { id: "ire1", title: "Bakunyuu", folder: "bakunyuu", cover: genJpg5("abmini/bakunyuu")[0] },
-        { id: "ire2", title: "Deco", folder: "deco", cover: genJpg5("abmini/deco")[0] },
-        { id: "ire3", title: "Bodycon", folder: "bodycon", cover: genJpg5("abmini/bodycon")[0] },
-        { id: "ire8", title: "Halter Top", folder: "haltertop", cover: genJpg5("abmini/haltertop")[0] },
-        { id: "ire4", title: "Girl Next Door", folder: "nextdoor", cover: genJpg5("abmini/nextdoor")[0] },
-        { id: "ire5", title: "Spaghetti", folder: "spaghetti", cover: genJpg5("abmini/spaghetti")[0] },
-        { id: "ire6", title: "Strapless", folder: "strapless", cover: genJpg5("abmini/strapless")[0] },
-        { id: "ire7", title: "Suite", folder: "suite", cover: genJpg5("abmini/suite")[0] },
-        { id: "ire17", title: "Sweater", folder: "sweater", cover: genJpg5("abmini/sweater")[0] },
-        { id: "ire27", title: "White Shirt", folder: "whiteshirt", cover: genJpg5("abmini/whiteshirt")[0] },
+        { id: "ire1", title: "Lush Curves", folder: "bakunyuu", cover: genJpg5("abmini/bakunyuu")[0] },
+        { id: "ire2", title: "Tempting Décolleté", folder: "deco", cover: genJpg5("abmini/deco")[0] },
+        { id: "ire3", title: "Sculpted Seduction", folder: "bodycon", cover: genJpg5("abmini/bodycon")[0] },
+        { id: "ire8", title: "Bare & Bold", folder: "haltertop", cover: genJpg5("abmini/haltertop")[0] },
+        { id: "ire4", title: "Irresistible Charm", folder: "nextdoor", cover: genJpg5("abmini/nextdoor")[0] },
+        { id: "ire5", title: "Slender Straps", folder: "spaghetti", cover: genJpg5("abmini/spaghetti")[0] },
+        { id: "ire6", title: "Bare Elegance", folder: "strapless", cover: genJpg5("abmini/strapless")[0] },
+        { id: "ire7", title: "Suite Seduction", folder: "suite", cover: genJpg5("abmini/suite")[0] },
+        { id: "ire17", title: "Snug & Sultry", folder: "sweater", cover: genJpg5("abmini/sweater")[0] },
+        { id: "ire27", title: "Undone Desire", folder: "whiteshirt", cover: genJpg5("abmini/whiteshirt")[0] },
     ].map(item => ({...item,ghname: "ai8ai",    repo: "abmini",})),
 
 
@@ -261,6 +283,15 @@ export const Cat2Sub2Img: Cat2SubMap = {
         { id: "flo3", title: "Leopard", folder: "leopard", cover: genJpg5("abss/leopard")[0] },
         { id: "flo4", title: "turtle neck", folder: "turtleneck", cover: genJpg5("abss/turtleneck")[0] },
         { id: "fl5", title: "Elegant in Cheongsam", folder: "cheongsam", cover: genJpg5("abss/cheongsam")[0] },
+        { id: "fl6", title: "Bodycon", folder: "bodycon", cover: genJpg5("abss/bodycon")[0] },
+        { id: "fye6", title: "Yellow", folder: "yellow", cover: genJpg5("abss/yellow")[0] },
+        { id: "ken", title: "Kendall Style", folder: "kendall", cover: genJpg5("abss/kendall")[0] },
+        { id: "ff6", title: "Split", folder: "split", cover: genJpg5("abss/split")[0] },
+        { id: "YCCSpa", title: "Sultry Spaghetti Straps", folder: "spa", cover: genJpg5("abss/spa")[0] },
+        { id: "cc5", title: "Flirty Floral Charms", folder: "floral" , cover: genJpg5("abss/floral")[0] },
+        { id: "wxyHalt", title: "Allure en Halter", folder: "haltertop", cover: genJpg5("abss/haltertop")[0] },
+        { id: "SYZLace", title: "Timeless Grace in Silk & Lace", folder: "lace", cover: genJpg5("abss/lace")[0] },
+        { id: "SYZOne", title: "Fantasy & Queens", folder: "oneshoulder" , cover: genJpg5("abss/oneshoulder")[0] },
     ].map(item => ({...item,ghname: "ai8ai",    repo: "abss",})),
 
 
