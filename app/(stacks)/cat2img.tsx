@@ -35,6 +35,15 @@ export default function SlideshowScreen() {
     }, [currentImage]);
     // Fetch image list dynamically from GitHub API
 
+
+    useEffect(() => {
+        if (images.length > 0) {
+            const nextIndex = (currentImage + 1) % images.length;
+            Image.prefetch(images[nextIndex]); // Preload next image
+        }
+    }, [currentImage]);
+
+
     useEffect(() => {
         const fetchImageList = async () => {
             try {
