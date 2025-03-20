@@ -11,9 +11,6 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import styles from '@/config/styles';
 
 
-// const repo = "abycc";  // You can dynamically change this
-// const folder = "pure"; // The folder inside the repo
-// 
 
 const GITHUB_API_URL = (ghname: string, repo: string, folder: string) => `https://api.github.com/repos/${ghname}/${repo}/contents/${folder}`;
 const GITHUB_RAW_URL = (ghname: string, repo: string, folder: string) => `https://raw.githubusercontent.com/${ghname}/${repo}/main/${folder}/`;
@@ -28,6 +25,8 @@ export default function SlideshowScreen() {
     const [currentImage, setCurrentImage] = useState(0);
     const [isAutoSlideshow, setIsAutoSlideshow] = useState(false);
     const [hasPermission, setHasPermission] = useState(false);
+    const [resizeMode, setResizeMode] = useState<'cover' | 'contain'>('cover');
+
     const intervalRef = useRef<number | null>(null);
 
     useEffect(() => {
@@ -38,6 +37,10 @@ export default function SlideshowScreen() {
 
     useEffect(() => {
         if (images.length > 0) {
+            getResizeMode(images[currentImage], (mode) => {
+                setResizeMode(mode);
+            });
+
             const nextIndex = (currentImage + 1) % images.length;
             Image.prefetch(images[nextIndex]); // Preload next image
         }
@@ -86,6 +89,21 @@ export default function SlideshowScreen() {
         }
         setIsAutoSlideshow(false);
     };
+
+    const getResizeMode = (imageUrl: string, callback: (mode: "cover" | "contain") => void) => {
+        Image.getSize(imageUrl, (width, height) => {
+            const aspectRatio = height/width;
+            console.log(aspectRatio.toFixed(2))
+
+            // Decide resizeMode based on aspect ratio
+            const mode = aspectRatio > 1.4 ? "cover" : "contain";
+            callback(mode);
+        }, (error) => {
+            console.error("Failed to get image size:", error);
+            callback("cover");  // Default to "cover" if error occurs
+        });
+    };
+
 
     // Scale animation for toggle
     const scaleAnim = useRef(new Animated.Value(1)).current;
@@ -167,7 +185,7 @@ export default function SlideshowScreen() {
             )}
             <TouchableOpacity onPress={toggleSlideshow} style={{ position: 'absolute', width: '100%', height: '100%' }}>
                 <Animated.View style={{ transform: [{ scale: scaleAnim }] }}>
-                    <Image source={{ uri: images[currentImage] }} style={styles.sliderImage} />
+                    <Image source={{ uri: images[currentImage] }} style={[styles.sliderImage, { resizeMode }]} />
                 </Animated.View>
             </TouchableOpacity>
 
