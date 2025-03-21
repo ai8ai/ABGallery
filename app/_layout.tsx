@@ -12,7 +12,7 @@ export default function Layout() {
                 <Drawer screenOptions={({ route }) => ({
                     drawerItemStyle: hiddenScreens.includes(route.name) ? { display: "none" } : {},
                 })}>
-                    <Drawer.Screen name="index" options={{ drawerLabel: 'Home', title: '💖 Beautiful 🌟 Asian Girls 👑', headerShown: true }} />
+                    <Drawer.Screen name="index" options={{ drawerLabel: 'Home', title: '💖 Beautiful Asian Girls 👑', headerShown: true }} />
                     <Drawer.Screen name="(stacks)" options={{ drawerLabel: 'Category', title: 'Category1', headerShown: true }} />
                 </Drawer>
             </GestureHandlerRootView>

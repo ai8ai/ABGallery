@@ -10,18 +10,18 @@ const styles = StyleSheet.create({
     },
     mainGrid: {
         justifyContent: 'space-between',
-        paddingBottom: 20,
+        paddingBottom: 10,
     },
 
     catContainer: {
         alignItems: 'center',
         width: '48%',
         aspectRatio: 9 / 16,
-        marginBottom: 10,
-        marginTop: 3,
+        marginTop: 5,
         marginLeft: 3,
         marginRight: 3,
     },
+    
     catCoverImg: {
         height: '88%',
         width: '100%',
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     },
     catTitle: {
         marginTop: 5,
-        fontSize: 14,
+        fontSize: 11,
         color: '#333',
         textAlign: 'center',
     },

@@ -1,11 +1,11 @@
 // Category
 import { CatInterface, Cat2SubMap } from '@/config/type';
-import { genJpg8, genJpg5, genGifList, genJpgList } from '@/utils/genImageList'
+import { genJpg55, genJpg8, genJpg5, genGifList, genJpgList } from '@/utils/genImageList'
 
 export const HomeList: CatInterface[] = [
-    { id: "abstunning", ghname: "ai8ai", title: "Hot 🧨 Stunning", shorttitle: "Hot & Stunning", cover: genJpg5("abcat/stunning")[0] },
-    { id: "bycc", ghname: "aidres8", title: "Yang Chenchen \n Yome Sugar 杨晨晨", shorttitle: "Yang Chenchen", cover: genJpgList("abcat/ycc/yc", 5)[0] },
-    { id: "bwxy", ghname: "aidres8", title: "Wang Xinyao \n Yanni 王馨瑶", shorttitle: "Wang Xinyao", cover: genJpgList("abcat/wxy/wc", 5)[0] },
+    { id: "abstunning", ghname: "ai8ai", title: "Hot 🧨 Stunning", shorttitle: "Hot & Stunning", cover: genJpg55("abcat/main/stunning")[0] },
+    { id: "bycc", ghname: "aidres8", title: "Yang Chenchen 杨晨晨", shorttitle: "Yang Chenchen", cover: genJpgList("abcat/ycc/yc", 5)[0] },
+    { id: "bwxy", ghname: "aidres8", title: "Wang Xinyao 王馨瑶", shorttitle: "Wang Xinyao", cover: genJpgList("abcat/wxy/wc", 5)[0] },
     { id: "bcmy", ghname: "aidres8", title: "Chu Mengyao 初梦瑶", shorttitle: "Chu Mengyao 初梦瑶", cover: genJpg5("abcat/cmy")[0] },
     { id: "bnabi", ghname: "aidres8", title: "Yeon 娜比", shorttitle: "Yeon 娜比", cover: genJpg5("abcat/nabi")[0] },
     { id: "b2", ghname: "aidres8", title: "Group", shorttitle: "Group", cover: genJpg5("abcat/b2")[0] },
@@ -385,10 +385,10 @@ export const Cat2Sub2Img: Cat2SubMap = {
     ].map(item => ({...item,ghname: "ai8ai",repo: "absyz",cover: genJpg5(`absyz/${item.folder}`)[0]})),
     
     abstunning: [
-        { id: "abs101", title: "👼 Forever Divine", folder: "forever_divine", cover: genJpg5("abstunning/forever_divine")[0] },
-        { id: "abs102", title: "🌺 Blooming Beauty", folder: "blooming_beauty", cover: genJpg5("abstunning/blooming_beauty")[0] },
-        { id: "abs103", title: "💃 Bare & Beautiful", folder: "sultry", cover: genJpg5("abstunning/sultry")[0] },
-        { id: "abs104", title: "💖 Lovely", folder: "lovely", cover: genJpg5("abstunning/lovely")[0] },
+        { id: "abs101", title: "👼 Forever Divine", folder: "forever_divine", cover: genJpg55("abstunning/main/forever_divine")[0] },
+        { id: "abs102", title: "🌺 Blooming Beauty", folder: "blooming_beauty", cover: genJpg55("abstunning/main/blooming_beauty")[0] },
+        { id: "abs103", title: "💃 Bare & Beautiful", folder: "sultry", cover: genJpg55("abstunning/main/sultry")[0] },
+        { id: "abs104", title: "💖 Lovely", folder: "lovely", cover: genJpg55("abstunning/main/lovely")[0] },
     ].map(item => ({ ...item, ghname: "ai8ai", repo: "abstunning", })),
     
 
