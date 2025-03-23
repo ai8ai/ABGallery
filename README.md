@@ -92,3 +92,18 @@ Magnetic Allure (磁场魅力)
 Enchanted Vision (魅惑视觉)
 Velvet Glow (丝滑光彩)
 Fierce Elegance (霸气优雅)
+
+
+
+Bust Corset (structured, waist-cinching, cleavage-enhancing)
+Plunge (deep V or extreme neckline)
+Very High Split (leg-baring, thigh-high or beyond)
+Bodycon (skin-tight, curve-hugging)
+Sheer & Mesh (see-through, strategically revealing)
+Cutout (waist, side, chest, or back cutout designs)
+Backless (daring open-back designs)
+Off-the-Shoulder (bare shoulders, feminine & flirty)
+Halter & Strappy (crisscross straps, barely-there support)
+Lace & Satin (sensual fabrics that scream luxury)
+Mini & Micro (extra-short dresses and skirts)
+Leather & Latex (bold, edgy, and ultra-sexy)
