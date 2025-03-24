@@ -5,6 +5,8 @@ import styles from '@/config/styles';
 
 import { CatInterface } from '@/config/type';
 import { Cat2Sub2Img } from '@/data/CatImgList';
+import { YCCImg } from '@/data/YCCImgList';
+
 
 const CategoryScreen: React.FC = () => {
     const { catId, ghname } = useLocalSearchParams();   // catId is repo
@@ -14,7 +16,10 @@ const CategoryScreen: React.FC = () => {
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-        const subCatData = Cat2Sub2Img[catId as string] || Cat2Sub2Img.default;
+        // const subCatData = Cat2Sub2Img[catId as string] || Cat2Sub2Img.default;
+        const subCatData = (catId as string).startsWith('cc')
+            ? YCCImg[catId as string] || Cat2Sub2Img.default
+            : Cat2Sub2Img[catId as string] || Cat2Sub2Img.default;
         setSubCatList(subCatData);
         setLoading(false);
     }, [catId]);
@@ -25,11 +30,11 @@ const CategoryScreen: React.FC = () => {
     const handleSubCatPress = (item: CatInterface) => {
         router.push({
             pathname: "/cat2img", params: {
-                imgPath:  item.path,
-                count:    item.count,
-                folder:   item.folder,
-                repo:     item.repo,      //repo
-                ghname:   ghname,
+                imgPath: item.path,
+                count: item.count,
+                folder: item.folder,
+                repo: item.repo,      //repo
+                ghname: ghname,
             }
         });
     };
