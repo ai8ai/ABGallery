@@ -6,11 +6,13 @@ export const HomeList: CatInterface[] = [
     { id: "abstunning", ghname: "ai8ai", title: "Hot 🧨 Stunning", shorttitle: "Hot & Stunning", cover: genJpg55("abcat/main/stunning")[0] },
     { id: "bycc", ghname: "aidres8", title: "Yang Chenchen🈲杨晨晨", shorttitle: "Yang Chenchen", cover: genJpg55("abcat/main/ycc")[0] },
 
+
     { id: "bwxy", ghname: "aidres8", title: "Wang Xinyao 王馨瑶", shorttitle: "Wang Xinyao", cover: genJpg55("abcat/main/wxy")[0] },
     { id: "bcmy", ghname: "aidres8", title: "Chu Mengyao 初梦瑶", shorttitle: "Chu Mengyao 初梦瑶", cover: genJpg55("abcat/main/cmy")[0] },
     
     { id: "bnabi", ghname: "aidres8", title: "Yeon 娜比", shorttitle: "Yeon 娜比", cover: genJpg55("abcat/main/nabi")[0] },
     { id: "absyz", ghname: "ai8ai", title: "Son Yoon Joo 손윤주", shorttitle: "Son Yoon Joo", cover: genJpg55("abcat/main/syz")[0] },
+
 
     { id: "abkele", ghname: "ai8ai", title: "Kele Vicky", shorttitle: "Kele Vicky", cover: genJpg55("abcat/main/kele")[0] },
     { id: "abanran", ghname: "ai8ai", title: "Anran 安然", shorttitle: "Anran", cover: genJpg55("abcat/main/anran")[0] },
@@ -35,6 +37,9 @@ export const HomeList: CatInterface[] = [
 
     { id: "igif", ghname: "ai8ai", title: "GIF MP4", shorttitle: "GIF", cover: genGifList("aicat/gif/gc", 5)[0] },
     { id: "abpast", ghname: "ai8ai", title: "Past Year Collection", shorttitle: "past", cover: genJpg55("abcat/main/past")[0] },
+
+    { id: "div1", ghname: "", title: "", shorttitle: "", cover: ""},
+    { id: "div2", ghname: "", title: "", shorttitle: "", cover: ""},
 
     { id: "cc1shoulder", ghname: "aidres8", title: "Yang Chenchen: One Shoulder", shorttitle: "Yome One Shoulder", cover: genJpg55("abcat/main/cc1shoulder")[0] },
     { id: "ccbankunyuu", ghname: "aidres8", title: "Yang Chenchen 🌰 Bankunyuu", shorttitle: "Yome 🌰 Bankunyuu", cover: genJpg55("abcat/main/ccbankunyuu")[0] },

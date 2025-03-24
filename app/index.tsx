@@ -19,17 +19,28 @@ const HomeScreen = () => {
         });
     };
 
-    const renderItem = ({ item }: { item: CatInterface }) => (
-        <TouchableOpacity
-            style={styles.catContainer}
-            onPress={() => handleItemPress(item)}
-        >
-            <Image source={{ uri: item.cover }} style={styles.catCoverImg} />
-            <Text style={styles.catTitle} numberOfLines={2}>
-                {item.title}
-            </Text>
-        </TouchableOpacity>
-    );
+    const renderItem = ({ item }: { item: CatInterface }) => {
+        if (item.id.startsWith("div")) {
+            return (
+                <View style={styles.dividerContainer}>
+                    <Text style={styles.dividerText}>❤️Yang Chenchen Yome Sugar Exclusive🌹</Text>
+                    <View style={styles.dividerLine} />
+                </View>
+            );
+        }
+
+        return (
+            <TouchableOpacity
+                style={styles.catContainer}
+                onPress={() => handleItemPress(item)}
+            >
+                <Image source={{ uri: item.cover }} style={styles.catCoverImg} />
+                <Text style={styles.catTitle} numberOfLines={2}>
+                    {item.title}
+                </Text>
+            </TouchableOpacity>
+        );
+    };
 
 
     return (

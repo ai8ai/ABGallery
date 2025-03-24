@@ -107,3 +107,6 @@ Halter & Strappy (crisscross straps, barely-there support)
 Lace & Satin (sensual fabrics that scream luxury)
 Mini & Micro (extra-short dresses and skirts)
 Leather & Latex (bold, edgy, and ultra-sexy)
+
+
+

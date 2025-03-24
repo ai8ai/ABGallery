@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     },
     catTitle: {
         marginTop: 5,
-        fontSize: 11,
+        fontSize: 14,
         color: '#333',
         textAlign: 'center',
     },
@@ -69,6 +69,31 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+    },
+    divider: {
+        borderBottomWidth: 1,
+        borderBottomColor: "#ccc",
+        marginVertical: 12,
+        width: "100%",
+    },
+
+    dividerContainer: {
+        flexDirection: "row",
+        alignItems: "center",  // Keeps text and line aligned
+        justifyContent: "center",  // Centers the entire divider content
+        marginVertical: 10,
+        width: "100%",
+    },
+    dividerText: {
+        fontSize: 14,
+        fontWeight: "bold",
+        textAlign: "center",
+        marginRight: 10, // Space between text and line
+    },
+    dividerLine: {
+        flex: 1, // Makes the line stretch across the screen
+        height: 1,
+        backgroundColor: "#ccc",
     },
 
     // modalContainer: {
