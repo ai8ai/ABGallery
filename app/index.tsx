@@ -14,7 +14,6 @@ const HomeScreen = () => {
                 catId: item.id,         // repo
                 ghname: item.ghname,
                 catTitle: item.title,           // for updating the title of stack 
-                catShortTitle: item.shorttitle  // for updating the title of drawer
             },
         });
     };

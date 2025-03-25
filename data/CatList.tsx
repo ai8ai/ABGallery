@@ -5,7 +5,7 @@ import { genJpg88, genJpg55, genJpg8, genJpg5, genGifList, genJpgList } from '@/
 export const Cat2Sub2Img: Cat2SubMap = {
 
     bycc: [
-        { id: "cc1", repo: "bycc", title: "Hot & Stunning 🔥", folder: "stunning" },
+        { id: "cc1shoulder", repo: "bycc", title: "Hot & Stunning 🔥", folder: "stunning" },
         { id: "cc2", repo: "bycc", title: "Angel's Temptation 😇", folder: "pure" },
         { id: "c14", repo: "bycc", title: "Soft Allure 🌸", folder: "pink" },
         { id: "cc3", repo: "bycc", title: "Irresistible Charm 💋", folder: "nextdoor" },

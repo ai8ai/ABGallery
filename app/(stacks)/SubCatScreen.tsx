@@ -5,17 +5,18 @@ import styles from '@/config/styles';
 
 import { CatInterface } from '@/config/type';
 import { Cat2Sub2Img } from '@/data/CatList';
+import { YCCImg } from '@/data/SubCatList';
 
 
 const CategoryScreen: React.FC = () => {
     const { catId, ghname } = useLocalSearchParams();   // catId is repo
-
+    console.log("catId: ", catId);
     const [subCatList, setSubCatList] = useState<CatInterface[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-        const subCatData = Cat2Sub2Img[catId as string] || Cat2Sub2Img.default;
+        const subCatData = YCCImg[catId as string] || Cat2Sub2Img.default;
         setSubCatList(subCatData);
         setLoading(false);
     }, [catId]);
@@ -24,24 +25,15 @@ const CategoryScreen: React.FC = () => {
     if (error) return <Text>{error}</Text>;
 
     const handleSubCatPress = (item: CatInterface) => {
-        if (item.id.startsWith("sub"))
-            router.push({
-                pathname: "/SubCatScreen", params: {
-                    catId: item.id,         // repo
-                    ghname: item.ghname,
-                    catTitle: item.title,           // for updating the title of stack 
-                }
-            });
-        else
-            router.push({
-                pathname: "/cat2img", params: {
-                    imgPath: item.path,
-                    count: item.count,
-                    folder: item.folder,
-                    repo: item.repo,      //repo
-                    ghname: ghname,
-                }
-            });
+        router.push({
+            pathname: "/cat2img", params: {
+                imgPath: item.path,
+                count: item.count,
+                folder: item.folder,
+                repo: item.repo,      //repo
+                ghname: ghname,
+            }
+        });
     };
 
     const renderItem = ({ item }: { item: CatInterface }) => (

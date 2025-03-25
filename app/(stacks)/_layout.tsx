@@ -3,14 +3,14 @@ import React, {useEffect} from "react";
 import { Stack, useNavigation, useLocalSearchParams } from "expo-router";
 
 const StacksLayout = () => {
-    const { catId, catTitle, catShortTitle } = useLocalSearchParams();  // Get the itemid from route params
+    const { catId, catTitle,  } = useLocalSearchParams();  // Get the itemid from route params
     const navigation = useNavigation();
 
     useEffect(() => {
         // Update the header title dynamically
         if (catId) {
             navigation.setOptions({
-                headerTitle: catShortTitle,  // Dynamically set the headerTitle to itemid
+                headerTitle: catTitle,  // Dynamically set the headerTitle to itemid
             });
         }
     }, [catId, navigation]);
@@ -19,6 +19,7 @@ const StacksLayout = () => {
         <Stack>
             <Stack.Screen name="cat2img" options={{ headerTitle: 'HomeD', title: 'DDD', headerShown: false }} />
             <Stack.Screen name="CatScreen" options={{ headerTitle: 'Home22D', title: 'DAsian2 Beauty', headerShown: false }} />
+            <Stack.Screen name="SubCatScreen" options={{ headerTitle: 'Home22D', title: 'DAsian2 Beauty', headerShown: false }} />
         </Stack>
     );
 };
