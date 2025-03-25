@@ -4,14 +4,12 @@ import { genJpg88, genJpg55, genJpg8, genJpg5, genGifList, genJpgList } from '@/
 
 export const Cat2Sub2Img: Cat2SubMap = {
 
-
     bycc: [
         { id: "cc1", repo: "bycc", title: "Hot & Stunning 🔥", folder: "stunning" },
         { id: "cc2", repo: "bycc", title: "Angel's Temptation 😇", folder: "pure" },
         { id: "c14", repo: "bycc", title: "Soft Allure 🌸", folder: "pink" },
         { id: "cc3", repo: "bycc", title: "Irresistible Charm 💋", folder: "nextdoor" },
         { id: "cc4", repo: "bycc", title: "Seduction in Bed 🛏️", folder: "bed" },
-        { id: "cc5", repo: "bycc", title: "Steamy in the Bath 🚿", folder: "bath" },
         { id: "cc6", repo: "bycc", title: "Mystic Blue 🔵", folder: "blue" },
         { id: "cc7", repo: "bycc", title: "Grace in Cheongsam 🏮", folder: "cheongsam" },
         { id: "cc8", repo: "bycc", title: "Cosplay Fantasy 🎭", folder: "cos" },
@@ -126,18 +124,20 @@ export const Cat2Sub2Img: Cat2SubMap = {
     ablxl: [
         { id: "lxl01", title: "🛏️ Cozy & Seductive Moments", folder: "bodycon" },
         { id: "lxl02", title: "👘 Elegant in Cheongsam", folder: "cheongsam" },
-        { id: "lxl03", title: "💎 Sublime Décolleté", folder: "deco" },
+        { id: "lxl03", title: "💎 Sublime Demin", folder: "demin_short" },
         { id: "lxl04", title: "🐠 Daily Fresh & Hot Trends", folder: "fishdress" },
         { id: "lxl05", title: "🧥 Luxurious Fur Looks", folder: "fur" },
         { id: "lxl06", title: "💃 Halter Neck Elegance", folder: "halter" },
-        { id: "lxl07", title: "🛋️ Relaxed & Chic", folder: "sofa" },
         { id: "lxl08", title: "👗 Bold One-Shoulder Styles", folder: "onesholder" },
-        { id: "lxl09", title: "🌲 Outdoor Allure", folder: "outdoor" },
-        { id: "lxl10", title: "🌶️ Sultry Spaghetti Straps", folder: "spaghetti" },
+
+        { id: "p01", title: "🔥Plunging Passion", folder: "plunge" },
+        { id: "s02", title: "💃Split Siren", folder: "split" },
+        { id: "w05", title: "🪶 Silken Slip Dress", folder: "slip" },
+
         { id: "lxl11", title: "📚 Student Charm", folder: "student" },
-        { id: "lxl12", title: "🔥 Bold & Sultry", folder: "sultry" },
         { id: "lxl13", title: "🎓 Enchanting in Teaching", folder: "teacher" },
         { id: "lxl14", title: "🤍 Classic White Shirt", folder: "whiteshirt" },
+
     ].map(item => ({ ...item, ghname: "ai8ai", repo: "ablxl", cover: genJpg5(`ablxl/${item.folder}`)[0] })),
 
     abspecialtaste: [

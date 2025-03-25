@@ -4,7 +4,7 @@ import { router, useLocalSearchParams } from 'expo-router';
 import styles from '@/config/styles';
 
 import { CatInterface } from '@/config/type';
-import { Cat2Sub2Img } from '@/data/CatImgList';
+import { Cat2Sub2Img } from '@/data/CatList';
 import { YCCImg } from '@/data/YCCImgList';
 
 
