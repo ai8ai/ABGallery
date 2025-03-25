@@ -3,7 +3,7 @@ import { CatInterface, Cat2SubMap } from '@/config/type';
 import { genJpg88, genJpg55, genJpg8, genJpg5, genGifList, genJpgList } from '@/utils/genImageList'
 
 export const YCCImg: Cat2SubMap = {
-    cc1shoulder: [
+    sub_cc1shoulder: [
         { id: "bp01", title: "🖤Black Pantyhose Allure", folder: "blacksilk" },
         { id: "bc01", title: "👗Bodycon Temptation", folder: "bodycon" },
         { id: "dm01", title: "👖Demin Desire", folder: "demin" },
@@ -11,7 +11,7 @@ export const YCCImg: Cat2SubMap = {
         { id: "lg01", title: "🦵Leggy Goddess", folder: "leggy" },
         { id: "su01", title: "🔥Sultry Seduction", folder: "sultry" },
     ].map(item => ({ ...item, ghname: "aidres8", repo: "cc1shoulder", cover: genJpg8(`cc1shoulder/${item.folder}`)[0] })),
-    ccbankunyuu: [
+    sub_ccbankunyuu: [
         { id: "s01", title: "Sultry Aura 🔥", folder: "sultry" },
         { id: "w02", title: "Minimal Muse 🎨", folder: "singleband" },
         { id: "so3", title: "Picnic Play 🍉", folder: "picnic" },
@@ -21,35 +21,14 @@ export const YCCImg: Cat2SubMap = {
     ].map(item => ({ ...item, ghname: "aidres8", repo: "ccbankunyuu", cover: genJpg8(`ccbankunyuu/${item.folder}`)[0] })),
 
 
-    ccsultry: [
-        { id: "b01", title: "💫Bare Backless", folder: "backless" },
-        { id: "b02", title: "🦵Leg Luxe", folder: "bankunyuu_leg" },
-        { id: "c01", title: "🌸Chic Camisole", folder: "camisole" },
-        { id: "g01", title: "🍀Glam Green", folder: "green" },
-        { id: "n01", title: "✨New Sensation", folder: "new" },
-        { id: "p01", title: "🔥Plunging Passion", folder: "plunge" },
-        { id: "p02", title: "🕊️Tulle Temptation", folder: "plung_tulle" },
-        { id: "s01", title: "🔥S-Style Seduction", folder: "s" },
-        { id: "s02", title: "💃Split Siren", folder: "split" },
-        { id: "s03", title: "👠Sultry Stripper", folder: "stripper" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccsultry", cover: genJpg8(`ccsultry/${item.folder}`)[0] })),
-    ccdemin: [
-        { id: "bo9", title: "Backless Rebel 🔥", folder: "backless" },
-        { id: "w08", title: "Bold Bandeau 👙", folder: "bandeau" },
-        { id: "w05", title: "Cutout Couture ✂️", folder: "cutout" },
-        { id: "s07", title: "Twilight Denim 🌌", folder: "dark" },
-        { id: "bo6", title: "Deep Indigo 💙", folder: "darkblue" },
-        { id: "w05", title: "Lace Layers 🕸️", folder: "lace_long_sleeve" },
-        { id: "bob", title: "One-Shoulder Icon 💃", folder: "oneshoulder" },
-        { id: "s04", title: "Wild Outdoors 🌲", folder: "outdoor" },
-        { id: "p01", title: "🔥Plunging Passion", folder: "plunge" },
-        { id: "r01", title: "❤️Ravishing Red", folder: "red" },
-        { id: "w02", title: "Cutoff Cutie 👖", folder: "short" },
-        { id: "s01", title: "Citrus Denim 🍋", folder: "yellowgreen" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccdemin", cover: genJpg8(`ccdemin/${item.folder}`)[0] })),
-
-
-    ccche: [
+    sub_ccbody: [
+        { id: "s01", title: "🔙 Elegance from Behind", folder: "back" },
+        { id: "s05", title: "🍑 Curves & Confidence", folder: "butt" },
+        { id: "w02", title: "🦵 Leggy & Stunning", folder: "leg" },
+        { id: "so3", title: "😊 Face", folder: "face" },
+        { id: "s11", title: "🔥S-Style Seduction", folder: "s" },
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccbody", cover: genJpg88(`ccbody/main/${item.folder}`)[0] })),
+    sub_ccche: [
         { id: "so3", title: "Petal Splash 🌼", folder: "floral_color" },
         { id: "w02", title: "Dragon Bloom 🐉", folder: "floral_dragongown" },
         { id: "w05", title: "Green Petal 🌿", folder: "floral_green" },
@@ -64,13 +43,33 @@ export const YCCImg: Cat2SubMap = {
         { id: "w08", title: "Solid Chic ⚡", folder: "solidcolor" },
         { id: "boa", title: "Solid Scarlet ❤️", folder: "solidred" },
     ].map(item => ({ ...item, ghname: "aidres8", repo: "ccche", cover: genJpg8(`ccche/${item.folder}`)[0] })),
-    ccbody: [
-        { id: "s01", title: "🔙 Elegance from Behind", folder: "back" },
-        { id: "s05", title: "🍑 Curves & Confidence", folder: "butt" },
-        { id: "w02", title: "🦵 Leggy & Stunning", folder: "leg" },
-        { id: "so3", title: "😊 Face", folder: "face" },
-        { id: "s11", title: "🔥S-Style Seduction", folder: "s" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccbody", cover: genJpg88(`ccbody/main/${item.folder}`)[0] })),
+
+
+    sub_ccsultry: [
+        { id: "b01", title: "💫Bare Backless", folder: "backless" },
+        { id: "b02", title: "🦵Bankunyuu🌰",   folder: "bankunyuu" },
+        { id: "c01", title: "🌸Chic Camisole", folder: "camisole" },
+        { id: "p01", title: "🔥Plunging Passion", folder: "plunge" },
+        { id: "s01", title: "🔥S-Style Seduction", folder: "s" },
+        { id: "n01", title: "✨Sheer Sensation", folder: "seethrough" },
+        { id: "s02", title: "💃Split Siren", folder: "split" },
+        { id: "s03", title: "👠Sultry Stripper", folder: "stripper" },
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccsultry", cover: genJpg8(`ccsultry/${item.folder}`)[0] })),
+    sub_ccdemin: [
+        { id: "bo9", title: "Backless Rebel 🔥", folder: "backless" },
+        { id: "w08", title: "Bold Bandeau 👙", folder: "bandeau" },
+        { id: "w05", title: "Cutout Couture ✂️", folder: "cutout" },
+        { id: "s07", title: "Twilight Denim 🌌", folder: "dark" },
+        { id: "bo6", title: "Deep Indigo 💙", folder: "darkblue" },
+        { id: "w05", title: "Lace Layers 🕸️", folder: "lace_long_sleeve" },
+        { id: "bob", title: "One-Shoulder Icon 💃", folder: "oneshoulder" },
+        { id: "s04", title: "Wild Outdoors 🌲", folder: "outdoor" },
+        { id: "p01", title: "🔥Plunging Passion", folder: "plunge" },
+        { id: "r01", title: "❤️Ravishing Red", folder: "red" },
+        { id: "w02", title: "Cutoff Cutie 👖", folder: "short" },
+        { id: "s01", title: "Citrus Denim 🍋", folder: "yellowgreen" },
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccdemin", cover: genJpg8(`ccdemin/${item.folder}`)[0] })),
+
 
 
 

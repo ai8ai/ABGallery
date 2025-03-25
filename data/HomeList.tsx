@@ -35,15 +35,6 @@ export const HomeList: CatInterface[] = [
     { id: "igif", ghname: "ai8ai", title: "GIF MP4 🎞️", cover: genGifList("aicat/gif/gc", 5)[0] },
     { id: "abpast", ghname: "ai8ai", title: "Past Year Collection 📸", cover: genJpg55("abcat/main/past")[0] },
 
-    { id: "div1", ghname: "", title: "", cover: "" },
-    { id: "div2", ghname: "", title: "", cover: "" },
-
-    { id: "cc1shoulder", ghname: "aidres8", title: "Yang Chenchen🔥 \n One Shoulder", cover: genJpg55("abcat/main/cc1shoulder")[0] },
-    { id: "ccbankunyuu", ghname: "aidres8", title: "Yang Chenchen 🌰 Bankunyuu", cover: genJpg55("abcat/main/ccbankunyuu")[0] },
-    { id: "ccsultry", ghname: "aidres8", title: "Yang Chenchen 😈 Sultry", cover: genJpg55("abcat/main/ccsultry")[0] },
-    { id: "ccdemin", ghname: "aidres8", title: "Yang Chenchen 👖 Demin", cover: genJpg55("abcat/main/ccdemin")[0] },
-    { id: "ccche", ghname: "aidres8", title: "Yang Chenchen 🌸 Cheongsam Collection", cover: genJpg55("abcat/main/ccche")[0] },
-    { id: "ccbody", ghname: "aidres8", title: "Yang Chenchen 🔥 Body", cover: genJpg55("abcat/main/ccblue")[0] },
 
     // { id: "ccblue", ghname: "aidres8", title: "Yang Chenchen 💙 Blue", cover: genJpg55("abcat/main/ccblue")[0] },
     // { id: "ccbodycon", ghname: "aidres8", title: "Yang Chenchen 😍 Bodycon", cover: genJpg55("abcat/main/ccbodycon")[0] },

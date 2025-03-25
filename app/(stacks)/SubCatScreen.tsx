@@ -10,7 +10,6 @@ import { YCCImg } from '@/data/SubCatList';
 
 const CategoryScreen: React.FC = () => {
     const { catId, ghname } = useLocalSearchParams();   // catId is repo
-    console.log("catId: ", catId);
     const [subCatList, setSubCatList] = useState<CatInterface[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
@@ -30,7 +29,8 @@ const CategoryScreen: React.FC = () => {
                 imgPath: item.path,
                 count: item.count,
                 folder: item.folder,
-                repo: item.repo,      //repo
+                repo: item.repo,     
+                catTitle: item.title,
                 ghname: ghname,
             }
         });

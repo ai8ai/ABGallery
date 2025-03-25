@@ -19,7 +19,7 @@ const GITHUB_RAW_URL = (ghname: string, repo: string, folder: string) => `https:
 export default function SlideshowScreen() {
     const navigation = useNavigation();
     const parentNavi = navigation.getParent();
-    const { ghname, repo, folder } = useLocalSearchParams();
+    const { ghname, repo, folder, catTitle } = useLocalSearchParams();
 
     const [images, setImages] = useState<string[]>([]);
     const [currentImage, setCurrentImage] = useState(0);

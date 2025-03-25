@@ -5,25 +5,35 @@ import { genJpg88, genJpg55, genJpg8, genJpg5, genGifList, genJpgList } from '@/
 export const Cat2Sub2Img: Cat2SubMap = {
 
     bycc: [
-        { id: "cc1shoulder", repo: "bycc", title: "Hot & Stunning 🔥", folder: "stunning" },
-        { id: "cc2", repo: "bycc", title: "Angel's Temptation 😇", folder: "pure" },
-        { id: "c14", repo: "bycc", title: "Soft Allure 🌸", folder: "pink" },
-        { id: "cc3", repo: "bycc", title: "Irresistible Charm 💋", folder: "nextdoor" },
-        { id: "cc4", repo: "bycc", title: "Seduction in Bed 🛏️", folder: "bed" },
-        { id: "cc6", repo: "bycc", title: "Mystic Blue 🔵", folder: "blue" },
-        { id: "cc7", repo: "bycc", title: "Grace in Cheongsam 🏮", folder: "cheongsam" },
-        { id: "cc8", repo: "bycc", title: "Cosplay Fantasy 🎭", folder: "cos" },
-        { id: "c13", repo: "bycc", title: "Casual Seduction 👖", folder: "demin" },
-        { id: "cc9", repo: "bycc", title: "Flirty Florals 🌺", folder: "floral" },
-        { id: "c11", repo: "bycc", title: "Sensual Vision 👓", folder: "glass" },
-        { id: "c12", repo: "bycc", title: "Enchanting Green 🌿", folder: "green" },
-        { id: "c16", repo: "bycc", title: "Mystic Red ❤️", folder: "red" },
-        { id: "c10", repo: "bycc", title: "School Seduction 🎒", folder: "school" },
-        { id: "c15", repo: "bycc", title: "Dazzling Sparkle ✨", folder: "sparkling" },
-        { id: "c17", repo: "bycc", title: "Bare & Bold 🔥", folder: "strapless" },
-        { id: "c18", repo: "bycc", title: "Slender Straps 💃", folder: "spaghetti" },
-        { id: "c19", repo: "bycc", title: "Sultry Split 🔥", folder: "split" },
-        { id: "c20", repo: "bycc", title: "Bridal Desire 👰", folder: "wedding" },
+        // { id: "sub_ccstunning", repo: "bycc", title: "Hot 🔥 Stunning ", folder: "stunning" },
+        { id: "sub_cc1shoulder",repo: "cc1shoulder", title: "Graceful 🩰 One Shoulder", folder: "cat" },
+        { id: "sub_ccbankunyuu",repo: "ccbankunyuu", title: " 🌰 Bankunyuu", folder:"cat"},
+
+        { id: "sub_ccbody",     repo: "ccbody", title: "🦵Goddess", folder:"cat"},
+        { id: "sub_ccche",      repo: "ccche",  title: "Cheongsam 🌸 Collection", folder: "cat"},
+        
+        { id: "sub_ccdemin",   repo: "ccdemin", title: "👖Demin👖Desire👖", folder: "cat"},
+        { id: "sub_ccsultry",  repo: "ccsultry",title: "Sultry Aura 🔥", folder: "cat"},
+    
+    
+        // { id: "subcc2", repo: "bycc", title: "Angel's Temptation 😇", folder: "pure" },
+        // { id: "subc14", repo: "bycc", title: "Soft Allure 🌸", folder: "pink" },
+        // { id: "subcc3", repo: "bycc", title: "Irresistible Charm 💋", folder: "nextdoor" },
+        // { id: "subcc4", repo: "bycc", title: "Seduction in Bed 🛏️", folder: "bed" },
+        // { id: "subcc6", repo: "bycc", title: "Mystic Blue 🔵", folder: "blue" },
+        // { id: "subcc7", repo: "bycc", title: "Grace in Cheongsam 🏮", folder: "cheongsam" },
+        // { id: "subcc8", repo: "bycc", title: "Cosplay Fantasy 🎭", folder: "cos" },
+        // { id: "subc13", repo: "bycc", title: "Casual Seduction 👖", folder: "demin" },
+        // { id: "subcc9", repo: "bycc", title: "Flirty Florals 🌺", folder: "floral" },
+        // { id: "subc11", repo: "bycc", title: "Sensual Vision 👓", folder: "glass" },
+        // { id: "subc12", repo: "bycc", title: "Enchanting Green 🌿", folder: "green" },
+        // { id: "subc16", repo: "bycc", title: "Mystic Red ❤️", folder: "red" },
+        // { id: "subc10", repo: "bycc", title: "School Seduction 🎒", folder: "school" },
+        // { id: "subc15", repo: "bycc", title: "Dazzling Sparkle ✨", folder: "sparkling" },
+        // { id: "subc17", repo: "bycc", title: "Bare & Bold 🔥", folder: "strapless" },
+        // { id: "subc18", repo: "bycc", title: "Slender Straps 💃", folder: "spaghetti" },
+        // { id: "subc19", repo: "bycc", title: "Sultry Split 🔥", folder: "split" },
+        // { id: "subc20", repo: "bycc", title: "Bridal Desire 👰", folder: "wedding" },
         { id: "cp25", repo: "bycc24", title: "2025 Collection 📅", folder: "2025" },
         { id: "cp24", repo: "bycc24", title: "2024 Collection 📆", folder: "2024" },
         { id: "cp23", repo: "bycc23", title: "2023 Collection ⏳", folder: "2023" },
@@ -32,8 +42,9 @@ export const Cat2Sub2Img: Cat2SubMap = {
     ].map(item => ({
         ...item,
         ghname: "aidres8",
-        cover: genJpg8(`${item.repo}/${item.folder}`)[0]
+        cover: genJpg88(`${item.repo}/main/${item.folder}`)[0] 
     })),
+
 
     bwxy: [
         { id: "w01", repo: "bwxy", title: "Daily Fresh & Hot Trends 🌟", folder: "stunning" },
