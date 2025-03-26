@@ -1,6 +1,23 @@
 // Category
 import { CatInterface, Cat2SubMap } from '@/config/type';
 import { genJpg88, genJpg55, genJpg8, genJpg5, genGifList, genJpgList } from '@/utils/genImageList'
+    // { id: "ccblue", ghname: "aidres8", title: "Yang Chenchen 💙 Blue", cover: genJpg55("abcat/main/ccblue")[0] },
+    // { id: "ccbodycon", ghname: "aidres8", title: "Yang Chenchen 😍 Bodycon", cover: genJpg55("abcat/main/ccbodycon")[0] },
+    // { id: "ccelegance", ghname: "aidres8", title: "Yang Chenchen 👑 Elegance", cover: genJpg55("abcat/main/ccelegance")[0] },
+    // { id: "ccformal", ghname: "aidres8", title: "Yang Chenchen 👗 Formal", cover: genJpg55("abcat/main/ccformal")[0] },
+    // { id: "ccfur", ghname: "aidres8", title: "Yang Chenchen 🧸 Fur", cover: genJpg55("abcat/main/ccfur")[0] },
+    // { id: "ccgarage", ghname: "aidres8", title: "Yang Chenchen 🚗 Garage", cover: genJpg55("abcat/main/ccgarage")[0] },
+    // { id: "ccgreen", ghname: "aidres8", title: "Yang Chenchen 💚 in Green", cover: genJpg55("abcat/main/ccgreen")[0] },
+    // { id: "ccnextdoor", ghname: "aidres8", title: "Yang Chenchen 🌸 Next Door Girl", cover: genJpg55("abcat/main/ccnextdoor")[0] },
+    // { id: "ccoutdoor", ghname: "aidres8", title: "Yang Chenchen 🌿 Outdoor", cover: genJpg55("abcat/main/ccoutdoor")[0] },
+    // { id: "ccpink", ghname: "aidres8", title: "Yang Chenchen 💖 in Pink", cover: genJpg55("abcat/main/ccpink")[0] },
+    // { id: "ccred", ghname: "aidres8", title: "Yang Chenchen 🈲 in Red", cover: genJpg55("abcat/main/ccred")[0] },
+    // { id: "ccspa", ghname: "aidres8", title: "Yang Chenchen 🍝 Spaghetti", cover: genJpg55("abcat/main/ccspa")[0] },
+    // { id: "ccstr", ghname: "aidres8", title: "Yang Chenchen 🍸 Strapless", cover: genJpg55("abcat/main/ccstr")[0] },
+    // { id: "ccviolet", ghname: "aidres8", title: "Yang Chenchen 💜 Violet", cover: genJpg55("abcat/main/ccviolet")[0] },
+    // { id: "ccwhite", ghname: "aidres8", title: "Yang Chenchen 🤍 in White", cover: genJpg55("abcat/main/ccwhite")[0] },
+    // { id: "ccyellow", ghname: "aidres8", title: "Yang Chenchen 💛 in Yellow", cover: genJpg55("abcat/main/ccyellow")[0] },
+    // { id: "ccpast", ghname: "aidres8", title: "Yang Chenchen 📸 Past Years", cover: genJpg55("abcat/main/ccpast")[0] }
 
 export const YCCImg: Cat2SubMap = {
     sub_cc1shoulder: [
@@ -253,4 +270,64 @@ export const YCCImg: Cat2SubMap = {
         { id: "w05", title: "Deep Desire 💖", folder: "deeppink" },
         { id: "bo6", title: "Mocha Mist ☕", folder: "brown" },
     ].map(item => ({ ...item, ghname: "aidres8", repo: "ccpink", cover: genJpg8(`ccpink/${item.folder}`)[0] })),
+
+    sub_xybodycon: [
+        { id: "s01", title: "🐾 Fur Allure", folder: "fur" },
+        { id: "bo6", title: "Halter Dream 💭", folder: "halter" },
+        { id: "syz106", title: "👑 Fantasy & Queens", folder: "hat" },
+        { id: "m01", title: "💃Flirty Mini", folder: "mini" },
+        { id: "s04", title: "Executive Cool 👔", folder: "office" },
+        { id: "p01", title: "🔥Plunging Passion", folder: "plunge" },
+        { id: "su01", title: "🔥Sultry Seduction", folder: "sultry" },
+        { id: "w02", title: "🌌 Velvet Twilight", folder: "sweater" },
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "xybodycon", cover: genJpg88(`xybodycon/main/${item.folder}`)[0] })),
+
+    sub_xycheongsam: [
+        { id: "s04", title: "Keyhole Temptation 🔑", folder: "keyhole" },
+        { id: "w02", title: "🦵 Leggy & Stunning", folder: "leggy" },
+        { id: "su01", title: "🔥Sultry Lace Band", folder: "laceband" },
+        { id: "s02", title: "💃Split Siren", folder: "split" },
+        { id: "gw01", title: "👑Tradtional Glamour", folder: "traditional" },
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "xycheongsam", cover: genJpg88(`xycheongsam/main/${item.folder}`)[0] })),
+
+
+    sub_xyclassic: [
+        { id: "w12", title: "Assistant Blush 🩷", folder: "assistant" },
+        { id: "bc01", title: "👗Bodycon Temptation", folder: "bodycon" },
+        { id: "so3", title: "Cozy Layers 🧥 Coat", folder: "coat" },
+        { id: "cdd", title: "🥂 Elegance", folder: "elegance"},
+        { id: "vi1", title: "👑 Fantasy & Queens", folder: "graceful" },
+        { id: "cc3", title: "Irresistible Charm💋Next Door", folder: "nextdoor" },        
+        { id: "cc6", title: "Mystic Kitchen 🔵", folder: "kitchen" }, 
+        { id: "s04", title: "Executive Cool 👔", folder: "office" },
+        { id: "s13", title: "Power Pants 👖", folder: "pants" },
+        { id: "s23", title: "Stunning Palazzo 👖", folder: "palazzo" },
+        { id: "s11", title: "School Muse 🎓", folder: "student" },
+        { id: "s01", title: "Uniform Grace 🎽", folder: "uniform" },
+        { id: "s14", title: "Crisp Contrast 👕", folder: "whiteshirt" },
+        { id: "gw01", title: "👑Gown Glamour", folder: "gown" },
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "xyclassic", cover: genJpg88(`xyclassic/main/${item.folder}`)[0] })),
+
+
+    sub_xyseethrough: [
+        { id: "bp01", title: "🖤Black Pantyhose Allure", folder: "blacksilk" },
+        { id: "bc01", title: "👗Bodycon Temptation", folder: "bodycon" },
+        { id: "so3", title: "Cozy Curling🧥 ", folder: "curling" },
+        { id: "s02", title: "💃Split Siren", folder: "split" },
+        { id: "a24", title: "❤️ Crimson Temptress", folder: "strapless" },
+        { id: "su01", title: "🔥Sultry Seduction", folder: "sultry" },
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "xyseethrough", cover: genJpg88(`xyseethrough/main/${item.folder}`)[0] })),
+
+    sub_xyplunge: [
+        { id: "s07", title: "Midnight Bloom 🌙", folder: "drunk" },
+        { id: "s01", title: "🐾 Fur Allure", folder: "fur" },
+        { id: "w05", title: "🪶 Silken Slip Dress", folder: "slip" },
+
+        { id: "s02", title: "💃Split Siren", folder: "split" },
+        { id: "a24", title: "❤️ Crimson Temptress", folder: "strapless" },
+        { id: "su01", title: "🔥Sultry Seduction", folder: "sultry" },
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "xyplunge", cover: genJpg88(`xyplunge/main/${item.folder}`)[0] })),
+
 };
+
+

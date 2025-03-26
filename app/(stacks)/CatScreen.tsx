@@ -27,9 +27,9 @@ const CategoryScreen: React.FC = () => {
         if (item.id.startsWith("sub"))
             router.push({
                 pathname: "/SubCatScreen", params: {
-                    catId: item.id,         // repo
-                    ghname: item.ghname,
-                    catTitle: item.title,           // for updating the title of stack 
+                    catId:      item.id,         
+                    ghname:     item.ghname,
+                    catTitle:   item.title,           // for updating the title of stack 
                 }
             });
         else

@@ -47,38 +47,52 @@ export const Cat2Sub2Img: Cat2SubMap = {
 
 
     bwxy: [
-        { id: "w01", repo: "bwxy", title: "Daily Fresh & Hot Trends 🌟", folder: "stunning" },
-        { id: "w02", repo: "bwxy", title: "Sultry Evenings Under the Lights 🌃", folder: "bar" },
-        { id: "w03", repo: "bwxy", title: "Cozy & Seductive Bath Moments 🛁", folder: "bath" },
-        { id: "w04", repo: "bwxy", title: "Elegant in Cheongsam 🏮", folder: "cheongsam" },
+        { id: "bo9", repo: "bwxy", title: "Backless Rebel 🔥", folder: "backless" },
+        { id: "c38", repo: "bwxy", title: "Passionate Corset ❤️", folder: "corset" },
+
+        { id: "cos", repo: "bwxy", title: "Cosplay Queens 🎭", folder: "cos" },
         { id: "w05", repo: "bwxy", title: "Sassy in Croptops 👚", folder: "croptop" },
-        { id: "w06", repo: "bwxy", title: "Sublime Décolleté 💖", folder: "decollete" },
-        { id: "w07", repo: "bwxy", title: "Enchanting in Business 💼", folder: "formal" },
+
+        { id: "c12", repo: "bwxy", title: "Casual Chic in Demin 👖", folder: "demin" },
         { id: "w08", repo: "bwxy", title: "Allure en Halter 🌺", folder: "haltertop" },
-        { id: "w09", repo: "bwxy", title: "Timeless Grace in Silk & Lace 🕊️", folder: "lace" },
-        { id: "w10", repo: "bwxy", title: "Nocturne in New York 🌙", folder: "nightnewyork" },
-        { id: "w11", repo: "bwxy", title: "Chic at Work 👠", folder: "office" },
-        { id: "w12", repo: "bwxy", title: "Breeze & Beyond 🍃", folder: "outdoor" },
-        { id: "w13", repo: "bwxy", title: "Chic in Motion 🏃‍♀️", folder: "pants" },
-        { id: "w14", repo: "bwxy", title: "Teasing Transparency 🔍", folder: "seethrough" },
-        { id: "w15", repo: "bwxy", title: "Sultry Spaghetti Straps 💃", folder: "spaghetti" },
-        { id: "w16", repo: "bwxy", title: "Mystic in Uniform 🎽", folder: "uniform" },
-        { id: "vi1", repo: "bwxy", title: "👑 Fantasy & Queens", folder: "graceful" },
-        { id: "vio", repo: "bwxy", title: "A Royal Seduction 👑", folder: "violet" },
-        { id: "spa", repo: "bwxy", title: "Dazzling in Sparkling ✨", folder: "sparkling" },
-        { id: "bod", repo: "bwxy", title: "Curves in Command 🔥", folder: "bodycon" },
-        { id: "coa", repo: "bwxy", title: "Wrapped in Elegance 🧥", folder: "coat" },
-        { id: "cos", repo: "bwxy", title: "Fantasy & Cosplay Queens 🎭", folder: "cos" },
-        { id: "hom", repo: "bwxy", title: "Cozy Chic & Homely Elegance 🏡", folder: "home" },
-        { id: "nex", repo: "bwxy", title: "The Girl Next Door 🚪", folder: "nextdoor" },
+
+        { id: "w15", repo: "bwxy", title: "Sultry Lowcut 💄", folder: "lowcut" },
+        { id: "s16", repo: "bwxy", title: "👑 Fantasy One Shoulder", folder: "oneshoulder" },
+
+        { id: "sur", repo: "bwxy", title: "Mystic Red ❤️", folder: "red" },
         { id: "sof", repo: "bwxy", title: "Relaxed Allure 🛋️", folder: "sofa" },
+
+        { id: "spa", repo: "bwxy", title: "Dazzling in Sparkling ✨", folder: "sparkling" },
         { id: "c25", repo: "bwxy", title: "Bare & Beautiful & Strapless 💋", folder: "strapless" },
-        { id: "c12", repo: "bwxy", title: "Casual Chic in Denim 👖", folder: "demin" },
-        { id: "c13", repo: "bwxy", title: "Blush of Desire 🌷", folder: "pink" },
-        { id: "c38", repo: "bwxy", title: "Passionate Hues ❤️", folder: "red" },
-        { id: "c43", repo: "bwxy", title: "Daring Affair 🚀", folder: "split" },
+
         { id: "sul", repo: "bwxy", title: "Simply Irresistible 💘", folder: "sultry" },
-    ].map(item => ({ ...item, ghname: "aidres8", cover: genJpg8(`${item.repo}/${item.folder}`)[0] })),
+
+        { id: "sub_xybodycon", repo: "xybodycon", title: "👗Curves in Command💄", folder: "cat" },
+        { id: "sub_xycheongsam", repo: "xycheongsam", title: "Elegant in Cheongsam 🏮", folder: "cat" },
+        { id: "sub_xyclassic", repo: "xyclassic", title: "Enchanting 💼 Classic", folder: "cat" },
+        { id: "sub_xyseethrough", repo: "xyseethrough", title: "Teasing Transparency 🔍", folder: "cat" },
+        { id: "sub_xyplunge",repo: "xyplunge", title: "🔥Plunging Passion", folder: "cat" },
+
+        // { id: "w01", repo: "bwxy", title: "Daily Fresh & Hot Trends 🌟", folder: "stunning" },
+        // { id: "w02", repo: "bwxy", title: "Sultry Evenings Under the Lights 🌃", folder: "bar" },
+        // { id: "w03", repo: "bwxy", title: "Cozy & Seductive Bath Moments 🛁", folder: "bath" },
+        // { id: "w06", repo: "bwxy", title: "Sublime Décolleté 💖", folder: "decollete" },
+        // { id: "w09", repo: "bwxy", title: "Timeless Grace in Silk & Lace 🕊️", folder: "lace" },
+        // { id: "w10", repo: "bwxy", title: "Nocturne in New York 🌙", folder: "nightnewyork" },
+        // { id: "w11", repo: "bwxy", title: "Chic at Work 👠", folder: "office" },
+        // { id: "w13", repo: "bwxy", title: "Chic in Motion 🏃‍♀️", folder: "pants" },
+        // { id: "w16", repo: "bwxy", title: "Mystic in Uniform 🎽", folder: "uniform" },
+        // { id: "vi1", repo: "bwxy", title: "👑 Fantasy & Queens", folder: "graceful" },
+        // { id: "vio", repo: "bwxy", title: "A Royal Seduction 👑", folder: "violet" },
+        // { id: "hom", repo: "bwxy", title: "Cozy Chic & Homely Elegance 🏡", folder: "home" },
+        // { id: "nex", repo: "bwxy", title: "The Girl Next Door 🚪", folder: "nextdoor" },
+        // { id: "c13", repo: "bwxy", title: "Blush of Desire 🌷", folder: "pink" },
+        // { id: "c43", repo: "bwxy", title: "Daring Affair 🚀", folder: "split" },
+    ].map(item => ({
+        ...item,
+        ghname: "aidres8",
+        cover: genJpg88(`${item.repo}/main/${item.folder}`)[0] 
+    })),
 
     b2: [
         { id: "b201", repo: "b2", title: "🔥 Twice the Temptation", folder: "two" },
