@@ -101,15 +101,6 @@ export const YCCImg: Cat2SubMap = {
         { id: "s08", title: "🔥 Sultry Allure", folder: "sultry" },
     ].map(item => ({ ...item, ghname: "aidres8", repo: "ccblue", cover: genJpg8(`ccblue/${item.folder}`)[0] })),
 
-    ccelegance: [
-        { id: "g01", title: "👗Classic Gown", folder: "gown" },
-        { id: "g02", title: "✨Silver Shine", folder: "gown_silver" },
-        { id: "g03", title: "🌼Golden Glow", folder: "gown_yellow" },
-        { id: "l01", title: "🎭Dark Drama", folder: "longskirt_dark" },
-        { id: "l02", title: "🍂Autumn Aura", folder: "longskirt_orange" },
-        { id: "m01", title: "💃Flirty Mini", folder: "mini" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccelegance", cover: genJpg8(`ccelegance/${item.folder}`)[0] })),
-
     ccfur: [
         { id: "b01", title: "🔥Bold Bodycon", folder: "bodycon" },
         { id: "c01", title: "🏎️Red Hot Ride", folder: "car" },
@@ -147,15 +138,6 @@ export const YCCImg: Cat2SubMap = {
         { id: "so5", title: "🌙 Midnight Cut", folder: "lowcut" },
         { id: "s04", title: "✨ Beaded Mirage", folder: "beadedmesh" },
     ].map(item => ({ ...item, ghname: "aidres8", repo: "ccviolet", cover: genJpg8(`ccviolet/${item.folder}`)[0] })),
-
-    ccbodycon: [
-        { id: "s01", title: "👚 Trendy Crop Tops", folder: "croptop" },
-        { id: "w02", title: "🦵 Leggy & Stunning", folder: "leggy" },
-        { id: "so3", title: "🌿 Naturally Nude", folder: "nude" },
-        { id: "so5", title: "🧡 Bold in Orange", folder: "orange" },
-        { id: "s04", title: "🎀 Pretty in Pink", folder: "pink" },
-        { id: "s05", title: "🕶️ Sheer Sleeve Elegance", folder: "seethrough_sleeve" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccbodycon", cover: genJpg8(`ccbodycon/${item.folder}`)[0] })),
 
     ccstr: [
         { id: "s01", title: "⚡ Curves in Control", folder: "bodycon" },
@@ -327,6 +309,33 @@ export const YCCImg: Cat2SubMap = {
         { id: "a24", title: "❤️ Crimson Temptress", folder: "strapless" },
         { id: "su01", title: "🔥Sultry Seduction", folder: "sultry" },
     ].map(item => ({ ...item, ghname: "aidres8", repo: "xyplunge", cover: genJpg88(`xyplunge/main/${item.folder}`)[0] })),
+
+    sub_ccbodycon: [
+        { id: "c01", title: "🏎️Red Hot Ride", folder: "car" },
+        { id: "s01", title: "🐾 Fur Allure", folder: "fur" },
+        { id: "w02", title: "🦵 Leggy & Stunning", folder: "leggy" },
+        { id: "m01", title: "💃Flirty Minimal", folder: "minimal" },
+        { id: "s23", title: "🌿 Naturally Nude", folder: "nude" },
+        { id: "l02", title: "🍂Autumn Aura", folder: "orange" },
+        { id: "s04", title: "🌸 Blush & Bubbles", folder: "pink" },
+        { id: "bo9", title: "Crimson Muse 🔴", folder: "red" },
+        { id: "n01", title: "✨Sheer Sensation", folder: "seethrough" },
+        { id: "w05", title: "🪶 Silken Slip Dress", folder: "slip" },
+        { id: "s08", title: "🔥 Sultry Allure", folder: "sultry" },
+        { id: "s14", title: "Crisp Contrast 👕", folder: "whiteshirt" },
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccbodycon", cover: genJpg8(`ccbodycon/${item.folder}`)[0] })),
+    sub_ccelegance: [
+        { id: "s04", title: "Sky High Chic ✈️", folder: "fairy" },
+        { id: "g01", title: "👗Classic Gown", folder: "gown" },
+        { id: "l02", title: "🍂Autumn Aura", folder: "longskirt_orange" },
+        { id: "n01", title: "✨Sheer Sensation", folder: "longskirt_seethrough" },
+        { id: "bo9", title: "Sleeveless Rebel 🔥", folder: "longskirt_sleeveless" },
+        { id: "s02", title: "❄️Winter White", folder: "longskirt_white" },
+        { id: "s01", title: "🧜‍♀️ Enchanted Mermaid", folder: "mermaid" },
+        { id: "g03", title: "🌼Golden Glow", folder: "yellow" },
+        { id: "m01", title: "💃Flirty Minimal", folder: "minimal" },
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccelegance", cover: genJpg8(`ccelegance/${item.folder}`)[0] })),
+
 
 };
 

@@ -8,13 +8,14 @@ export const Cat2Sub2Img: Cat2SubMap = {
         // { id: "sub_ccstunning", repo: "bycc", title: "Hot 🔥 Stunning ", folder: "stunning" },
         { id: "sub_cc1shoulder",repo: "cc1shoulder", title: "Graceful 🩰 One Shoulder", folder: "cat" },
         { id: "sub_ccbankunyuu",repo: "ccbankunyuu", title: " 🌰 Bankunyuu", folder:"cat"},
-
         { id: "sub_ccbody",     repo: "ccbody", title: "🦵Goddess", folder:"cat"},
         { id: "sub_ccche",      repo: "ccche",  title: "Cheongsam 🌸 Collection", folder: "cat"},
-        
         { id: "sub_ccdemin",   repo: "ccdemin", title: "👖Demin👖Desire👖", folder: "cat"},
         { id: "sub_ccsultry",  repo: "ccsultry",title: "Sultry Aura 🔥", folder: "cat"},
-    
+
+        { id: "sub_ccbodycon", repo: "ccbodycon", title: "👗Curves in Command💄", folder: "cat" },
+        { id: "sub_ccelegance", repo: "ccelegance", title: "🌸Elegance", folder: "cat" },
+
     
         // { id: "subcc2", repo: "bycc", title: "Angel's Temptation 😇", folder: "pure" },
         // { id: "subc14", repo: "bycc", title: "Soft Allure 🌸", folder: "pink" },
@@ -34,6 +35,8 @@ export const Cat2Sub2Img: Cat2SubMap = {
         // { id: "subc18", repo: "bycc", title: "Slender Straps 💃", folder: "spaghetti" },
         // { id: "subc19", repo: "bycc", title: "Sultry Split 🔥", folder: "split" },
         // { id: "subc20", repo: "bycc", title: "Bridal Desire 👰", folder: "wedding" },
+
+        
         { id: "cp25", repo: "bycc24", title: "2025 Collection 📅", folder: "2025" },
         { id: "cp24", repo: "bycc24", title: "2024 Collection 📆", folder: "2024" },
         { id: "cp23", repo: "bycc23", title: "2023 Collection ⏳", folder: "2023" },
