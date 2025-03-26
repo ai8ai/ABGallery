@@ -204,23 +204,6 @@ export const YCCImg: Cat2SubMap = {
         { id: "s13", title: "Holiday Glow 🎄", folder: "holiday" },
     ].map(item => ({ ...item, ghname: "aidres8", repo: "ccnextdoor", cover: genJpg8(`ccnextdoor/${item.folder}`)[0] })),
 
-    ccformal: [
-        { id: "s01", title: "Sultry Statement 🔥", folder: "sultry" },
-        { id: "w02", title: "Boss Babe 👩‍💼", folder: "suite" },
-        { id: "so3", title: "Laced in Elegance 👠", folder: "stockings" },
-        { id: "s04", title: "Sky High Chic ✈️", folder: "stewardess" },
-        { id: "w05", title: "Stairway to Glam ✨", folder: "stair" },
-        { id: "s11", title: "School Muse 🎓", folder: "school" },
-        { id: "w12", title: "Office Blush 🩷", folder: "pinkoffice" },
-        { id: "s13", title: "Power Pants 👖", folder: "pants" },
-        { id: "s14", title: "Crisp Contrast 👕", folder: "bodycon_whiteshirt" },
-        { id: "w15", title: "Cool & Curvy 💙", folder: "bodycon_blueshirt" },
-        { id: "s21", title: "Lacy Vision 🌹", folder: "bodycon_lace" },
-        { id: "w22", title: "Ruched Royale 👗", folder: "bodycon_ruched" },
-        { id: "s23", title: "Violet Affair 💜", folder: "bodycon_violet" },
-        { id: "s24", title: "Blushing Bodycon 🌸", folder: "bodycon_pink" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccformal", cover: genJpg8(`ccformal/${item.folder}`)[0] })),
-
 
     ccgreen: [
         { id: "s01", title: "Uniform Grace 🎽", folder: "uniform" },
@@ -335,6 +318,27 @@ export const YCCImg: Cat2SubMap = {
         { id: "g03", title: "🌼Golden Glow", folder: "yellow" },
         { id: "m01", title: "💃Flirty Minimal", folder: "minimal" },
     ].map(item => ({ ...item, ghname: "aidres8", repo: "ccelegance", cover: genJpg8(`ccelegance/${item.folder}`)[0] })),
+
+
+    sub_ccformal: [
+        { id: "w15", title: "Cool & Curvy 💙", folder: "bodycon_blueshirt" },
+        { id: "s21", title: "Lacy Vision 🌹", folder: "bodycon_lace" },
+        { id: "s24", title: "Blushing Bodycon 🌸", folder: "bodycon_pink" },
+        { id: "w22", title: "Ruched Royale 👗", folder: "bodycon_ruched" },
+        { id: "s23", title: "Violet Affair 💜", folder: "bodycon_violet" },
+        { id: "s14", title: "Crisp Contrast 👕", folder: "bodycon_whiteshirt" },
+        { id: "gw01", title: "👑Gown Glamour", folder: "gown" },
+        { id: "s04", title: "Executive Cool 👔", folder: "official" },
+        { id: "s13", title: "Power Pants 👖", folder: "pants" },
+        { id: "s11", title: "School Muse 🎓", folder: "school" },
+        { id: "w12", title: "Office Blush 🩷", folder: "pinkoffice" },
+        { id: "s04", title: "Sky High Chic ✈️", folder: "stewardess" },
+        { id: "w05", title: "Stairway to Glam ✨", folder: "stair" },
+        { id: "s01", title: "Sultry Statement 🔥", folder: "sultry" },
+        { id: "w02", title: "Boss Babe 👩‍💼", folder: "suite" },
+        { id: "so3", title: "Laced in Elegance 👠", folder: "stockings" },
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccformal", cover: genJpg8(`ccformal/${item.folder}`)[0] })),
+
 
 
 };

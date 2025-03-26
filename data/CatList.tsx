@@ -16,6 +16,7 @@ export const Cat2Sub2Img: Cat2SubMap = {
         { id: "sub_ccbodycon", repo: "ccbodycon", title: "👗Curves in Command💄", folder: "cat" },
         { id: "sub_ccelegance", repo: "ccelegance", title: "🌸Elegance", folder: "cat" },
 
+        { id: "sub_ccformal", repo: "ccformal", title: "Enchanting 💼 Classic", folder: "cat" },
     
         // { id: "subcc2", repo: "bycc", title: "Angel's Temptation 😇", folder: "pure" },
         // { id: "subc14", repo: "bycc", title: "Soft Allure 🌸", folder: "pink" },
