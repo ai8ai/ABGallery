@@ -1,26 +1,49 @@
 // Category
 import { CatInterface, Cat2SubMap } from '@/config/type';
-import { genJpg88, genJpg55, genJpg8, genJpg5, genGifList, genJpgList } from '@/utils/genImageList'
+import { genJpg88, genJpg1, genJpg8, genJpg5, genGifList, genJpgList } from '@/utils/genImageList'
+
+const GH8 = "ai8ai"
+const GH9 = "aidres8"
 
 export const Cat2Sub2Img: Cat2SubMap = {
 
+    abstunning: [
+        { id: "abs102", title: "🌺 Blooming Beauty", folder: "blooming_beauty" },
+        { id: "abs122", title: "🌺 Elite Queen", folder: "elitequeen", },
+        { id: "abs204", title: "💖 Exotic Grace", folder: "exoticgrace", },
+        { id: "abs301", title: "👼 Forever Divine", folder: "forever_divine", },
+        { id: "abs403", title: "💃 Lingerie Boudoir", folder: "lingerieboudoir", },
+        { id: "abs504", title: "💖 Pure Enchantment", folder: "pureenchantment", },
+        { id: "abs604", title: "💖 Pure Enchantment", folder: "sensualwarriors", },
+        { id: "abs704", title: "💖 Pure Enchantment", folder: "vintagevixens", },
+    ].map(item => ({...item,
+        cover: genJpg1(GH8, `abstunning/main/${item.folder}`)[0]
+    })),
+
     bycc: [
-        // { id: "sub_ccstunning", repo: "bycc", title: "Hot 🔥 Stunning ", folder: "stunning" },
-        { id: "sub_cc1shoulder",repo: "cc1shoulder", title: "Graceful 🩰 One Shoulder", folder: "cat" },
-        { id: "sub_ccbankunyuu",repo: "ccbankunyuu", title: " 🌰 Bankunyuu", folder:"cat"},
-        { id: "sub_ccbody",     repo: "ccbody", title: "🦵Goddess", folder:"cat"},
-        { id: "sub_ccche",      repo: "ccche",  title: "Cheongsam 🌸 Collection", folder: "cat"},
-        { id: "sub_ccdemin",   repo: "ccdemin", title: "👖Demin👖Desire👖", folder: "cat"},
-        { id: "sub_ccsultry",  repo: "ccsultry",title: "Sultry Aura 🔥", folder: "cat"},
+        { id: "sub_cc1shoulder", repo: "cc1shoulder", title: "Graceful 🩰 One Shoulder", folder: "cat" },
+        { id: "sub_ccbankunyuu", repo: "ccbankunyuu", title: " 🌰 Bankunyuu", folder: "cat" },
+        { id: "sub_ccbody", repo: "ccbody", title: "🦵Goddess", folder: "cat" },
+        { id: "sub_ccche", repo: "ccche", title: "Cheongsam 🌸 Collection", folder: "cat" },
+        { id: "sub_ccdemin", repo: "ccdemin", title: "👖Demin👖Desire👖", folder: "cat" },
+        { id: "sub_ccsultry", repo: "ccsultry", title: "Sultry Aura 🔥", folder: "cat" },
 
         { id: "sub_ccbodycon", repo: "ccbodycon", title: "👗Curves in Command💄", folder: "cat" },
         { id: "sub_ccelegance", repo: "ccelegance", title: "🌸Elegance", folder: "cat" },
-
         { id: "sub_ccformal", repo: "ccformal", title: "Enchanting 💼 Classic", folder: "cat" },
-    
+        { id: "sub_ccgarage", repo: "ccgarage", title: " Garage 🚗", folder: "cat" },
+        { id: "sub_cchalter", repo: "cchalter", title: "🎀 Allure en Halter", folder: "cat" },
+        { id: "sub_cchighneck", repo: "cchighneck", title: "👗 Chic in High-Neck", folder: "cat" },
+
+        { id: "sub_cclowcut", repo: "cclowcut", title: "Sultry Lowcut 💄", folder: "cat" },
+        { id: "sub_ccoutdoor", repo: "ccoutdoor", title: "🍃 Breeze & Beyond", folder: "cat" },
+        { id: "sub_ccnextdoor", repo: "ccnextdoor", title: "Irresistible🌺Next Door", folder: "cat" },
+        { id: "sub_ccplunge", repo: "ccplunge", title: "🔥Plunging Passion", folder: "cat" },
+        { id: "sub_ccleggy", repo: "ccleggy", title: "Bare Legs👠腿控", folder: "cat" },
+
+        { id: "sub_ccspa", repo: "ccspa", title: "Slender Slip 💃", folder: "cat" },
+
         // { id: "subcc2", repo: "bycc", title: "Angel's Temptation 😇", folder: "pure" },
-        // { id: "subc14", repo: "bycc", title: "Soft Allure 🌸", folder: "pink" },
-        // { id: "subcc3", repo: "bycc", title: "Irresistible Charm 💋", folder: "nextdoor" },
         // { id: "subcc4", repo: "bycc", title: "Seduction in Bed 🛏️", folder: "bed" },
         // { id: "subcc6", repo: "bycc", title: "Mystic Blue 🔵", folder: "blue" },
         // { id: "subcc7", repo: "bycc", title: "Grace in Cheongsam 🏮", folder: "cheongsam" },
@@ -33,11 +56,10 @@ export const Cat2Sub2Img: Cat2SubMap = {
         // { id: "subc10", repo: "bycc", title: "School Seduction 🎒", folder: "school" },
         // { id: "subc15", repo: "bycc", title: "Dazzling Sparkle ✨", folder: "sparkling" },
         // { id: "subc17", repo: "bycc", title: "Bare & Bold 🔥", folder: "strapless" },
-        // { id: "subc18", repo: "bycc", title: "Slender Straps 💃", folder: "spaghetti" },
         // { id: "subc19", repo: "bycc", title: "Sultry Split 🔥", folder: "split" },
         // { id: "subc20", repo: "bycc", title: "Bridal Desire 👰", folder: "wedding" },
 
-        
+
         { id: "cp25", repo: "bycc24", title: "2025 Collection 📅", folder: "2025" },
         { id: "cp24", repo: "bycc24", title: "2024 Collection 📆", folder: "2024" },
         { id: "cp23", repo: "bycc23", title: "2023 Collection ⏳", folder: "2023" },
@@ -46,7 +68,7 @@ export const Cat2Sub2Img: Cat2SubMap = {
     ].map(item => ({
         ...item,
         ghname: "aidres8",
-        cover: genJpg88(`${item.repo}/main/${item.folder}`)[0] 
+        cover: genJpg88(`${item.repo}/main/${item.folder}`)[0]
     })),
 
 
@@ -75,7 +97,7 @@ export const Cat2Sub2Img: Cat2SubMap = {
         { id: "sub_xycheongsam", repo: "xycheongsam", title: "Elegant in Cheongsam 🏮", folder: "cat" },
         { id: "sub_xyclassic", repo: "xyclassic", title: "Enchanting 💼 Classic", folder: "cat" },
         { id: "sub_xyseethrough", repo: "xyseethrough", title: "Teasing Transparency 🔍", folder: "cat" },
-        { id: "sub_xyplunge",repo: "xyplunge", title: "🔥Plunging Passion", folder: "cat" },
+        { id: "sub_xyplunge", repo: "xyplunge", title: "🔥Plunging Passion", folder: "cat" },
 
         // { id: "w01", repo: "bwxy", title: "Daily Fresh & Hot Trends 🌟", folder: "stunning" },
         // { id: "w02", repo: "bwxy", title: "Sultry Evenings Under the Lights 🌃", folder: "bar" },
@@ -95,7 +117,7 @@ export const Cat2Sub2Img: Cat2SubMap = {
     ].map(item => ({
         ...item,
         ghname: "aidres8",
-        cover: genJpg88(`${item.repo}/main/${item.folder}`)[0] 
+        cover: genJpg88(`${item.repo}/main/${item.folder}`)[0]
     })),
 
     b2: [
@@ -127,13 +149,6 @@ export const Cat2Sub2Img: Cat2SubMap = {
         { id: "syz108", title: "🎭 Sultry Spaghetti Straps", folder: "spaghetti" },
         { id: "syz109", title: "💃 Bare & Beautiful", folder: "strapless" },
     ].map(item => ({ ...item, ghname: "ai8ai", repo: "absyz", cover: genJpg5(`absyz/${item.folder}`)[0] })),
-
-    abstunning: [
-        { id: "abs101", title: "👼 Forever Divine", folder: "forever_divine", cover: genJpg55("abstunning/main/forever_divine")[0] },
-        { id: "abs102", title: "🌺 Blooming Beauty", folder: "blooming_beauty", cover: genJpg55("abstunning/main/blooming_beauty")[0] },
-        { id: "abs103", title: "💃 Bare & Beautiful", folder: "sultry", cover: genJpg55("abstunning/main/sultry")[0] },
-        { id: "abs104", title: "💖 Lovely", folder: "lovely", cover: genJpg55("abstunning/main/lovely")[0] },
-    ].map(item => ({ ...item, ghname: "ai8ai", repo: "abstunning", })),
 
 
     abkele: [

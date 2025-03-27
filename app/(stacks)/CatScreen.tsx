@@ -6,19 +6,18 @@ import styles from '@/config/styles';
 import { CatInterface } from '@/config/type';
 import { Cat2Sub2Img } from '@/data/CatList';
 
-
 const CategoryScreen: React.FC = () => {
-    const { catId, ghname } = useLocalSearchParams();   // catId is repo
+    const { repo, gh, catTitle } = useLocalSearchParams();   // catId is repo
 
     const [subCatList, setSubCatList] = useState<CatInterface[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-        const subCatData = Cat2Sub2Img[catId as string] || Cat2Sub2Img.default;
+        const subCatData = Cat2Sub2Img[repo as string] || Cat2Sub2Img.default;
         setSubCatList(subCatData);
         setLoading(false);
-    }, [catId]);
+    }, [repo]);
 
     if (loading) return <ActivityIndicator size="large" />;
     if (error) return <Text>{error}</Text>;
@@ -28,18 +27,17 @@ const CategoryScreen: React.FC = () => {
             router.push({
                 pathname: "/SubCatScreen", params: {
                     catId:      item.id,         
-                    ghname:     item.ghname,
+                    ghname:     item.gh,
                     catTitle:   item.title,           // for updating the title of stack 
                 }
             });
         else
             router.push({
                 pathname: "/cat2img", params: {
-                    imgPath: item.path,
-                    count: item.count,
                     folder: item.folder,
-                    repo: item.repo,      //repo
-                    ghname: ghname,
+                    catTitle:   "item.title",
+                    repo: repo,      //repo
+                    ghname: gh,
                 }
             });
     };

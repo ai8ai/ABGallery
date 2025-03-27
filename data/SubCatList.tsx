@@ -1,21 +1,16 @@
 // Category
-import { CatInterface, Cat2SubMap } from '@/config/type';
-import { genJpg88, genJpg55, genJpg8, genJpg5, genGifList, genJpgList } from '@/utils/genImageList'
+import { Cat2SubMap } from '@/config/type';
+import { genJpg88 } from '@/utils/genImageList'
     // { id: "ccblue", ghname: "aidres8", title: "Yang Chenchen 💙 Blue", cover: genJpg55("abcat/main/ccblue")[0] },
     // { id: "ccbodycon", ghname: "aidres8", title: "Yang Chenchen 😍 Bodycon", cover: genJpg55("abcat/main/ccbodycon")[0] },
     // { id: "ccelegance", ghname: "aidres8", title: "Yang Chenchen 👑 Elegance", cover: genJpg55("abcat/main/ccelegance")[0] },
     // { id: "ccformal", ghname: "aidres8", title: "Yang Chenchen 👗 Formal", cover: genJpg55("abcat/main/ccformal")[0] },
     // { id: "ccfur", ghname: "aidres8", title: "Yang Chenchen 🧸 Fur", cover: genJpg55("abcat/main/ccfur")[0] },
-    // { id: "ccgarage", ghname: "aidres8", title: "Yang Chenchen 🚗 Garage", cover: genJpg55("abcat/main/ccgarage")[0] },
     // { id: "ccgreen", ghname: "aidres8", title: "Yang Chenchen 💚 in Green", cover: genJpg55("abcat/main/ccgreen")[0] },
-    // { id: "ccnextdoor", ghname: "aidres8", title: "Yang Chenchen 🌸 Next Door Girl", cover: genJpg55("abcat/main/ccnextdoor")[0] },
-    // { id: "ccoutdoor", ghname: "aidres8", title: "Yang Chenchen 🌿 Outdoor", cover: genJpg55("abcat/main/ccoutdoor")[0] },
     // { id: "ccpink", ghname: "aidres8", title: "Yang Chenchen 💖 in Pink", cover: genJpg55("abcat/main/ccpink")[0] },
     // { id: "ccred", ghname: "aidres8", title: "Yang Chenchen 🈲 in Red", cover: genJpg55("abcat/main/ccred")[0] },
-    // { id: "ccspa", ghname: "aidres8", title: "Yang Chenchen 🍝 Spaghetti", cover: genJpg55("abcat/main/ccspa")[0] },
     // { id: "ccstr", ghname: "aidres8", title: "Yang Chenchen 🍸 Strapless", cover: genJpg55("abcat/main/ccstr")[0] },
     // { id: "ccviolet", ghname: "aidres8", title: "Yang Chenchen 💜 Violet", cover: genJpg55("abcat/main/ccviolet")[0] },
-    // { id: "ccwhite", ghname: "aidres8", title: "Yang Chenchen 🤍 in White", cover: genJpg55("abcat/main/ccwhite")[0] },
     // { id: "ccyellow", ghname: "aidres8", title: "Yang Chenchen 💛 in Yellow", cover: genJpg55("abcat/main/ccyellow")[0] },
     // { id: "ccpast", ghname: "aidres8", title: "Yang Chenchen 📸 Past Years", cover: genJpg55("abcat/main/ccpast")[0] }
 
@@ -27,7 +22,7 @@ export const YCCImg: Cat2SubMap = {
         { id: "gw01", title: "👑Gown Glamour", folder: "gown" },
         { id: "lg01", title: "🦵Leggy Goddess", folder: "leggy" },
         { id: "su01", title: "🔥Sultry Seduction", folder: "sultry" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "cc1shoulder", cover: genJpg8(`cc1shoulder/${item.folder}`)[0] })),
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "cc1shoulder", cover: genJpg88(`cc1shoulder/main/${item.folder}`)[0] })),
     sub_ccbankunyuu: [
         { id: "s01", title: "Sultry Aura 🔥", folder: "sultry" },
         { id: "w02", title: "Minimal Muse 🎨", folder: "singleband" },
@@ -35,7 +30,7 @@ export const YCCImg: Cat2SubMap = {
         { id: "s23", title: "🌿 Naturally Nude", folder: "nude" },
         { id: "s04", title: "Keyhole Temptation 🔑", folder: "keyhole" },
         { id: "w05", title: "Cutout Couture ✂️", folder: "cutout" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccbankunyuu", cover: genJpg8(`ccbankunyuu/${item.folder}`)[0] })),
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccbankunyuu", cover: genJpg88(`ccbankunyuu/main/${item.folder}`)[0] })),
 
 
     sub_ccbody: [
@@ -59,7 +54,7 @@ export const YCCImg: Cat2SubMap = {
         { id: "bo9", title: "Crimson Muse 🔴", folder: "red" },
         { id: "w08", title: "Solid Chic ⚡", folder: "solidcolor" },
         { id: "boa", title: "Solid Scarlet ❤️", folder: "solidred" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccche", cover: genJpg8(`ccche/${item.folder}`)[0] })),
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccche", cover: genJpg88(`ccche/main/${item.folder}`)[0] })),
 
 
     sub_ccsultry: [
@@ -71,7 +66,7 @@ export const YCCImg: Cat2SubMap = {
         { id: "n01", title: "✨Sheer Sensation", folder: "seethrough" },
         { id: "s02", title: "💃Split Siren", folder: "split" },
         { id: "s03", title: "👠Sultry Stripper", folder: "stripper" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccsultry", cover: genJpg8(`ccsultry/${item.folder}`)[0] })),
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccsultry", cover: genJpg88(`ccsultry/main/${item.folder}`)[0] })),
     sub_ccdemin: [
         { id: "bo9", title: "Backless Rebel 🔥", folder: "backless" },
         { id: "w08", title: "Bold Bandeau 👙", folder: "bandeau" },
@@ -85,7 +80,7 @@ export const YCCImg: Cat2SubMap = {
         { id: "r01", title: "❤️Ravishing Red", folder: "red" },
         { id: "w02", title: "Cutoff Cutie 👖", folder: "short" },
         { id: "s01", title: "Citrus Denim 🍋", folder: "yellowgreen" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccdemin", cover: genJpg8(`ccdemin/${item.folder}`)[0] })),
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccdemin", cover: genJpg88(`ccdemin/main/${item.folder}`)[0] })),
 
 
 
@@ -99,7 +94,7 @@ export const YCCImg: Cat2SubMap = {
         { id: "s06", title: "🫐 Soft Blue Dream", folder: "softblue" },
         { id: "w07", title: "🍝 Spaghetti Strap Bodycon", folder: "spaghatti_bodycon" },
         { id: "s08", title: "🔥 Sultry Allure", folder: "sultry" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccblue", cover: genJpg8(`ccblue/${item.folder}`)[0] })),
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccblue", cover: genJpg88(`ccblue/main/${item.folder}`)[0] })),
 
     ccfur: [
         { id: "b01", title: "🔥Bold Bodycon", folder: "bodycon" },
@@ -108,28 +103,22 @@ export const YCCImg: Cat2SubMap = {
         { id: "s01", title: "🌫️Grey Grace", folder: "stole_grey" },
         { id: "s02", title: "❄️Winter White", folder: "stole_white" },
         { id: "su1", title: "💋Sultry Elegance", folder: "sultry" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccfur", cover: genJpg8(`ccfur/${item.folder}`)[0] })),
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccfur", cover: genJpg88(`ccfur/main/${item.folder}`)[0] })),
 
-
-    ccgarage: [
-        { id: "b01", title: "💥Bold Bodycon", folder: "bodycon" },
-        { id: "l01", title: "🔥Low-Cut Luxe", folder: "lowcut" },
-        { id: "r01", title: "⛓️Red Chain Glam", folder: "redchain" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccgarage", cover: genJpg8(`ccgarage/${item.folder}`)[0] })),
 
     ccpast: [
         { id: "b01", title: "💥1M", folder: "p1m" },
         { id: "l01", title: "🔥33K", folder: "p33k" },
         { id: "r01", title: "⛓️500K", folder: "p500k" },
         { id: "b02", title: "💫100K", folder: "p100k" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccpast", cover: genJpg8(`ccpast/${item.folder}`)[0] })),
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccpast", cover: genJpg88(`ccpast/main/${item.folder}`)[0] })),
 
 
     ccyellow: [
         { id: "s01", title: "🌅 Sultry Sunrise", folder: "sultry" },
         { id: "w02", title: "✨ Golden Temptation", folder: "lowcut" },
         { id: "so3", title: "☀️ Cozy Glow", folder: "cosy" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccyellow", cover: genJpg8(`ccyellow/${item.folder}`)[0] })),
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccyellow", cover: genJpg88(`ccyellow/main/${item.folder}`)[0] })),
 
     ccviolet: [
         { id: "s01", title: "💫 Crisscross Desire", folder: "xstrap" },
@@ -137,24 +126,15 @@ export const YCCImg: Cat2SubMap = {
         { id: "so3", title: "🍝 Spaghetti Seduction", folder: "spaghetti" },
         { id: "so5", title: "🌙 Midnight Cut", folder: "lowcut" },
         { id: "s04", title: "✨ Beaded Mirage", folder: "beadedmesh" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccviolet", cover: genJpg8(`ccviolet/${item.folder}`)[0] })),
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccviolet", cover: genJpg88(`ccviolet/main/${item.folder}`)[0] })),
 
     ccstr: [
         { id: "s01", title: "⚡ Curves in Control", folder: "bodycon" },
         { id: "w02", title: "👗 Grace in Length", folder: "longskirt" },
         { id: "so3", title: "✨ Sparkle & Shine", folder: "sparkling" },
         { id: "s04", title: "💎 Sequin Dreams", folder: "sequined" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccstr", cover: genJpg8(`ccstr/${item.folder}`)[0] })),
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccstr", cover: genJpg88(`ccstr/main/${item.folder}`)[0] })),
 
-    ccspa: [
-        { id: "s01", title: "🛁 Spa Siren", folder: "sultry" },
-        { id: "w02", title: "✨ Sparkling Retreat", folder: "sparkling" },
-        { id: "so3", title: "🍃 Emerald Escape", folder: "green" },
-        { id: "s04", title: "🌸 Blush & Bubbles", folder: "pink" },
-        { id: "w05", title: "🌙 Midnight Relaxation", folder: "night" },
-        { id: "s11", title: "🌊 Blue Tranquility", folder: "blue" },
-        { id: "w12", title: "🛋️ Lounge Muse", folder: "sofa" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccspa", cover: genJpg8(`ccspa/${item.folder}`)[0] })),
 
     ccred: [
         { id: "s01", title: "🐾 Fur Allure", folder: "fur" },
@@ -181,28 +161,8 @@ export const YCCImg: Cat2SubMap = {
         { id: "a22", title: "👑 Highneck Halo", folder: "highneckhalter" },
         { id: "a23", title: "⛳ Glam on the Green", folder: "golf" },
         { id: "a24", title: "❤️ Crimson Temptress", folder: "deepredstrapless" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccred", cover: genJpg8(`ccred/${item.folder}`)[0] })),
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccred", cover: genJpg88(`ccred/main/${item.folder}`)[0] })),
 
-    ccoutdoor: [
-        { id: "s01", title: "Active Allure 🏃‍♀️", folder: "sport" },
-        { id: "w02", title: "Playground Charm 🎠", folder: "playground" },
-        { id: "so3", title: "Seaside Breeze 🌊", folder: "seaside" },
-        { id: "s04", title: "Motor Muse 🏍️", folder: "motor" },
-        { id: "w05", title: "Garden Dream 🌸", folder: "garden" },
-        { id: "s11", title: "Soccer Chic ⚽", folder: "soccer" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccoutdoor", cover: genJpg8(`ccoutdoor/${item.folder}`)[0] })),
-
-
-    ccnextdoor: [
-        { id: "cc1", title: "🔥 Hot & Stunning 🔥", folder: "stunning" },
-        { id: "s01", title: "Braided Beauty 💇‍♀️", folder: "braids" },
-        { id: "w02", title: "Soft Light 🌅", folder: "light" },
-        { id: "so3", title: "Cozy Layers 🧥", folder: "coat" },
-        { id: "s04", title: "Sweet Bite 🍭", folder: "eating" },
-        { id: "w05", title: "Floral Grace 🌺", folder: "flowerinhand" },
-        { id: "s11", title: "Heartfelt ❤️", folder: "heart" },
-        { id: "s13", title: "Holiday Glow 🎄", folder: "holiday" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccnextdoor", cover: genJpg8(`ccnextdoor/${item.folder}`)[0] })),
 
 
     ccgreen: [
@@ -213,7 +173,7 @@ export const YCCImg: Cat2SubMap = {
         { id: "w05", title: "Green Glimpse 🌱", folder: "keyhole" },
         { id: "bo6", title: "Halter Dream 💭", folder: "halterneck" },
         { id: "s07", title: "Fur Fantasy 🐾", folder: "fur" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccgreen", cover: genJpg8(`ccgreen/${item.folder}`)[0] })),
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccgreen", cover: genJpg88(`ccgreen/main/${item.folder}`)[0] })),
 
     ccwhite: [
         { id: "s01", title: "Snowy Seduction ❄️", folder: "turtleneck" },
@@ -225,7 +185,7 @@ export const YCCImg: Cat2SubMap = {
         { id: "s07", title: "Ivory Curve 🤍", folder: "bodycon" },
         { id: "w08", title: "BBS Allure 🎀", folder: "bbs" },
         { id: "w09", title: "Silken Touch 🧵", folder: "silk" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccwhite", cover: genJpg8(`ccwhite/${item.folder}`)[0] })),
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccwhite", cover: genJpg88(`ccwhite/main/${item.folder}`)[0] })),
 
     ccpink: [
         { id: "s01", title: "Pure Bloom 🌸", folder: "whitetop" },
@@ -234,7 +194,7 @@ export const YCCImg: Cat2SubMap = {
         { id: "s04", title: "Hotel Glow 🏨", folder: "hotel" },
         { id: "w05", title: "Deep Desire 💖", folder: "deeppink" },
         { id: "bo6", title: "Mocha Mist ☕", folder: "brown" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccpink", cover: genJpg8(`ccpink/${item.folder}`)[0] })),
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccpink", cover: genJpg88(`ccpink/main/${item.folder}`)[0] })),
 
     sub_xybodycon: [
         { id: "s01", title: "🐾 Fur Allure", folder: "fur" },
@@ -287,7 +247,6 @@ export const YCCImg: Cat2SubMap = {
         { id: "s07", title: "Midnight Bloom 🌙", folder: "drunk" },
         { id: "s01", title: "🐾 Fur Allure", folder: "fur" },
         { id: "w05", title: "🪶 Silken Slip Dress", folder: "slip" },
-
         { id: "s02", title: "💃Split Siren", folder: "split" },
         { id: "a24", title: "❤️ Crimson Temptress", folder: "strapless" },
         { id: "su01", title: "🔥Sultry Seduction", folder: "sultry" },
@@ -306,7 +265,7 @@ export const YCCImg: Cat2SubMap = {
         { id: "w05", title: "🪶 Silken Slip Dress", folder: "slip" },
         { id: "s08", title: "🔥 Sultry Allure", folder: "sultry" },
         { id: "s14", title: "Crisp Contrast 👕", folder: "whiteshirt" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccbodycon", cover: genJpg8(`ccbodycon/${item.folder}`)[0] })),
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccbodycon", cover: genJpg88(`ccbodycon/main/${item.folder}`)[0] })),
     sub_ccelegance: [
         { id: "s04", title: "Sky High Chic ✈️", folder: "fairy" },
         { id: "g01", title: "👗Classic Gown", folder: "gown" },
@@ -317,7 +276,7 @@ export const YCCImg: Cat2SubMap = {
         { id: "s01", title: "🧜‍♀️ Enchanted Mermaid", folder: "mermaid" },
         { id: "g03", title: "🌼Golden Glow", folder: "yellow" },
         { id: "m01", title: "💃Flirty Minimal", folder: "minimal" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccelegance", cover: genJpg8(`ccelegance/${item.folder}`)[0] })),
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccelegance", cover: genJpg88(`ccelegance/main/${item.folder}`)[0] })),
 
 
     sub_ccformal: [
@@ -337,9 +296,107 @@ export const YCCImg: Cat2SubMap = {
         { id: "s01", title: "Sultry Statement 🔥", folder: "sultry" },
         { id: "w02", title: "Boss Babe 👩‍💼", folder: "suite" },
         { id: "so3", title: "Laced in Elegance 👠", folder: "stockings" },
-    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccformal", cover: genJpg8(`ccformal/${item.folder}`)[0] })),
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccformal", cover: genJpg88(`ccformal/main/${item.folder}`)[0] })),
 
+    sub_ccgarage: [
+        { id: "b01", title: "💥Bold Bodycon", folder: "bodycon" },
+        { id: "l01", title: "🔥Low-Cut Luxe", folder: "lowcut" },
+        { id: "r01", title: "⛓️Red Chain Glam", folder: "laceband" },
+        { id: "s04", title: "Motor Muse 🏍️", folder: "motor" },
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccgarage", cover: genJpg88(`ccgarage/main/${item.folder}`)[0] })),
 
+    sub_cchalter: [
+        { id: "w12", title: "🔥 Bodycon Desire", folder: "bodycon" },
+        { id: "so3", title: "🍃 Emerald Escape", folder: "green" },
+        { id: "l01", title: "🔥Low-Cut Luxe", folder: "lowcut" },
+        { id: "a15", title: "🌿 Outdoor Envy", folder: "outdoor" },
+        { id: "s02", title: "💃Split Siren", folder: "split" },
+        { id: "r01", title: "❤️Ravishing Stole", folder: "stole" },
+        { id: "s01", title: "Sultry Statement 🔥", folder: "sultry" },
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "cchalter", cover: genJpg88(`cchalter/main/${item.folder}`)[0] })),
+
+    sub_cchighneck: [
+        { id: "w12", title: "🔥 Bodycon Desire", folder: "bodycon" },
+        { id: "so3", title: "Laced in Elegance 👠", folder: "lace" },
+        { id: "so3", title: "Cozy Chic Turtle🧥", folder: "turtleneck" },
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "cchighneck", cover: genJpg88(`cchighneck/main/${item.folder}`)[0] })),
+
+    sub_cclowcut: [
+        { id: "s02", title: "❄️ Cream White", folder: "creamwhite" },
+        { id: "w05", title: "Net Temptation 🎣", folder: "fishnet" },
+        { id: "syz106", title: "👑 Fantasy & Queens", folder: "hat" },
+        { id: "w12", title: "🔥 Square Desire", folder: "lowsquare" },
+        { id: "so3", title: "🍃 Emerald Escape", folder: "palegreen" },
+        { id: "s04", title: "🌸 Blush & Bubbles", folder: "pink" },
+        { id: "cos", title: "Servant Queens 🎭", folder: "servant" },
+        { id: "s04", title: "🌃 Skyline Chic", folder: "skyline" },
+        { id: "sa3", title: "Laced in Elegance 👠", folder: "lace" },
+        { id: "s01", title: "Sultry Statement 🔥", folder: "sultry" },
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "cclowcut", cover: genJpg88(`cclowcut/main/${item.folder}`)[0] })),
+
+    sub_ccoutdoor: [
+        { id: "w12", title: "🔥 Bodycon Desire", folder: "bodycon" },
+        { id: "w05", title: "Garden Dream 🌸", folder: "garden" },
+        { id: "s23", title: "🌿 Naturally Nude", folder: "nude" },
+        { id: "w02", title: "Playground Charm 🎠", folder: "playground" },
+        { id: "so3", title: "Seaside Breeze 🌊", folder: "seaside" },
+        { id: "s11", title: "Soccer Chic ⚽", folder: "soccer" },
+        { id: "s01", title: "Active Allure 🏃‍♀️", folder: "sport" },
+        { id: "w05", title: "🪶 Silken Yoga", folder: "yoga" },
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccoutdoor", cover: genJpg88(`ccoutdoor/main/${item.folder}`)[0] })),
+
+    sub_ccnextdoor: [
+        { id: "cc1", title: "🔥 Hot & Stunning 🔥", folder: "stunning" },
+        { id: "s01", title: "Braided Beauty 💇‍♀️", folder: "braids" },
+        { id: "so3", title: "Cozy Layers 🧥", folder: "coat" },
+        { id: "s04", title: "Sweet Bite 🍭", folder: "eating" },
+        { id: "syz106", title: "👑 Fan-tasy", folder: "fan" },
+        { id: "w05", title: "Floral Grace 🌺", folder: "flowerinhand" },
+        { id: "s13", title: "Holiday Glow 🎄", folder: "holiday" },
+        { id: "cc3", title: "Irresistible Charm💋Next Door", folder: "nextdoor" },        
+        { id: "cc6", title: "Mystic Kitchen 🔵", folder: "kitchen" }, 
+        { id: "w02", title: "Soft Light 🌅", folder: "light" },
+        { id: "suc2",  title: "Angel's Temptation 😇", folder: "pure" },
+        { id: "s11", title: "Heartfelt ❤️", folder: "sweatheart" },
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccnextdoor", cover: genJpg88(`ccnextdoor/main/${item.folder}`)[0] })),
+
+    sub_ccplunge: [
+        { id: "w12", title: "🔥 Bodycon Desire", folder: "bodycon" },
+        { id: "w02", title: "Boss Babe 👩‍💼", folder: "formal" },
+        { id: "w05", title: "Green Lake 🍵", folder: "green_lake" },
+        { id: "s04", title: "Home Glow 🏨", folder: "home" },
+        { id: "su01", title: "🔥Sultry Lace", folder: "laceblack" },
+        { id: "s02", title: "❄️Lace White", folder: "lacewhite" },
+        { id: "s11", title: "🌊 Blue Tranquility", folder: "lightblue" },
+        { id: "m01", title: "💃Flirty Mini", folder: "miniskirt" },
+        { id: "s04", title: "🌸 Blush & Bubbles", folder: "pink" },
+        { id: "bo9", title: "Crimson Muse 🔴", folder: "red" },
+        { id: "su01", title: "🔥Sultry Seduction", folder: "sultry" },
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccplunge", cover: genJpg88(`ccplunge/main/${item.folder}`)[0] })),
+
+    sub_ccleggy: [
+        { id: "ss03", title: "🐆 Leopard Prints", folder: "leo"},
+        { id: "bp01", title: "🖤Black Pantyhose Allure", folder: "black_silk" },
+        { id: "w12", title: "🔥 Bodycon Desire", folder: "bodycon" },
+        { id: "s01", title: "💫 Crisscross Desire", folder: "crisscross" },
+        { id: "su01", title: "🔥Sultry Lace", folder: "lace" },
+        { id: "su02", title: "🔥Sultry Lace Band", folder: "laceband" },
+        { id: "s07", title: "Midnight Bloom 🌙", folder: "night" },
+        { id: "s02", title: "💃Split Siren", folder: "split" },
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccleggy", cover: genJpg88(`ccleggy/main/${item.folder}`)[0] })),
+
+    sub_ccspa: [
+        { id: "w12", title: "🔥 Bodycon Desire", folder: "bodycon" },
+        { id: "s04", title: "Sky High Chic ✈️", folder: "fairy" },
+        { id: "so3", title: "🍃 Emerald Escape", folder: "green" },
+        { id: "s11", title: "🌊 Blue Tranquility", folder: "lightbluedoor" },
+        { id: "sbl", title: "💙 Royal Blue Elegance", folder: "royalblue" },
+        { id: "w05", title: "🌙 Midnight Relaxation", folder: "night" },
+        { id: "s23", title: "🌿 Naturally Nude", folder: "nude" },
+        { id: "w02", title: "✨ Sparkling Retreat", folder: "sparkling" },
+        { id: "ao3", title: "👚 White Curves", folder: "white" },
+        { id: "s01", title: "🛁 Spa Siren", folder: "sultry" },
+    ].map(item => ({ ...item, ghname: "aidres8", repo: "ccspa", cover: genJpg88(`ccspa/main/${item.folder}`)[0] })),
 
 };
 

@@ -1,6 +1,6 @@
 export interface CatInterface {
     id: string;     // repo for home, useless for others
-    ghname?: string;
+    gh?: string;
     title: string;
     folder?: string;
     cover?: string;

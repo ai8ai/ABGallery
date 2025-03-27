@@ -8,12 +8,12 @@ const StacksLayout = () => {
 
     useEffect(() => {
         // Update the header title dynamically
-        if (catId) {
+        if (catTitle) {
             navigation.setOptions({
                 headerTitle: catTitle,  // Dynamically set the headerTitle to itemid
             });
         }
-    }, [catId, navigation]);
+    }, [catId, navigation, catTitle]);
 
     return (
         <Stack>
