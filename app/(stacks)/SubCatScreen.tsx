@@ -4,34 +4,35 @@ import { router, useLocalSearchParams } from 'expo-router';
 import styles from '@/config/styles';
 
 import { CatInterface } from '@/config/type';
-import { Cat2Sub2Img } from '@/data/CatList';
-import { YCCImg } from '@/data/SubCatList';
+import { CatList } from '@/data/CatList';
+import { SubList } from '@/data/SubCatList';
 
 
 const CategoryScreen: React.FC = () => {
-    const { catId, ghname } = useLocalSearchParams();   // catId is repo
+    const { itemid, gh } = useLocalSearchParams();   // catId is repo
     const [subCatList, setSubCatList] = useState<CatInterface[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-        const subCatData = YCCImg[catId as string] || Cat2Sub2Img.default;
+        const subCatData = SubList[itemid as string] || CatList.default;
+        console.log(itemid.slice(4))
         setSubCatList(subCatData);
+        console.log(subCatList)
         setLoading(false);
-    }, [catId]);
+    }, [itemid]);
 
     if (loading) return <ActivityIndicator size="large" />;
     if (error) return <Text>{error}</Text>;
 
     const handleSubCatPress = (item: CatInterface) => {
+        console.log("SubCat Pressed:");
         router.push({
             pathname: "/cat2img", params: {
-                imgPath: item.path,
-                count: item.count,
-                folder: item.folder,
-                repo: item.repo,     
-                catTitle: item.title,
-                ghname: ghname,
+                gh:     gh,
+                repo:   itemid.slice(4),      //repo
+                folder: item.id,         // id is folder
+                title:  item.title,
             }
         });
     };

@@ -4,18 +4,18 @@ import { router, useLocalSearchParams } from 'expo-router';
 import styles from '@/config/styles';
 
 import { CatInterface } from '@/config/type';
-import { Cat2Sub2Img } from '@/data/CatList';
+import { CatList } from '@/data/CatList';
 
 const CategoryScreen: React.FC = () => {
-    const { repo, gh, catTitle } = useLocalSearchParams();   // catId is repo
+    const { repo, gh } = useLocalSearchParams();   // HomeList // repo:abstunning          gh: ai8ai 
 
-    const [subCatList, setSubCatList] = useState<CatInterface[]>([]);
+    const [catList, setCatList] = useState<CatInterface[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-        const subCatData = Cat2Sub2Img[repo as string] || Cat2Sub2Img.default;
-        setSubCatList(subCatData);
+        const catData = CatList[repo as string] || CatList.default;
+        setCatList(catData);
         setLoading(false);
     }, [repo]);
 
@@ -23,23 +23,24 @@ const CategoryScreen: React.FC = () => {
     if (error) return <Text>{error}</Text>;
 
     const handleSubCatPress = (item: CatInterface) => {
-        if (item.id.startsWith("sub"))
+        if (item.id.startsWith("sub")) {
             router.push({
                 pathname: "/SubCatScreen", params: {
-                    catId:      item.id,         
-                    ghname:     item.gh,
-                    catTitle:   item.title,           // for updating the title of stack 
+                    gh: gh,
+                    itemid: item.id,
+                    title: item.title,
                 }
             });
-        else
+        } else {
             router.push({
                 pathname: "/cat2img", params: {
-                    folder: item.folder,
-                    catTitle:   "item.title",
+                    gh: gh,
                     repo: repo,      //repo
-                    ghname: gh,
+                    folder: item.id,         // id is folder
+                    title: item.title,
                 }
             });
+        }
     };
 
     const renderItem = ({ item }: { item: CatInterface }) => (
@@ -57,7 +58,7 @@ const CategoryScreen: React.FC = () => {
     return (
         <View style={styles.mainContainer}>
             <FlatList
-                data={subCatList}
+                data={catList}
                 numColumns={2}
                 keyExtractor={(item) => item.id}
                 renderItem={renderItem}

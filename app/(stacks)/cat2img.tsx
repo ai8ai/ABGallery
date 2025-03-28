@@ -12,14 +12,15 @@ import styles from '@/config/styles';
 
 
 
-const GITHUB_API_URL = (ghname: string, repo: string, folder: string) => `https://api.github.com/repos/${ghname}/${repo}/contents/${folder}`;
-const GITHUB_RAW_URL = (ghname: string, repo: string, folder: string) => `https://raw.githubusercontent.com/${ghname}/${repo}/main/${folder}/`;
+const GITHUB_API_URL = (gh: string, repo: string, folder: string) => `https://api.github.com/repos/${gh}/${repo}/contents/${folder}`;
+const GITHUB_RAW_URL = (gh: string, repo: string, folder: string) => `https://raw.githubusercontent.com/${gh}/${repo}/main/${folder}/`;
 
 
 export default function SlideshowScreen() {
     const navigation = useNavigation();
     const parentNavi = navigation.getParent();
-    const { ghname, repo, folder, catTitle } = useLocalSearchParams();
+    const { gh, repo, folder } = useLocalSearchParams();
+    console.log("gh:", gh, "repo:", repo, "folder:", folder)
 
     const [images, setImages] = useState<string[]>([]);
     const [currentImage, setCurrentImage] = useState(0);
@@ -50,8 +51,8 @@ export default function SlideshowScreen() {
     useEffect(() => {
         const fetchImageList = async () => {
             try {
-                console.log(repo + " repo - folder " + folder + " - ghname:" + ghname)
-                const response = await fetch(GITHUB_API_URL(ghname as string, repo as string, folder as string));
+                console.log(repo + " repo - folder " + folder + " - gh:" + gh)
+                const response = await fetch(GITHUB_API_URL(gh as string, repo as string, folder as string));
                 if (!response.ok) throw new Error("Failed to fetch image list");
                 const files = await response.json();
 
@@ -59,7 +60,7 @@ export default function SlideshowScreen() {
                 // Filter only image files (e.g., .jpg, .png, .jpeg)
                 const imageFiles = files
                     .filter((file: any) => file.type === 'file' && /\.(jpg|jpeg|webp|png|gif|JPG|JPEG|PNG|WEBP)$/i.test(file.name))
-                    .map((file: any) => GITHUB_RAW_URL(ghname as string, repo as string, folder as string) + file.name);
+                    .map((file: any) => GITHUB_RAW_URL(gh as string, repo as string, folder as string) + file.name);
 
                 const shuffledImages = imageFiles.sort(() => Math.random() - 0.5);
                 setImages(shuffledImages);

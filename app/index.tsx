@@ -11,9 +11,9 @@ const HomeScreen = () => {
         router.push({
             pathname: "/CatScreen",
             params: {
-                repo: item.id,         // repo
-                gh:   item.gh,
-                catTitle: item.title,           // for updating the title of stack 
+                repo: item.id,         // repo:abstunning          gh: ai8ai     title: "Hot 🧨 Stunning"
+                gh:   item.gh,          // HomeList provids: gh, repo, title
+                title: item.title,           // for updating the title of (stacks), not passing down 
             },
         });
     };
