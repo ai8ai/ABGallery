@@ -2,7 +2,6 @@
 import { Cat2SubMap } from '@/config/type';
 import { genJpg1 } from '@/utils/genImageList'
 
-const AI8 = "ai8ai"
 const AID = "aidres8"
 
 export const SubList: Cat2SubMap = {
