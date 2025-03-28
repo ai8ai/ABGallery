@@ -5,8 +5,8 @@ export const HomeList: CatInterface[] = [
     { id: "abstunning", gh: "ai8ai",    title: "Hot 🧨 Stunning", },  // id is repo
     { id: "ccmain",     gh: "aidres8",  title: "Yang Chenchen🈲杨晨晨", },
 
-    // { id: "bwxy", gh: "aidres8", title: "Wang Xinyao 🔥 王馨瑶" },
-    // { id: "bcmy", gh: "aidres8", title: "Chu Mengyao 💋 初梦瑶" },
+    { id: "bwxy", gh: "aidres8", title: "Wang Xinyao 🔥 王馨瑶" },
+    { id: "bcmy", gh: "aidres8", title: "Chu Mengyao 💋 初梦瑶" },
 
     // { id: "bnabi", gh: "aidres8", title: "Yeon 娜比 🌸", },
     // { id: "absyz", gh: "ai8ai", title: "Son Yoon Joo 💖 손윤주" },

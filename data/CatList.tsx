@@ -43,32 +43,16 @@ export const CatList: Cat2SubMap = {
 
 
     bwxy: [
-        { id: "bo9", repo: "bwxy", title: "Backless Rebel 🔥", folder: "backless" },
-        { id: "c38", repo: "bwxy", title: "Passionate Corset ❤️", folder: "corset" },
+        { id: "sub_xycos", title: "Cosplay Queens 🎭" },
+        { id: "sub_xywearing", title: "Sassy in Body 👚" },
+        { id: "sub_xysultry", title: "Simply Irresistible 💘" },
 
-        { id: "cos", repo: "bwxy", title: "Cosplay Queens 🎭", folder: "cos" },
-        { id: "w05", repo: "bwxy", title: "Sassy in Croptops 👚", folder: "croptop" },
-
-        { id: "c12", repo: "bwxy", title: "Casual Chic in Demin 👖", folder: "demin" },
-        { id: "w08", repo: "bwxy", title: "Allure en Halter 🌺", folder: "haltertop" },
-
-        { id: "w15", repo: "bwxy", title: "Sultry Lowcut 💄", folder: "lowcut" },
-        { id: "s16", repo: "bwxy", title: "👑 Fantasy One Shoulder", folder: "oneshoulder" },
-
-        { id: "sur", repo: "bwxy", title: "Mystic Red ❤️", folder: "red" },
-        { id: "sof", repo: "bwxy", title: "Relaxed Allure 🛋️", folder: "sofa" },
-
-        { id: "spa", repo: "bwxy", title: "Dazzling in Sparkling ✨", folder: "sparkling" },
-        { id: "c25", repo: "bwxy", title: "Bare & Beautiful & Strapless 💋", folder: "strapless" },
-
-        { id: "sul", repo: "bwxy", title: "Simply Irresistible 💘", folder: "sultry" },
-
-        { id: "sub_xybodycon", repo: "xybodycon", title: "👗Curves in Command💄", folder: "cat" },
-        { id: "sub_xycheongsam", repo: "xycheongsam", title: "Elegant in Cheongsam 🏮", folder: "cat" },
-        { id: "sub_xyclassic", repo: "xyclassic", title: "Enchanting 💼 Classic", folder: "cat" },
-        { id: "sub_xyseethrough", repo: "xyseethrough", title: "Teasing Transparency 🔍", folder: "cat" },
-        { id: "sub_xyplunge", repo: "xyplunge", title: "🔥Plunging Passion", folder: "cat" },
-    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `${item.repo}/main/${item.folder}`)[0] })),
+        { id: "sub_xybodycon", title: "👗Curves in Command💄" },
+        { id: "sub_xycheongsam", title: "Elegant in Cheongsam 🏮" },
+        { id: "sub_xyclassic", title: "Enchanting 💼 Classic" },
+        { id: "sub_xyseethrough", title: "Teasing Transparency 🔍" },
+        { id: "sub_xyplunge", title: "🔥Plunging Passion" },
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `${item.id.slice(4)}/main/cat`)[0] })),
 
     bnabi: [
         { id: "bn101", title: "✨ Dazzling in Sparkling", folder: "sparkling" },
