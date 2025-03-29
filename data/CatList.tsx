@@ -41,17 +41,39 @@ export const CatList: Cat2SubMap = {
         { id: "sub_ccwedding", title: "Bridal Desire 👰" }
     ].map(item => ({ ...item, cover: genJpg1(GH_bb, `${item.id.slice(4)}/main/cat`)[0] })),
 
+    byey: [
+        { id: "sultry", title: "Simply Irresistible 💘" },
+        { id: "stunning", title: "🔥 Daily Fresh & Hot Trends" },
+        { id: "che", title: "👘 Elegant in Cheongsam" },
+        { id: "oneshoulder", title: "👑 Fantasy & Queens" },
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `${item.id.slice(4)}/main/cat`)[0] })),
+
+
     bwxy: [
         { id: "sub_xycos", title: "Cosplay Queens 🎭" },
         { id: "sub_xywearing", title: "Sassy in Body 👚" },
         { id: "sub_xysultry", title: "Simply Irresistible 💘" },
-
         { id: "sub_xybodycon", title: "👗Curves in Command💄" },
         { id: "sub_xycheongsam", title: "Elegant in Cheongsam 🏮" },
         { id: "sub_xyclassic", title: "Enchanting 💼 Classic" },
         { id: "sub_xyseethrough", title: "Teasing Transparency 🔍" },
         { id: "sub_xyplunge", title: "🔥Plunging Passion" },
     ].map(item => ({ ...item, cover: genJpg1(GH_bb, `${item.id.slice(4)}/main/cat`)[0] })),
+
+    abinfluencer: [
+        { id: "akasha", title: "Akasha's Allure 🔥" },
+        { id: "anonymous", title: "Mystique Anonymous 🕶️" },
+        { id: "bailu", title: "Bailu's Grace 🌿" },
+        { id: "liruoxi", title: "Liruoxi's Charm 💫" },
+        { id: "mengxinyue", title: "Meng Xinyue's Elegance 🌙" },
+        { id: "sumanxi", title: "Sumanxi's Seduction 💋" },
+        { id: "vanessa", title: "Vanessa's Vibes 💃" },
+        { id: "wangyuchun", title: "Wang Yuchun's Radiance ✨" },
+        { id: "yanmo", title: "Yanmo's Enigma 🔮" },
+        { id: "zhangxinxin", title: "Zhang Xinxin's Glow 🌟" },
+        { id: "zhouyuxi", title: "Zhou Yuxi's Elegance 🎀" }
+    ].map(item => ({ ...item, cover: genJpg1(GH_ab, `abinfluencer/main/${item.id}`)[0] })),
+
 
     bnabi: [
         { id: "sparkling", title: "✨ Dazzling in Sparkling" },
@@ -172,12 +194,18 @@ export const CatList: Cat2SubMap = {
         { id: "dongliya", title: "🎭 Dong Liya" },
         { id: "jingtian", title: "🌟 Jing Tian 景甜" },
         { id: "others", title: "❓ Annonymous" },
-        { id: "yangmi", title: "🎀 Da Mi Mi" },
-        { id: "zhangyuyi", title: "☔ Raincoat Zhang" },
         { id: "liuyan", title: "💎 Liu Yan" },
         { id: "yangmi", title: "👑 Yang Mi 大幂幂" },
         { id: "duxiaoyu", title: "📸 Du Xiaoyu" },
         { id: "xudongdong", title: "🌠 Xu Dongdong" },
+        { id: "gulinazha", title: "🥵 Gu Li Na Zha" },
+        { id: "zhangmeng", title: "🍑 Meng Zhang" },
+        { id: "zhangxinyu", title: "😏 Zhang Xinyu" },
+        { id: "yintao", title: "💖 Yin Tao" },
+        { id: "xuanzi", title: "👀 Xuan Zi" },
+        { id: "xuanlu", title: "😍 Xuan Lu" },
+        { id: "mengziyi", title: "🍯 Meng Ziyi" },
+        { id: "zhangyuyi", title: "☔ Raincoat Zhang" },
     ].map(item => ({ ...item, cover: genJpg1(GH_ab, `abcel/main/${item.id}`)[0] })),
 
     abspecialtaste: [
@@ -248,8 +276,8 @@ export const CatList: Cat2SubMap = {
         { id: "wallpaper", title: "🖼️ Elegant Wallpaper" },
         { id: "weddings", title: "💍 Weddings" },
     ].map(item => ({ ...item, cover: genJpg1(GH_ab, `abholiday/main/${item.id}`)[0] })),
-    
-        
+
+
     bgif: [
         { id: "gif", title: "🎞️ Animated GIFs" },
     ].map(item => ({ ...item, cover: genJpg1(GH_bb, `bgif/main/${item.id}`)[0] })),

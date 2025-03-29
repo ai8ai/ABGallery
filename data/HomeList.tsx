@@ -21,8 +21,11 @@ export const HomeList: CatInterface[] = [
     { id: "abzyx", gh: "ai8ai", title: "Carol 周妍希 🔥" },
     { id: "abxlz", gh: "ai8ai", title: "Xu Lizhi 🍑 徐莉芝" },
 
+    { id: "byey", gh: "aidres8", title: "Yue Er yue💃玥儿玥" },
     { id: "absuren", gh: "ai8ai", title: "Next Door👗素人しろうと" },
+
     { id: "abcel",   gh: "ai8ai", title: "Celebrities 🌟" }, 
+    { id: "abinfluencer", gh: "ai8ai", title: "📸 Influencer 🎥" },
 
     { id: "abspecialtaste", gh: "ai8ai", title: "Special Taste 😈" },
     { id: "absketch", gh: "ai8ai", title: "Sketch & Hand-drawing ✏️" },
@@ -32,6 +35,8 @@ export const HomeList: CatInterface[] = [
 
     { id: "abplaces", gh: "ai8ai", title: "Places 🌆" },
     { id: "abholiday", gh: "ai8ai", title: "Holidays 🎉" },
+
+
 
     { id: "bgif", gh: "aidres8", title: "GIF MP4 🎞️" },
     { id: "abpast", gh: "ai8ai", title: "Past Year Collection 📸" },
