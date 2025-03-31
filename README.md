@@ -1,112 +1,90 @@
-# Welcome to Asian Beauty 👋
+# 📸 ABGallery - Free Image Hosting & Expo Gallery App
 
-Asian Beauty is a [collection](https://aidres.com) of Asian beautiful women including Japanese, Korean, Chinese, Viatnamies, Philipines, and more.
+ABGallery is an open-source **image hosting and gallery solution** that leverages **GitHub** for free, reliable storage. It includes an **Expo-powered React Native app** that makes browsing and displaying images effortless. 🚀
 
-## Get started
+---
 
-1. Download the demo published at: [googleplay](https://play.google.com/store/apps/details?id=com.aixpertlab.asianbeautyycc)
-  
-Top 10 Stunning Women Categories (十大绝色女神榜)
-不朽女神 (Bùxiǔ nǚshén) – Eternal Goddesses (Most Iconic Supermodels)
-银幕尤物 (Yínmù yóuwù) – Silver Screen Enchantresses (Hottest Hollywood Actresses)
-新世代缪斯 (Xīn shìdài miùsī) – New-Gen Muses (Rising Instagram Models)
-烈焰海滩 (Lièyàn hǎitān) – Flaming Shores (Bikini Bombshells)
-丝绸女王 (Sīchóu nǚwáng) – Silk Empress (Lingerie Queens)
-性感战士 (Xìnggǎn zhànshì) – Sensual Warriors (Fitness Goddesses)
-暗夜玫瑰 (Ànyè méiguī) – Midnight Rose (Tattooed Beauties)
-异域芳华 (Yìyù fānghuá) – Exotic Grace (Exotic & International)
-天生尤物 (Tiānshēng yóuwù) – Naturally Seductive (Curvy & Confident)
-红毯皇后 (Hóngtǎn huánghòu) – Red Carpet Queen (Glam & Red Carpet Stars)
+## ✨ Features
 
-传奇超模 (Chuánqí chāomó) – Most Iconic Supermodels
-性感好莱坞 (Xìnggǎn Hǎoláiwù) – Hottest Hollywood Actresses
-新晋网络红人 (Xīnjìn wǎngluò hóngrén) – Rising Instagram Models
-比基尼炸弹 (Bǐjīní zhàdàn) – Bikini Bombshells
-内衣女王 (Nèiyī nǚwáng) – Lingerie Queens
-健身女神 (Jiànshēn nǚshén) – Fitness Goddesses
-性感纹身 (Xìnggǎn wénshēn) – Tattooed Beauties
-异国风情 (Yìguó fēngqíng) – Exotic & International
-曲线女王 (Qūxiàn nǚwáng) – Curvy & Confident
-红毯女神 (Hóngtǎn nǚshén) – Glam & Red Carpet Stars
+✅ **Free Image Hosting**: Store and serve images directly from GitHub.  
+✅ **Built with Expo & React Native**: Cross-platform mobile app with a smooth UI.  
+✅ **Slideshow Support**: Manually navigate or autoplay images.  
+✅ **Lightweight & Fast**: Optimized for performance and easy deployment.  
+✅ **Customizable**: Easily modify the source code for your own use.  
 
+---
 
-魅惑写真 (Mèihuò xiězhēn) – Enchanting Glamour
-海滩女神 (Hǎitān nǚshén) – Beach Goddess
-蕾丝密语 (Léisi mìyǔ) – Lace Whisper (Lingerie & Boudoir)
-都市风情 (Dūshì fēngqíng) – Urban Elegance (Street & Casual)
-力量之美 (Lìliàng zhī měi) – The Beauty of Strength (Fitness & Athletic)
-神秘幻想 (Shénmì huànxiǎng) – Mystical Fantasy (Exotic & Fantasy)
+## 📲 Download the App
 
-魅力写真 (Mèilì xiězhēn) – Glamour Shots
-比基尼女神 (Bǐjīní nǚshén) – Bikini & Swimwear
-内衣与闺房 (Nèiyī yǔ guīfáng) – Lingerie & Boudoir
-街拍潮流 (Jiēpāi cháoliú) – Street & Casual
-健身女神 (Jiànshēn nǚshén) – Fitness & Athletic
-异域与幻想 (Yìyù yǔ huànxiǎng) – Exotic & Fantasy
+Try the app now on **Google Play**!  
+[![Download on Google Play](https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg)](https://play.google.com/store/apps/details?id=com.aixpertlab.asianbeautyycc)
 
-精英女王 (Jīngyīng Nǚwáng) – Elite Queen (Powerful women in business)
-霸气女总裁 (Bàqì Nǚ Zǒngcái) – Dominant CEO Goddess (Strong, independent women in leadership)
-智慧女神 (Zhìhuì Nǚshén) – Goddess of Wisdom (Women who exude intelligence and charm)
-职场尤物 (Zhíchǎng Yóuwù) – Workplace Enchantress (Chic, stylish professionals)
-西装杀手 (Xīzhuāng Shāshǒu) – Suit Killer (Women who look stunning in formal attire)
-干练女神 (Gànliàn Nǚshén) – Sharp & Capable Goddess (Confident and professional women)
+---
 
-Sultry Sirens – Bold, intense, and captivating beauty.
-Ethereal Elegance – Dreamy, soft, and angelic portraits.
-Urban Chic – Trendy, stylish, and modern fashion photography.
-Golden Hour Glow – Warm, natural, and outdoor beauty in sunlight.
-Celestial Muses – Fantasy, mystical, and otherworldly aesthetics.
-Vintage Vixens – Classic Hollywood glam, retro, and nostalgic vibes.
-Femme Fatale – Strong, confident, and seductive poses.
-Bohemian Bliss – Free-spirited, artistic, and nature-infused beauty.
-Velvet Noir – Moody, dramatic, and black-and-white elegance.
-Sporty & Fierce – Athletic, active, and empowered looks.
+## 🛠️ Installation & Setup
 
-1. Eternal Beauty (永恒之美)
-For timeless, classic, and immortal beauty.
+### Prerequisites
+- Install [Node.js](https://nodejs.org/)
+- Install [Expo CLI](https://docs.expo.dev/get-started/installation/)
 
-Forever Divine (永远的女神)
-Timeless Muse (永恒缪斯)
-Immortal Grace (不朽优雅)
-Ageless Glow (不老光彩)
+### Clone the Repository
+```bash
+git clone https://github.com/ai8ai/ABGallery.git
+cd ABGallery
+```
 
-2. Fresh & Radiant (清新耀眼)
-For youthful, refreshing, and glowing beauty.
+### Install Dependencies
+```bash
+npm install
+```
 
-Ethereal Bloom (空灵绽放)
-Luminous Charm (光辉魅力)
-Ever Radiant (恒久闪耀)
-Pure Enchantment (纯净迷人)
+### Start the Development Server
+```bash
+npx expo start
+```
 
-3. Celestial & Mystical (天界神韵)
-For goddess-like, dreamy, and otherworldly beauty.
+Scan the QR code with the **Expo Go** app to preview the project on your mobile device. 📱
 
-Celestial Grace (天仙韵致)
-Divine Aura (神圣光环)
-Moonlit Enigma (月光谜影)
-Heavenly Muse (天上缪斯)
-4. Bold & Enchanting (迷人自信)
-For captivating, powerful, and confident beauty.
+---
 
-Magnetic Allure (磁场魅力)
-Enchanted Vision (魅惑视觉)
-Velvet Glow (丝滑光彩)
-Fierce Elegance (霸气优雅)
+## 📂 Project Structure
+```
+ABGallery/
+│-- assets/          # Image assets & icons
+│-- components/      # Reusable UI components
+│-- screens/         # App screens (Home, Gallery, Settings, etc.)
+│-- app.json         # Expo configuration
+│-- package.json     # Project dependencies
+│-- App.js           # Main entry point
+```
 
+---
 
+## 🎨 Customization
 
-Bust Corset (structured, waist-cinching, cleavage-enhancing)
-Plunge (deep V or extreme neckline)
-Very High Split (leg-baring, thigh-high or beyond)
-Bodycon (skin-tight, curve-hugging)
-Sheer & Mesh (see-through, strategically revealing)
-Cutout (waist, side, chest, or back cutout designs)
-Backless (daring open-back designs)
-Off-the-Shoulder (bare shoulders, feminine & flirty)
-Halter & Strappy (crisscross straps, barely-there support)
-Lace & Satin (sensual fabrics that scream luxury)
-Mini & Micro (extra-short dresses and skirts)
-Leather & Latex (bold, edgy, and ultra-sexy)
+Want to load images from your own GitHub repository?
+1. Fork this repository.
+2. Upload your images to the `images/` folder in your repo.
+3. Update the image URLs in the app.
+4. Deploy and enjoy your custom gallery! 🎉
 
+---
 
+## 🤝 Contributing
+
+We welcome contributions! Feel free to **fork** this project, submit **pull requests**, or report issues. 💡
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📧 Contact
+
+For any questions or collaboration inquiries, feel free to reach out:
+- GitHub: [ai8ai](https://github.com/ai8ai)
+- Email: aiXpertlab@gmail.com
 

@@ -158,8 +158,7 @@ export default function SlideshowScreen() {
     
             const { uri } = await FileSystem.downloadAsync(imageUrl, fileUri);
             const asset = await MediaLibrary.createAssetAsync(uri);
-            await MediaLibrary.createAlbumAsync("Downloaded Images", asset, false);
-    
+            await MediaLibrary.createAlbumAsync("Downloaded Images", asset, false);    
             showToast("Download complete! Image saved.");
         } catch (error) {
             console.error("Download Error:", error);
