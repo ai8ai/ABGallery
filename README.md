@@ -110,23 +110,3 @@ Leather & Latex (bold, edgy, and ultra-sexy)
 
 
 
-为了尽快出活儿，抛砖引玉一些接地气的方法论，仅供参考：
-
-开发过程：
-1.✅Business Analysis: collect user requirements: 既要还要，越全越好
-2.✅Business Design: 只保留和产品定位(accounting?)相符的部分remove not-accounting-system-requirements (like Sales Order, PO, Workflow)
-    这个结段讨论的主题：这个function是否需要
-3.🔄System Design (current stage): 
-
-    进入这个阶段的function都是需要的。剩下的是个先后顺序的事儿。考虑的维度变成两个：谁用？使用频率？
-
-    3.1 Core Functions: 高频高发(每天用，所有人用)，直奔主题，无任何干扰，最短时间完成每天通常要干的活儿(accountant/accounting firm每日工作流程相同部分，从design到development严格遵守SRP)。
-    📌完成3.1，引入专业accountant以marketing为目的进行测试，为marketing做准备，其他非核心功能我们协助完成。
-
-    3.2 Working Functions: 高频低发(每天用，部分人用)，极致体验，适当扩充功能（accountant/accounting firm每日工作流程不同部分?）
-    📌完成3.2，开始marketing，培育种子用户，实现revenue。其他低频功能我们后台完成。
-
-    3.3 General Functions: 低频高发(所有人偶尔用)，严谨，与上述高频场景严格物理区隔，避免因小失大（比如：权限申请, email更改）
-    📌完成3.3，转交给marketing department, 开发项目结束。其余功能由maintainence team接管。
-
-    3.4 辅助功能：低频低发（部分人偶尔用），能用就行，实在不行还有service ticket。(比如：公司地址更改)
