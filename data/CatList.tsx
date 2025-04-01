@@ -41,13 +41,6 @@ export const CatList: Cat2SubMap = {
         { id: "sub_ccwedding", title: "Bridal Desire 👰" }
     ].map(item => ({ ...item, cover: genJpg1(GH_bb, `${item.id.slice(4)}/main/cat`)[0] })),
 
-    byey: [
-        { id: "sultry", title: "Simply Irresistible 💘" },
-        { id: "stunning", title: "🔥 Daily Fresh & Hot Trends" },
-        { id: "che", title: "👘 Elegant in Cheongsam" },
-        { id: "oneshoulder", title: "👑 Fantasy & Queens" },
-    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `${item.id.slice(4)}/main/cat`)[0] })),
-
     bwxy: [
         { id: "sub_xycos", title: "Cosplay Queens 🎭" },
         { id: "sub_xywearing", title: "Sassy in Body 👚" },
@@ -58,6 +51,15 @@ export const CatList: Cat2SubMap = {
         { id: "sub_xyseethrough", title: "Teasing Transparency 🔍" },
         { id: "sub_xyplunge", title: "🔥Plunging Passion" },
     ].map(item => ({ ...item, cover: genJpg1(GH_bb, `${item.id.slice(4)}/main/cat`)[0] })),
+
+
+    byey: [
+        { id: "sultry", title: "Simply Irresistible 💘" },
+        { id: "stunning", title: "🔥 Daily Fresh & Hot Trends" },
+        { id: "che", title: "👘 Elegant in Cheongsam" },
+        { id: "oneshoulder", title: "👑 Fantasy & Queens" },
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `byey/main/${item.id}`)[0] })),
+
 
     abinfluencer: [
         { id: "akasha", title: "Akasha's Allure 🔥" },
@@ -134,21 +136,24 @@ export const CatList: Cat2SubMap = {
         { id: "strapless", title: "👗 Bare & Beautiful" },
     ].map(item => ({ ...item, cover: genJpg1(GH_ab, `abccc/main/${item.id}`)[0] })),
 
+    
     ablxl: [
-        { id: "bodycon", title: "🛏️ Cozy & Seductive Moments" },
+        { id: "afterbath", title: "🛏️ Just Stepped Out" },
+        { id: "bodycon", title: "💃 Sensual & Sculpted Bodycon" },
         { id: "cheongsam", title: "👘 Elegant in Cheongsam" },
         { id: "demin_short", title: "💎 Sublime Demin" },
-        { id: "fishdress", title: "🐠 Daily Fresh & Hot Trends" },
+        { id: "fishdress", title: "🐠 Mythical Mermaid" },
         { id: "fur", title: "🧥 Luxurious Fur Looks" },
-        { id: "halter", title: "💃 Halter Neck Elegance" },
+        { id: "halter", title: "🌶️ Halter Neck Elegance" },
+        { id: "home", title: "🏡 Cozy Chic at Home" },
+        { id: "office", title: "🎓 Enchanting in Office" },
         { id: "onesholder", title: "👗 Bold One-Shoulder Styles" },
         { id: "plunge", title: "🔥Plunging Passion" },
         { id: "split", title: "💃Split Siren" },
         { id: "slip", title: "🪶 Silken Slip Dress" },
         { id: "student", title: "📚 Student Charm" },
-        { id: "office", title: "🎓 Enchanting in Office" },
         { id: "whiteshirt", title: "🤍 Classic White Shirt" },
-        { id: "afterbath", title: "🌶️ Just Stepped Out" },
+        { id: "sultry", title: "🔥 Sultry Allure" },
     ].map(item => ({ ...item, cover: genJpg1(GH_ab, `ablxl/main/${item.id}`)[0] })),
 
     abzyx: [
