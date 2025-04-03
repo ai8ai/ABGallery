@@ -72,7 +72,8 @@ export const CatList: Cat2SubMap = {
         { id: "wangyuchun", title: "Wang Yuchun's Radiance ✨" },
         { id: "yanmo", title: "Yanmo's Enigma 🔮" },
         { id: "zhangxinxin", title: "Zhang Xinxin's Glow 🌟" },
-        { id: "zhouyuxi", title: "Zhou Yuxi's Elegance 🎀" }
+        { id: "zhouyuxi", title: "Zhou Yuxi's Elegance 🎀" },
+        { id: "ula", title: "Chuir 嘉绮里 Ula 👠" },
     ].map(item => ({ ...item, cover: genJpg1(GH_ab, `abinfluencer/main/${item.id}`)[0] })),
 
     bnabi: [
