@@ -4,30 +4,31 @@ import { genJpg1, genGifList, genJpgList } from '@/utils/genImageList'
 
 const GH_ab = "ai8ai"
 const GH_bb = "aidres8"
+const GH_sb = "silkbeauty"
 
 export const CatList: Cat2SubMap = {
 
     abstunning: [
         { id: "blooming_beauty", title: "🌺 Blooming Beauty" },
-        { id: "elitequeen", title: "🦵 Elite Queen" },
-        { id: "exoticgrace", title: "🔥 Exotic Grace" },
+        { id: "cutout", title: "Cutout Couture ✂️" },
         { id: "forever_divine", title: "👼 Forever Divine" },
-        { id: "lingerieboudoir", title: "💃 Lingerie Boudoir" },
-        { id: "pureenchantment", title: "💖 Pure Enchantment" },
-        { id: "sensualwarriors", title: "👗 Sensual Warriors" },
-        { id: "vintagevixens", title: "🎀 Vintage Vixens" },
-    ].map(item => ({ ...item, cover: genJpg1(GH_ab, `abstunning/main/${item.id}`)[0] })),
+        { id: "naturally_seductive", title: "💃 Naturally Seductive" },
+        { id: "pure_enchantment", title: "💖 Pure Enchantment" },
+        { id: "sensual_warrior", title: "👗 Sensual Warriors" },
+        { id: "elite_queen", title: "🦵 Elite Queen" },
+        { id: "ai_grace", title: "🔥 AI Grace" },
+    ].map(item => ({ ...item, cover: genJpg1(GH_sb, `abstunning/main/${item.id}`)[0] })),
 
     ccmain: [
-        { id: "sub_cc1shoulder", title: "Graceful 🩰 One Shoulder" },
-        { id: "sub_ccbankunyuu", title: " 🌰 Bankunyuu" },
-        { id: "sub_ccbody", title: "🦵Goddess" },
-        { id: "sub_ccche", title: "Cheongsam 🌸 Collection" },
-        { id: "sub_ccdemin", title: "👖Demin👖Desire👖" },
-        { id: "sub_ccsultry", title: "Sultry Aura 🔥" },
-        { id: "sub_ccbodycon", title: "👗Curves in Command💄" },
-        { id: "sub_ccelegance", title: "🌸Elegance" },
-        { id: "sub_ccformal", title: "Enchanting 💼 Classic" },
+        { id: "sub_cc1shoulder", title: " 🩰 One Shoulder" },
+        { id: "sub_ccbankunyuu", title: "Bankunyuu 🌰" },
+        { id: "sub_ccbody", title: "🦵Goddess Body" },
+        { id: "sub_ccche", title: "Cheongsam 🌸" },
+        { id: "sub_ccdemin", title: "👖Demin👖" },
+        // { id: "sub_ccsultry", title: "Sultry Aura 🔥" },
+        { id: "sub_ccbodycon", title: "💄Sculpted Bodycon" },
+        { id: "sub_ccelegance", title: "Elegance🌸" },
+        { id: "sub_ccformal", title: "💼 Classic" },
         { id: "sub_ccgarage", title: " Garage 🚗" },
         { id: "sub_cchalter", title: "🎀 Allure en Halter" },
         { id: "sub_cchighneck", title: "👗 Chic in High-Neck" },
@@ -42,14 +43,14 @@ export const CatList: Cat2SubMap = {
     ].map(item => ({ ...item, cover: genJpg1(GH_bb, `${item.id.slice(4)}/main/cat`)[0] })),
 
     bwxy: [
-        { id: "sub_xycos", title: "Cosplay Queens 🎭" },
         { id: "sub_xywearing", title: "Sassy in Body 👚" },
+        { id: "sub_xyplunge", title: "🔥Plunging Passion" },
         { id: "sub_xysultry", title: "Simply Irresistible 💘" },
         { id: "sub_xybodycon", title: "👗Curves in Command💄" },
         { id: "sub_xycheongsam", title: "Elegant in Cheongsam 🏮" },
         { id: "sub_xyclassic", title: "Enchanting 💼 Classic" },
         { id: "sub_xyseethrough", title: "Teasing Transparency 🔍" },
-        { id: "sub_xyplunge", title: "🔥Plunging Passion" },
+        { id: "sub_xycos", title: "Cosplay Queens 🎭" },
     ].map(item => ({ ...item, cover: genJpg1(GH_bb, `${item.id.slice(4)}/main/cat`)[0] })),
 
 

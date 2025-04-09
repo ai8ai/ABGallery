@@ -14,9 +14,11 @@ export const SubList: Cat2SubMap = {
         { id: "sultry", title: "🔥Sultry Seduction" }
     ].map(item => ({ ...item, cover: genJpg1(AID, `cc1shoulder/main/${item.id}`)[0] })),
     sub_ccbankunyuu: [
+        { id: "tubetop", title: "🎀 Tube Top" },
         { id: "sultry", title: "Sultry Aura 🔥" },
         { id: "xstrap", title: "💫 Crisscross Desire" },
         { id: "singleband", title: "Minimal Muse 🎨" },
+        { id: "camisole", title: "🌸Chic Camisole" },
         { id: "picnic", title: "Picnic Play 🍉" },
         { id: "nude", title: "🌿 Naturally Nude" },
         { id: "keyhole", title: "Keyhole Temptation 🔑" },
@@ -32,24 +34,24 @@ export const SubList: Cat2SubMap = {
         { id: "s", title: "🔥S-Style Seduction" }
     ].map(item => ({ ...item, cover: genJpg1(AID, `ccbody/main/${item.id}`)[0] })),
     sub_ccche: [
+        { id: "keyhole", title: "Keyhole Temptation 🔑" },
+        { id: "split", title: "💋Split Siren" },
         { id: "floral_color", title: "Petal Splash 🌼" },
         { id: "floral_dragongown", title: "Dragon Bloom 🐉" },
         { id: "floral_green", title: "Green Petal 🌿" },
         { id: "floral_greentea", title: "Greentea Bloom 🍵" },
         { id: "floral_monochrome", title: "Monochrome Bloom ⚫⚪" },
-        { id: "floral_violet", title: "Violet Blossom 💜" },
         { id: "floral_yellow", title: "Golden Petals 🌟" },
         { id: "japanese", title: "Cherry Kimono 🌸" },
-        { id: "night", title: "Midnight Bloom 🌙" },
         { id: "outdoor", title: "Floral Escape 🍃" },
         { id: "red", title: "Crimson Muse 🔴" },
         { id: "solidcolor", title: "Solid Chic ⚡" },
-        { id: "lady", title: "Gentlewomen ❤️" }
     ].map(item => ({ ...item, cover: genJpg1(AID, `ccche/main/${item.id}`)[0] })),
-
+    
+    
     sub_ccsultry: [
         { id: "backless", title: "💫Bare Backless" },
-        { id: "bath", title: "🛁Cozy & Seductive Bath Moments" },
+        { id: "bath", title: "🛁Cozy Bath Moments" },
         { id: "bankunyuu", title: "🦵Bankunyuu🌰" },
         { id: "bombshells", title: "💃Bomb Shells" },
         { id: "camisole", title: "🌸Chic Camisole" },
@@ -74,7 +76,7 @@ export const SubList: Cat2SubMap = {
         { id: "oneshoulder", title: "One-Shoulder Icon 💃" },
         { id: "outdoor", title: "Wild Outdoors 🌲" },
         { id: "plunge", title: "🔥Plunging Passion" },
-        { id: "red", title: "❤️Ravishing Red" },
+        { id: "choker", title: "❤️Ravishing Choker" },
         { id: "short", title: "Cutoff Cutie 👖" },
         { id: "yellowgreen", title: "Citrus Denim 🍋" }
     ].map(item => ({ ...item, cover: genJpg1(AID, `ccdemin/main/${item.id}`)[0] })),
@@ -109,14 +111,15 @@ export const SubList: Cat2SubMap = {
         { id: "longskirt_white", title: "❄️Winter White" },
         { id: "mermaid", title: "🧜‍♀️ Enchanted Mermaid" },
         { id: "minimal", title: "💃Flirty Minimal" },
+        { id: "uniform", title: "Uniform Grace 🎽" },
         { id: "yellow", title: "🌼Golden Glow" },
-        { id: "sweater", title: "🌌 Velvet Twilight" },
-        { id: "uniform", title: "Uniform Grace 🎽" }
+        { id: "sparkling", title: "✨ Sparkling Retreat" },
+        { id: "sweater", title: "🧣 Soft Sweater Seduction" },
     ].map(item => ({ ...item, cover: genJpg1(AID, `ccelegance/main/${item.id}`)[0] })),
+
 
     sub_ccformal: [
         { id: "bodycon_blueshirt", title: "Cool & Curvy 💙" },
-        { id: "bodycon_lace", title: "Lacy Vision 🌹" },
         { id: "bodycon_pink", title: "Blushing Bodycon 🌸" },
         { id: "bodycon_ruched", title: "Ruched Royale 👗" },
         { id: "bodycon_violet", title: "Violet Affair 💜" },
@@ -132,9 +135,8 @@ export const SubList: Cat2SubMap = {
         { id: "stair", title: "Stairway to Glam ✨" },
         { id: "suite", title: "Boss Babe 👩‍💼" },
         { id: "stockings", title: "Laced in Elegance 👠" },
-        { id: "uniform", title: "Uniform Grace 🎽" },
         { id: "sultry", title: "Sultry Statement 🔥" },
-        { id: "sweater", title: "🌌 Velvet Twilight" }
+        { id: "uniform", title: "Uniform Grace 🎽" },
     ].map(item => ({ ...item, cover: genJpg1(AID, `ccformal/main/${item.id}`)[0] })),
     sub_ccgarage: [
         { id: "bodycon", title: "💥Bold Bodycon" },
@@ -172,7 +174,6 @@ export const SubList: Cat2SubMap = {
         { id: "pink", title: "🌸 Blush & Bubbles" },
         { id: "ruched", title: "💘 Ruched Romance" },
         { id: "seethrough", title: "✨Sheer Sensation" },
-        { id: "servant", title: "Servant Queens 🎭" },
         { id: "skyline", title: "🌃 Skyline Chic" },
         { id: "sultry", title: "Sultry Statement 🔥" },
         { id: "sofa", title: "🛋️ Sofa Soft" },
@@ -215,8 +216,9 @@ export const SubList: Cat2SubMap = {
         { id: "pure", title: "Angel's Temptation 😇" },
         { id: "selfi", title: "Crimson Muse 🔴" },
         { id: "sweatheart", title: "Heartfelt ❤️" },
-
+        { id: "shower", title: "🛁Cozy Bath Moments" },
     ].map(item => ({ ...item, cover: genJpg1(AID, `ccnextdoor/main/${item.id}`)[0] })),
+
 
     sub_ccplunge: [
         { id: "bodycon", title: "🔥 Bodycon Desire" },
@@ -230,7 +232,6 @@ export const SubList: Cat2SubMap = {
         { id: "miniskirt", title: "💃 Flirty Mini" },
         { id: "pink", title: "🌸 Blush & Bubbles" },
         { id: "red", title: "Crimson Muse 🔴" },
-        { id: "sultry", title: "🔥 Sultry Seduction" },
         { id: "tubetop", title: "🎀 Tube Top" },
     ].map(item => ({ ...item, cover: genJpg1(AID, `ccplunge/main/${item.id}`)[0] })),
     sub_ccspa: [
@@ -253,7 +254,6 @@ export const SubList: Cat2SubMap = {
         { id: "yellow_sultry", title: "🔥 Yellow Desire" },
     ].map(item => ({ ...item, cover: genJpg1(AID, `ccspa/main/${item.id}`)[0] })),
 
-
     sub_cccos: [
         { id: "sultry", title: "🛁 Spa Siren" },
         { id: "rabbit", title: "🧣 Rabbit" },
@@ -265,14 +265,6 @@ export const SubList: Cat2SubMap = {
         { id: "outdoor", title: "Floral Escape 🍃" },
         { id: "indoor", title: "👑 Fantasy & Queens" },
     ].map(item => ({ ...item, cover: genJpg1(AID, `ccwedding/main/${item.id}`)[0] })),
-
-
-
-
-
-
-
-
 
     sub_xycos: [
         { id: "sultry", title: "🛁 Spa Siren" },
@@ -289,6 +281,7 @@ export const SubList: Cat2SubMap = {
         { id: "sultry", title: "🔥Sultry Seduction" }
     ].map(item => ({ ...item, cover: genJpg1(AID, `xywearing/main/${item.id}`)[0] })),
     sub_xysultry: [
+        { id: "braless", title: "👙No Bra, No Rules" },
         { id: "backless", title: "💫Bare Backless" },
         { id: "haltertop", title: "Halter Dream 💭"},
         { id: "oneshoulder", title: "One-Shoulder Icon 💃" },
