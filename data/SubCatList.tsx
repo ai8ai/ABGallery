@@ -47,8 +47,8 @@ export const SubList: Cat2SubMap = {
         { id: "red", title: "Crimson Muse 🔴" },
         { id: "solidcolor", title: "Solid Chic ⚡" },
     ].map(item => ({ ...item, cover: genJpg1(AID, `ccche/main/${item.id}`)[0] })),
-    
-    
+
+
     sub_ccsultry: [
         { id: "backless", title: "💫Bare Backless" },
         { id: "bath", title: "🛁Cozy Bath Moments" },
@@ -269,6 +269,8 @@ export const SubList: Cat2SubMap = {
     sub_xycos: [
         { id: "sultry", title: "🛁 Spa Siren" },
         { id: "halter", title: "Halter Dream 💭" },
+        { id: "police", title: "✂️ Policeman" },
+
     ].map(item => ({ ...item, cover: genJpg1(AID, `xycos/main/${item.id}`)[0] })),
     sub_xywearing: [
         { id: "croptop", title: "Sassy in Croptops 👚" },
@@ -283,9 +285,11 @@ export const SubList: Cat2SubMap = {
     sub_xysultry: [
         { id: "braless", title: "👙No Bra, No Rules" },
         { id: "backless", title: "💫Bare Backless" },
-        { id: "haltertop", title: "Halter Dream 💭"},
-        { id: "oneshoulder", title: "One-Shoulder Icon 💃" },
         { id: "corset", title: "🔥Corset Passion" },
+        { id: "haltertop", title: "Halter Dream 💭" },
+        { id: "oneshoulder", title: "One-Shoulder Icon 💃" },
+        { id: "swimming", title: "Swimming Breeze 🌊" },
+        { id: "tubetop", title: "🎀 Tube Top" },
     ].map(item => ({ ...item, cover: genJpg1(AID, `xysultry/main/${item.id}`)[0] })),
 
 
@@ -298,30 +302,32 @@ export const SubList: Cat2SubMap = {
         { id: "plunge", title: "🔥Plunging Passion" },
         { id: "sultry", title: "🔥Sultry Seduction" },
         { id: "sweater", title: "🌌 Velvet Twilight" },
-            ].map(item => ({ ...item, cover: genJpg1(AID, `xybodycon/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(AID, `xybodycon/main/${item.id}`)[0] })),
     sub_xycheongsam: [
         { id: "keyhole", title: "Keyhole Temptation 🔑" },
         { id: "leggy", title: "🦵 Leggy & Stunning" },
         { id: "laceband", title: "🔥Sultry Lace Band" },
         { id: "split", title: "💃Split Siren" },
         { id: "traditional", title: "👑Traditional Glamour" },
-            ].map(item => ({ ...item, cover: genJpg1(AID, `xycheongsam/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(AID, `xycheongsam/main/${item.id}`)[0] })),
     sub_xyclassic: [
         { id: "assistant", title: "Assistant Blush 🩷" },
         { id: "bodycon", title: "👗Bodycon Temptation" },
         { id: "coat", title: "Cozy Layers 🧥 Coat" },
         { id: "elegance", title: "🥂 Elegance" },
-        { id: "graceful", title: "👑 Fantasy & Queens" },
-        { id: "nextdoor", title: "Irresistible Charm💋Next Door" },
+        { id: "gown", title: "👑Gown Glamour" },
+        { id: "graceful", title: "🌸 Fantasy & Queens" },
         { id: "kitchen", title: "Mystic Kitchen 🔵" },
+        { id: "longskirt", title: "👗 Grace in Length" },
         { id: "office", title: "Executive Cool 👔" },
         { id: "pants", title: "Power Pants 👖" },
         { id: "palazzo", title: "Stunning Palazzo 👖" },
         { id: "student", title: "School Muse 🎓" },
+        { id: "teacher", title: "Teacher Muse 🎓" },
         { id: "uniform", title: "Uniform Grace 🎽" },
         { id: "whiteshirt", title: "Crisp Contrast 👕" },
-        { id: "gown", title: "👑Gown Glamour" },
-            ].map(item => ({ ...item, cover: genJpg1(AID, `xyclassic/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(AID, `xyclassic/main/${item.id}`)[0] })),
+    
     sub_xyseethrough: [
         { id: "blacksilk", title: "🖤Black Pantyhose Allure" },
         { id: "bodycon", title: "👗Bodycon Temptation" },
@@ -329,14 +335,20 @@ export const SubList: Cat2SubMap = {
         { id: "split", title: "💃Split Siren" },
         { id: "strapless", title: "❤️ Crimson Temptress" },
         { id: "sultry", title: "🔥Sultry Seduction" },
-            ].map(item => ({ ...item, cover: genJpg1(AID, `xyseethrough/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(AID, `xyseethrough/main/${item.id}`)[0] })),
     sub_xyplunge: [
         { id: "drunk", title: "Midnight Bloom 🌙" },
         { id: "fur", title: "🐾 Fur Allure" },
         { id: "slip", title: "🪶 Silken Slip Dress" },
         { id: "split", title: "💃Split Siren" },
-        { id: "strapless", title: "❤️ Crimson Temptress" },
+        { id: "seethrough", title: "✨Sheer Sensation" },
         { id: "sultry", title: "🔥Sultry Seduction" },
-            ].map(item => ({ ...item, cover: genJpg1(AID, `xyplunge/main/${item.id}`)[0] })),
-
+    ].map(item => ({ ...item, cover: genJpg1(AID, `xyplunge/main/${item.id}`)[0] })),
+    sub_xynextdoor: [
+        { id: "outdoor", title: "Outdoor Escape 🍃" },
+        { id: "floral", title: "🌸 Flirty Florals" },
+        { id: "home", title: "Home Glow 🏨" },
+        { id: "afterwork", title: "🛏️ Just Stepped Out" },
+        { id: "leisuretime", title: "👑 Calm & Serene" },
+    ].map(item => ({ ...item, cover: genJpg1(AID, `xynextdoor/main/${item.id}`)[0] })),
 };
