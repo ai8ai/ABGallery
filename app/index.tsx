@@ -1,7 +1,7 @@
 // index.tsx
+import React, { useCallback } from 'react';
 import { router } from 'expo-router';
 import { View, FlatList, Image, Text, TouchableOpacity } from 'react-native';
-
 import { CatInterface } from '@/config/type';
 import styles from '@/config/styles';
 import { HomeList } from '@/data/HomeList';
@@ -12,22 +12,13 @@ const HomeScreen = () => {
             pathname: "/CatScreen",
             params: {
                 repo: item.id,         // repo:abstunning          gh: ai8ai     title: "Hot 🧨 Stunning"
-                gh:   item.gh,          // HomeList provids: gh, repo, title
+                gh: item.gh,          // HomeList provids: gh, repo, title
                 title: item.title,           // for updating the title of (stacks), not passing down 
             },
         });
     };
 
-    const renderItem = ({ item }: { item: CatInterface }) => {
-        if (item.id.startsWith("div")) {
-            return (
-                <View style={styles.dividerContainer}>
-                    <Text style={styles.dividerText}>❤️Yang Chenchen Yome Sugar Exclusive🌹</Text>
-                    <View style={styles.dividerLine} />
-                </View>
-            );
-        }
-
+    const renderItem = useCallback(({ item }: { item: CatInterface }) => {
         return (
             <TouchableOpacity
                 style={styles.catContainer}
@@ -39,7 +30,7 @@ const HomeScreen = () => {
                 </Text>
             </TouchableOpacity>
         );
-    };
+    }, [handleItemPress]);
 
 
     return (
