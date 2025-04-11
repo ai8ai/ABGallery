@@ -238,7 +238,7 @@ export const CatList: Cat2SubMap = {
         { id: "bodycon", title: "🔥 Sensual & Sculpted Bodycon" },
         { id: "cheongsam", title: "💃 Elegant in Timeless Cheongsam" },
         { id: "demin", title: "Casual Chic in Demin 👖" },
-        { id: "desktop_wallpaper", title: "👔 Undone Desire" },
+        { id: "desktop_wallpaper", title: "👔 Desktop" },
         { id: "floral", title: "🌸 Flirty Floral Charms" },
         { id: "haltertop", title: "🎀 Allure en Halter" },
         { id: "heart", title: "🖤 Mysterious Black Heart" },
@@ -272,7 +272,7 @@ export const CatList: Cat2SubMap = {
         { id: "weddings", title: "💍 Weddings" },
     ].map(item => ({ ...item, cover: genJpg1(GH_ab, `abholiday/main/${item.id}`)[0] })),
 
-    bgif: [
+    bgif: [ 
         { id: "gif", title: "🎞️ Animated GIFs" },
     ].map(item => ({ ...item, cover: genJpg1(GH_bb, `bgif/main/${item.id}`)[0] })),
     abpast: [

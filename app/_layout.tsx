@@ -18,5 +18,5 @@ export default function Layout() {
             </GestureHandlerRootView>
             <StatusBar style="light" translucent />
         </>
-    );
+    ); 
 }
