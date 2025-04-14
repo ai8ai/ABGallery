@@ -8,26 +8,29 @@ const GH_sb = "silkbeauty"
 
 export const CatList: Cat2SubMap = {
 
+    sart: [
+        { id: "sub_ssketch", title: "🎨Artistic Sketches👚" },
+        { id: "sub_sholiday", title: "🔥Holidays" },
+        { id: "sub_sdesktop", title: "Simply Irresistible Desktop💘" },
+        { id: "sub_sscene", title: "⛳ Glam on the Green" },
+    ].map(item => ({ ...item, cover: genJpg1(GH_sb, `${item.id.slice(4)}/main/cat`)[0] })),
+
+
+
     sai: [
         { id: "backless", title: "💫Bare Backless" },
         { id: "bakunyuu", title: "🍈 Voluptuous Curves" },
         { id: "camisole", title: "🌸Chic Camisole" },
         { id: "cosplay", title: "🎭 Cosplay Fantasy" },
         { id: "demins", title: "👖 Casual Chic in Demin" },
-
-        { id: "chubby", title: "👑 Regal Fantasy" },
+        { id: "freshair", title: "🔥 Daily Fresh" },
         { id: "lolita", title: "😇 Angelic Innocence" },
-        { id: "lowcut", title: "🔥Low-Cut Luxe" },
-        { id: "mid", title: "🕰️ Timeless Elegance" },
-        { id: "middleeast", title: "🕌 Exotic Allure" },
-        { id: "nextdoor", title: "🏡 Sweet Next Door" },
-        { id: "socialite", title: "💃 Flirty Socialite" },
-        { id: "somebody", title: "🌟 Mystery Muse" },
-        { id: "square", title: "📏 Sculpted Beauty" },
+        { id: "oneshoulder", title: "👑 Fantasy & Queens" },
+        { id: "outdoor", title: "Floral Escape 🍃" },
+        { id: "slip", title: "🎭 Sultry Slip" },
+        { id: "strapless", title: "💃 Bare & Beautiful" },
         { id: "stunning", title: "🔥 Breathtaking & Stunning" },
-        { id: "travel", title: "✈️ Wanderlust Travel" },
-        { id: "sultry", title: "Sultry Aura 🔥" },
-    ].map(item => ({ ...item, cover: genJpg1(GH_sb, `abstunning/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_sb, `sai/main/${item.id}`)[0] })),
 
 
     abstunning: [
@@ -238,18 +241,6 @@ export const CatList: Cat2SubMap = {
         { id: "legfeet", title: "🦵 Poise in Every Step" },
     ].map(item => ({ ...item, cover: genJpg1(GH_ab, `abspecialtaste/main/${item.id}`)[0] })),
 
-    absketch: [
-        { id: "sketch", title: "🎨 Artistic Sketches" },
-        { id: "history", title: "🏡 History" },
-        { id: "face", title: "🎭 Mesmerizing Face"},
-        { id: "flower", title: "🌸 Blooming Elegance"},
-        { id: "human", title: "👤 Divine Form"},
-        { id: "legfinger", title: "🦵 Leggy Finger Allure"},
-        { id: "lips", title: "💋 Tempting Lips"},
-        { id: "nature", title: "🍃 Nature’s Charm"},
-        { id: "lightandshadow", title: "💡 Light & Shadow Drama"},
-
-    ].map(item => ({ ...item, cover: genJpg1(GH_ab, `absketch/main/${item.id}`)[0] })),
 
     abmini: [
         { id: "bakunyuu", title: "🍑 Lush & Voluptuous Curves" },
@@ -295,12 +286,6 @@ export const CatList: Cat2SubMap = {
         { id: "night", title: "🌙 Midnight Glamour & Nightlife" },
     ].map(item => ({ ...item, cover: genJpg1(GH_ab, `abplaces/main/${item.id}`)[0] })),
 
-    abholiday: [
-        { id: "luneryear", title: "🎊 Chinese New Year" },
-        { id: "deco", title: "💎 Sublime Décolleté" },
-        { id: "wallpaper", title: "🖼️ Elegant Wallpaper" },
-        { id: "weddings", title: "💍 Weddings" },
-    ].map(item => ({ ...item, cover: genJpg1(GH_ab, `abholiday/main/${item.id}`)[0] })),
 
     bgif: [ 
         { id: "gif", title: "🎞️ Animated GIFs" },

@@ -33,7 +33,7 @@ export const HomeList: CatInterface[] = [
     { id: "abplaces", gh: "ai8ai", title: "Scenarios 🌆" },
 
     { id: "sart", gh: "silkbeauty", title: "🎨 Artistic Elegance" },
-    { id: "sai", gh: "silkbeauty", title: "DeepSeek Generated🎉" },
+    { id: "sai",  gh: "silkbeauty", title: "DeepSeek Generated🎉" },
 
     
 ].map(item => ({...item,

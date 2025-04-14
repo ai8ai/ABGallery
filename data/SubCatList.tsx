@@ -2,7 +2,9 @@
 import { Cat2SubMap } from '@/config/type';
 import { genJpg1 } from '@/utils/genImageList'
 
-const AID = "aidres8"
+const GH_ab = "ai8ai"
+const GH_bb = "aidres8"
+const GH_sb = "silkbeauty"
 
 export const SubList: Cat2SubMap = {
     sub_cc1shoulder: [
@@ -12,7 +14,7 @@ export const SubList: Cat2SubMap = {
         { id: "gown", title: "👑Gown Glamour" },
         { id: "leggy", title: "🦵Leggy Goddess" },
         { id: "sultry", title: "🔥Sultry Seduction" }
-    ].map(item => ({ ...item, cover: genJpg1(AID, `cc1shoulder/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `cc1shoulder/main/${item.id}`)[0] })),
     sub_ccbankunyuu: [
         { id: "tubetop", title: "🎀 Tube Top" },
         { id: "sultry", title: "Sultry Aura 🔥" },
@@ -24,7 +26,7 @@ export const SubList: Cat2SubMap = {
         { id: "keyhole", title: "Keyhole Temptation 🔑" },
         { id: "croptop", title: "Sassy in Croptops 👚" },
         { id: "cutout", title: "Cutout Couture ✂️" },
-    ].map(item => ({ ...item, cover: genJpg1(AID, `ccbankunyuu/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `ccbankunyuu/main/${item.id}`)[0] })),
 
     sub_ccbody: [
         { id: "back", title: "🔙 Elegance from Behind" },
@@ -32,7 +34,7 @@ export const SubList: Cat2SubMap = {
         { id: "leg", title: "🦵 Leggy & Stunning" },
         { id: "face", title: "😊 Face" },
         { id: "s", title: "🔥S-Style Seduction" }
-    ].map(item => ({ ...item, cover: genJpg1(AID, `ccbody/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `ccbody/main/${item.id}`)[0] })),
     sub_ccche: [
         { id: "keyhole", title: "Keyhole Temptation 🔑" },
         { id: "split", title: "💋Split Siren" },
@@ -46,7 +48,7 @@ export const SubList: Cat2SubMap = {
         { id: "outdoor", title: "Floral Escape 🍃" },
         { id: "red", title: "Crimson Muse 🔴" },
         { id: "solidcolor", title: "Solid Chic ⚡" },
-    ].map(item => ({ ...item, cover: genJpg1(AID, `ccche/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `ccche/main/${item.id}`)[0] })),
 
 
     sub_ccsultry: [
@@ -65,7 +67,7 @@ export const SubList: Cat2SubMap = {
         { id: "tubetop", title: "🎀 Tube Top" },
         { id: "stripper", title: "👠Sultry Stripper" }
 
-    ].map(item => ({ ...item, cover: genJpg1(AID, `ccsultry/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `ccsultry/main/${item.id}`)[0] })),
     sub_ccdemin: [
         { id: "backless", title: "Backless Rebel 🔥" },
         { id: "bandeau", title: "Bold Bandeau 👙" },
@@ -79,7 +81,7 @@ export const SubList: Cat2SubMap = {
         { id: "choker", title: "❤️Ravishing Choker" },
         { id: "short", title: "Cutoff Cutie 👖" },
         { id: "yellowgreen", title: "Citrus Denim 🍋" }
-    ].map(item => ({ ...item, cover: genJpg1(AID, `ccdemin/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `ccdemin/main/${item.id}`)[0] })),
 
     sub_ccbodycon: [
         { id: "car", title: "🏎️Red Hot Ride" },
@@ -97,7 +99,7 @@ export const SubList: Cat2SubMap = {
         { id: "slip", title: "🪶 Silken Slip Dress" },
         { id: "sultry", title: "🔥 Sultry Allure" },
         { id: "whiteshirt", title: "Crisp Contrast 👕" }
-    ].map(item => ({ ...item, cover: genJpg1(AID, `ccbodycon/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `ccbodycon/main/${item.id}`)[0] })),
     sub_ccelegance: [
         { id: "beadedmesh", title: "✨ Beaded Mirage" },
         { id: "bench", title: "🪑 Beneath the Bench" },
@@ -115,7 +117,7 @@ export const SubList: Cat2SubMap = {
         { id: "yellow", title: "🌼Golden Glow" },
         { id: "sparkling", title: "✨ Sparkling Retreat" },
         { id: "sweater", title: "🧣 Soft Sweater Seduction" },
-    ].map(item => ({ ...item, cover: genJpg1(AID, `ccelegance/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `ccelegance/main/${item.id}`)[0] })),
 
 
     sub_ccformal: [
@@ -137,13 +139,13 @@ export const SubList: Cat2SubMap = {
         { id: "stockings", title: "Laced in Elegance 👠" },
         { id: "sultry", title: "Sultry Statement 🔥" },
         { id: "uniform", title: "Uniform Grace 🎽" },
-    ].map(item => ({ ...item, cover: genJpg1(AID, `ccformal/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `ccformal/main/${item.id}`)[0] })),
     sub_ccgarage: [
         { id: "bodycon", title: "💥Bold Bodycon" },
         { id: "lowcut", title: "🔥Low-Cut Luxe" },
         { id: "laceband", title: "⛓️Red Chain Glam" },
         { id: "motor", title: "Motor Muse 🏍️" }
-    ].map(item => ({ ...item, cover: genJpg1(AID, `ccgarage/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `ccgarage/main/${item.id}`)[0] })),
 
     sub_cchalter: [
         { id: "bodycon", title: "🔥 Bodycon Desire" },
@@ -157,12 +159,12 @@ export const SubList: Cat2SubMap = {
         { id: "stole", title: "❤️Ravishing Stole" },
         { id: "sultry", title: "Sultry Statement 🔥" }
 
-    ].map(item => ({ ...item, cover: genJpg1(AID, `cchalter/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `cchalter/main/${item.id}`)[0] })),
     sub_cchighneck: [
         { id: "bodycon", title: "🔥 Bodycon Desire" },
         { id: "lace", title: "Laced in Elegance 👠" },
         { id: "turtleneck", title: "Cozy Chic Turtle🧥" }
-    ].map(item => ({ ...item, cover: genJpg1(AID, `cchighneck/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `cchighneck/main/${item.id}`)[0] })),
 
     sub_cclowcut: [
         { id: "creamwhite", title: "❄️ Cream White" },
@@ -177,7 +179,7 @@ export const SubList: Cat2SubMap = {
         { id: "skyline", title: "🌃 Skyline Chic" },
         { id: "sultry", title: "Sultry Statement 🔥" },
         { id: "sofa", title: "🛋️ Sofa Soft" },
-    ].map(item => ({ ...item, cover: genJpg1(AID, `cclowcut/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `cclowcut/main/${item.id}`)[0] })),
 
     sub_ccleggy: [
         { id: "black_silk", title: "🖤Black Pantyhose Allure" },
@@ -188,7 +190,7 @@ export const SubList: Cat2SubMap = {
         { id: "leo", title: "🐆 Leopard Prints" },
         { id: "night", title: "Midnight Bloom 🌙" },
         { id: "split", title: "💃Split Siren" },
-    ].map(item => ({ ...item, cover: genJpg1(AID, `ccleggy/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `ccleggy/main/${item.id}`)[0] })),
 
     sub_ccoutdoor: [
         { id: "bodycon", title: "🔥 Bodycon Desire" },
@@ -201,7 +203,7 @@ export const SubList: Cat2SubMap = {
         { id: "soccer", title: "Soccer Chic ⚽" },
         { id: "sport", title: "Active Allure 🏃‍♀️" },
         { id: "yoga", title: "🪶 Silken Yoga" },
-    ].map(item => ({ ...item, cover: genJpg1(AID, `ccoutdoor/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `ccoutdoor/main/${item.id}`)[0] })),
     sub_ccnextdoor: [
         { id: "stunning", title: "🔥 Hot & Stunning 🔥" },
         { id: "braids", title: "Braided Beauty 💇‍♀️" },
@@ -217,7 +219,7 @@ export const SubList: Cat2SubMap = {
         { id: "selfi", title: "Crimson Muse 🔴" },
         { id: "sweatheart", title: "Heartfelt ❤️" },
         { id: "shower", title: "🛁Cozy Bath Moments" },
-    ].map(item => ({ ...item, cover: genJpg1(AID, `ccnextdoor/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `ccnextdoor/main/${item.id}`)[0] })),
 
 
     sub_ccplunge: [
@@ -233,7 +235,7 @@ export const SubList: Cat2SubMap = {
         { id: "pink", title: "🌸 Blush & Bubbles" },
         { id: "red", title: "Crimson Muse 🔴" },
         { id: "tubetop", title: "🎀 Tube Top" },
-    ].map(item => ({ ...item, cover: genJpg1(AID, `ccplunge/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `ccplunge/main/${item.id}`)[0] })),
     sub_ccspa: [
         { id: "bed", title: "🛏️ Serene Bed" },
         { id: "bodycon", title: "🔥 Bodycon Desire" },
@@ -252,7 +254,7 @@ export const SubList: Cat2SubMap = {
         { id: "sultry", title: "🛁 Spa Siren" },
         { id: "w_handbag", title: "👜 Spa Chic with Handbag" },
         { id: "yellow_sultry", title: "🔥 Yellow Desire" },
-    ].map(item => ({ ...item, cover: genJpg1(AID, `ccspa/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `ccspa/main/${item.id}`)[0] })),
 
     sub_cccos: [
         { id: "sultry", title: "🛁 Spa Siren" },
@@ -260,18 +262,18 @@ export const SubList: Cat2SubMap = {
         { id: "police", title: "✂️ Policeman" },
         { id: "nurse", title: "🛏️ Serene Nurse" },
         { id: "chef", title: "🌿 Naturally Chef" },
-    ].map(item => ({ ...item, cover: genJpg1(AID, `cccos/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `cccos/main/${item.id}`)[0] })),
     sub_ccwedding: [
         { id: "outdoor", title: "Floral Escape 🍃" },
         { id: "indoor", title: "👑 Fantasy & Queens" },
-    ].map(item => ({ ...item, cover: genJpg1(AID, `ccwedding/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `ccwedding/main/${item.id}`)[0] })),
 
     sub_xycos: [
         { id: "sultry", title: "🛁 Spa Siren" },
         { id: "halter", title: "Halter Dream 💭" },
         { id: "police", title: "✂️ Policeman" },
 
-    ].map(item => ({ ...item, cover: genJpg1(AID, `xycos/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `xycos/main/${item.id}`)[0] })),
     sub_xywearing: [
         { id: "croptop", title: "Sassy in Croptops 👚" },
         { id: "demin", title: "Casual Chic in Demin 👖" },
@@ -281,7 +283,7 @@ export const SubList: Cat2SubMap = {
         { id: "sparkling", title: "Dazzling in Sparkling ✨" },
         { id: "strapless", title: "Bare & Beautiful & Strapless 💋" },
         { id: "sultry", title: "🔥Sultry Seduction" }
-    ].map(item => ({ ...item, cover: genJpg1(AID, `xywearing/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `xywearing/main/${item.id}`)[0] })),
     sub_xysultry: [
         { id: "braless", title: "👙No Bra, No Rules" },
         { id: "backless", title: "💫Bare Backless" },
@@ -290,7 +292,7 @@ export const SubList: Cat2SubMap = {
         { id: "oneshoulder", title: "One-Shoulder Icon 💃" },
         { id: "swimming", title: "Swimming Breeze 🌊" },
         { id: "tubetop", title: "🎀 Tube Top" },
-    ].map(item => ({ ...item, cover: genJpg1(AID, `xysultry/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `xysultry/main/${item.id}`)[0] })),
 
 
     sub_xybodycon: [
@@ -302,14 +304,14 @@ export const SubList: Cat2SubMap = {
         { id: "plunge", title: "🔥Plunging Passion" },
         { id: "sultry", title: "🔥Sultry Seduction" },
         { id: "sweater", title: "🌌 Velvet Twilight" },
-    ].map(item => ({ ...item, cover: genJpg1(AID, `xybodycon/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `xybodycon/main/${item.id}`)[0] })),
     sub_xycheongsam: [
         { id: "keyhole", title: "Keyhole Temptation 🔑" },
         { id: "leggy", title: "🦵 Leggy & Stunning" },
         { id: "laceband", title: "🔥Sultry Lace Band" },
         { id: "split", title: "💃Split Siren" },
         { id: "traditional", title: "👑Traditional Glamour" },
-    ].map(item => ({ ...item, cover: genJpg1(AID, `xycheongsam/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `xycheongsam/main/${item.id}`)[0] })),
     sub_xyclassic: [
         { id: "assistant", title: "Assistant Blush 🩷" },
         { id: "bodycon", title: "👗Bodycon Temptation" },
@@ -326,7 +328,7 @@ export const SubList: Cat2SubMap = {
         { id: "teacher", title: "Teacher Muse 🎓" },
         { id: "uniform", title: "Uniform Grace 🎽" },
         { id: "whiteshirt", title: "Crisp Contrast 👕" },
-    ].map(item => ({ ...item, cover: genJpg1(AID, `xyclassic/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `xyclassic/main/${item.id}`)[0] })),
     
     sub_xyseethrough: [
         { id: "blacksilk", title: "🖤Black Pantyhose Allure" },
@@ -335,7 +337,7 @@ export const SubList: Cat2SubMap = {
         { id: "split", title: "💃Split Siren" },
         { id: "strapless", title: "❤️ Crimson Temptress" },
         { id: "sultry", title: "🔥Sultry Seduction" },
-    ].map(item => ({ ...item, cover: genJpg1(AID, `xyseethrough/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `xyseethrough/main/${item.id}`)[0] })),
     sub_xyplunge: [
         { id: "drunk", title: "Midnight Bloom 🌙" },
         { id: "fur", title: "🐾 Fur Allure" },
@@ -343,12 +345,44 @@ export const SubList: Cat2SubMap = {
         { id: "split", title: "💃Split Siren" },
         { id: "seethrough", title: "✨Sheer Sensation" },
         { id: "sultry", title: "🔥Sultry Seduction" },
-    ].map(item => ({ ...item, cover: genJpg1(AID, `xyplunge/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `xyplunge/main/${item.id}`)[0] })),
     sub_xynextdoor: [
         { id: "outdoor", title: "Outdoor Escape 🍃" },
         { id: "floral", title: "🌸 Flirty Florals" },
         { id: "home", title: "Home Glow 🏨" },
         { id: "afterwork", title: "🛏️ Just Stepped Out" },
         { id: "leisuretime", title: "👑 Calm & Serene" },
-    ].map(item => ({ ...item, cover: genJpg1(AID, `xynextdoor/main/${item.id}`)[0] })),
+    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `xynextdoor/main/${item.id}`)[0] })),
+
+    sub_ssketch: [
+        { id: "sketch", title: "🎨 Artistic Sketches" },
+        { id: "history", title: "🏡 History" },
+        { id: "face", title: "🎭 Mesmerizing Face"},
+        { id: "flower", title: "🌸 Blooming Elegance"},
+        { id: "human", title: "👤 Divine Form"},
+        { id: "legfinger", title: "🦵 Leggy Finger Allure"},
+        { id: "lips", title: "💋 Tempting Lips"},
+        { id: "nature", title: "🍃 Nature’s Charm"},
+        { id: "lightandshadow", title: "💡 Light & Shadow Drama"},
+    ].map(item => ({ ...item, cover: genJpg1(GH_sb, `ssketch/main/${item.id}`)[0] })),
+
+    sub_sholiday: [
+        { id: "luneryear", title: "🎊 Chinese New Year" },
+        { id: "deco", title: "💎 Sublime Décolleté" },
+        { id: "wallpaper", title: "🖼️ Elegant Wallpaper" },
+        { id: "weddings", title: "💍 Weddings" },
+    ].map(item => ({ ...item, cover: genJpg1(GH_sb, `sholiday/main/${item.id}`)[0] })),
+
+    sub_sdesktop: [
+        { id: "scene", title: "💎 Sublime Scene" },
+        { id: "beauties", title: "🖼️ Elegant Wallpaper" },
+    ].map(item => ({ ...item, cover: genJpg1(GH_sb, `sdesktop/main/${item.id}`)[0] })),
+
+    sub_sscene: [
+        { id: "sea", title: "🌊 Majestic Seascape",},
+        { id: "lone", title: "🌟 Serene Solitude",},
+        { id: "land", title: "🏞️ Enchanted Landscapes",},
+        { id: "sky", title: "💎Twinkle, Twinkle, Little Star" },
+    ].map(item => ({ ...item, cover: genJpg1(GH_sb, `sscene/main/${item.id}`)[0] })),
+
 };
