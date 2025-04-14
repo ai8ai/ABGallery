@@ -14,15 +14,11 @@ export const HomeList: CatInterface[] = [
     { id: "abxlz", gh: "ai8ai", title: "Xu Lizhi 🍑 徐莉芝" },
     { id: "abanran", gh: "ai8ai", title: "Anran ✨ 安然" },
     
-
     { id: "absuren", gh: "ai8ai", title: "Next Door👗素人しろうと" },
     { id: "abspecialtaste", gh: "ai8ai", title: "Special Taste 😈" },
 
-    { id: "abcel",   gh: "ai8ai", title: "Celebrities 🌟" }, 
-    { id: "abinfluencer", gh: "ai8ai", title: "📸 Influencer 🎥" },
-
     { id: "bgif", gh: "aidres8", title: "GIF MP4 🎞️" },
-    { id: "abpast", gh: "ai8ai", title: "Past Year Collection 📸" },
+    { id: "abinfluencer", gh: "ai8ai", title: "📸 Influencer 🎥" },
 
     { id: "abccc", gh: "ai8ai", title: "Chengcheng 💃 程程程" },
     { id: "abzyx", gh: "ai8ai", title: "Carol 周妍希 🔥" },
@@ -34,11 +30,12 @@ export const HomeList: CatInterface[] = [
     { id: "abmini", gh: "ai8ai", title: "Modern Minimalist 🛋️" },
 
     { id: "abss", gh: "ai8ai", title: "Signature Styles 🔥" },
-    { id: "abplaces", gh: "ai8ai", title: "Places 🌆" },
+    { id: "abplaces", gh: "ai8ai", title: "Scenarios 🌆" },
 
-    { id: "absketch", gh: "ai8ai", title: "Sketch & Hand-drawing ✏️" },
-    { id: "abholiday", gh: "ai8ai", title: "Holidays 🎉" },
+    { id: "sart", gh: "silkbeauty", title: "🎨 Artistic Elegance" },
+    { id: "sai", gh: "silkbeauty", title: "DeepSeek Generated🎉" },
 
+    
 ].map(item => ({...item,
     cover: genJpg1(`${item.gh}`, `${item.id}/main/cat`)[0]   // cat is folder name.
 }));

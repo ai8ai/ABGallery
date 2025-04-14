@@ -8,6 +8,28 @@ const GH_sb = "silkbeauty"
 
 export const CatList: Cat2SubMap = {
 
+    sai: [
+        { id: "backless", title: "💫Bare Backless" },
+        { id: "bakunyuu", title: "🍈 Voluptuous Curves" },
+        { id: "camisole", title: "🌸Chic Camisole" },
+        { id: "cosplay", title: "🎭 Cosplay Fantasy" },
+        { id: "demins", title: "👖 Casual Chic in Demin" },
+
+        { id: "chubby", title: "👑 Regal Fantasy" },
+        { id: "lolita", title: "😇 Angelic Innocence" },
+        { id: "lowcut", title: "🔥Low-Cut Luxe" },
+        { id: "mid", title: "🕰️ Timeless Elegance" },
+        { id: "middleeast", title: "🕌 Exotic Allure" },
+        { id: "nextdoor", title: "🏡 Sweet Next Door" },
+        { id: "socialite", title: "💃 Flirty Socialite" },
+        { id: "somebody", title: "🌟 Mystery Muse" },
+        { id: "square", title: "📏 Sculpted Beauty" },
+        { id: "stunning", title: "🔥 Breathtaking & Stunning" },
+        { id: "travel", title: "✈️ Wanderlust Travel" },
+        { id: "sultry", title: "Sultry Aura 🔥" },
+    ].map(item => ({ ...item, cover: genJpg1(GH_sb, `abstunning/main/${item.id}`)[0] })),
+
+
     abstunning: [
         { id: "blooming_beauty", title: "🌺 Blooming Beauty" },
         { id: "cutout", title: "Cutout Couture ✂️" },
@@ -25,7 +47,6 @@ export const CatList: Cat2SubMap = {
         { id: "sub_ccbody", title: "🦵Goddess Body" },
         { id: "sub_ccche", title: "Cheongsam 🌸" },
         { id: "sub_ccdemin", title: "👖Demin👖" },
-        // { id: "sub_ccsultry", title: "Sultry Aura 🔥" },
         { id: "sub_ccbodycon", title: "💄Sculpted Bodycon" },
         { id: "sub_ccelegance", title: "Elegance🌸" },
         { id: "sub_ccformal", title: "💼 Classic" },
@@ -168,19 +189,20 @@ export const CatList: Cat2SubMap = {
         { id: "sultry", title: "🔥 Sultry Allure" },
     ].map(item => ({ ...item, cover: genJpg1(GH_ab, `abxlz/main/${item.id}`)[0] })),
     absuren: [
-        { id: "stunning", title: "🔥 Breathtaking & Stunning" },
         { id: "backless", title: "💫Bare Backless" },
-        { id: "b2", title: "✨ Dazzling in Group" },
         { id: "bakunyuu", title: "🍈 Voluptuous Curves" },
         { id: "chubby", title: "👑 Regal Fantasy" },
         { id: "lolita", title: "😇 Angelic Innocence" },
+        { id: "lowcut", title: "🔥Low-Cut Luxe" },
         { id: "mid", title: "🕰️ Timeless Elegance" },
         { id: "middleeast", title: "🕌 Exotic Allure" },
         { id: "nextdoor", title: "🏡 Sweet Next Door" },
         { id: "socialite", title: "💃 Flirty Socialite" },
         { id: "somebody", title: "🌟 Mystery Muse" },
         { id: "square", title: "📏 Sculpted Beauty" },
+        { id: "stunning", title: "🔥 Breathtaking & Stunning" },
         { id: "travel", title: "✈️ Wanderlust Travel" },
+        { id: "sultry", title: "Sultry Aura 🔥" },
         { id: "sb1", title: "👥 The Unseen Beauty" },
         { id: "sb2", title: "🚶‍♂️ Silent Stories" },
         { id: "sb3", title: "🌏 Beauty in the Crowd" },
@@ -219,6 +241,14 @@ export const CatList: Cat2SubMap = {
     absketch: [
         { id: "sketch", title: "🎨 Artistic Sketches" },
         { id: "history", title: "🏡 History" },
+        { id: "face", title: "🎭 Mesmerizing Face"},
+        { id: "flower", title: "🌸 Blooming Elegance"},
+        { id: "human", title: "👤 Divine Form"},
+        { id: "legfinger", title: "🦵 Leggy Finger Allure"},
+        { id: "lips", title: "💋 Tempting Lips"},
+        { id: "nature", title: "🍃 Nature’s Charm"},
+        { id: "lightandshadow", title: "💡 Light & Shadow Drama"},
+
     ].map(item => ({ ...item, cover: genJpg1(GH_ab, `absketch/main/${item.id}`)[0] })),
 
     abmini: [
