@@ -39,11 +39,13 @@ export const CatList: Cat2SubMap = {
         { id: "elite_queen", title: "🦵 Elite Queen" },
         { id: "exoticgrace", title: "🕌 Exotic Grace" },
         { id: "forever_divine", title: "👼 Forever Divine" },
+        { id: "minimal", title: "💃Flirty Minimal" },
         { id: "naturally_seductive", title: "💃 Naturally Seductive" },
         { id: "pure_enchantment", title: "💖 Pure Enchantment" },
         { id: "sensual_warrior", title: "🩰 Sensual Warriors" },
         { id: "vintage_vixens", title: "🔥 Vintage Vixens" },
         { id: "ai_grace", title: "💄 AI Grace" },
+        { id: "bikini", title: "👙 Bikini Beauty"},
     ].map(item => ({ ...item, cover: genJpg1(GH_sb, `abstunning/main/${item.id}`)[0] })),
 
     ccmain: [
@@ -94,17 +96,22 @@ export const CatList: Cat2SubMap = {
         { id: "akasha", title: "Akasha's Allure 🔥" },
         { id: "anonymous", title: "Mystique Anonymous 🕶️" },
         { id: "bailu", title: "Bailu's Grace 🌿" },
+        { id: "duxiaoyu", title: "👗 Timeless Du Xiaoyu" },
         { id: "liruoxi", title: "Liruoxi's Charm 💫" },
+        { id: "luxuanxuan", title: "Lu Xuanxuan 💫" },
         { id: "mengxinyue", title: "Meng Xinyue's Elegance 🌙" },
         { id: "sumanxi", title: "Sumanxi's Seduction 💋" },
+        { id: "susua", title: "SuSuA's Seduction 💋" },
+        { id: "ula", title: "Chuir 嘉绮里 Ula 👠" },
         { id: "vanessa", title: "Vanessa's Vibes 💃" },
         { id: "wangyuchun", title: "Wang Yuchun's Radiance ✨" },
+        { id: "xuanzi", title: "👑 Fantasy Xuanzi" },
         { id: "yanmo", title: "Yanmo's Enigma 🔮" },
         { id: "zhangxinxin", title: "Zhang Xinxin's Glow 🌟" },
         { id: "zhouyuxi", title: "Zhou Yuxi's Elegance 🎀" },
-        { id: "ula", title: "Chuir 嘉绮里 Ula 👠" },
     ].map(item => ({ ...item, cover: genJpg1(GH_ab, `abinfluencer/main/${item.id}`)[0] })),
 
+    
     bnabi: [
         { id: "sparkling", title: "✨ Dazzling in Sparkling" },
         { id: "gown", title: "👗 Timeless Gown Beauty" },
