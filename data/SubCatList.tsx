@@ -302,7 +302,7 @@ export const SubList: Cat2SubMap = {
         { id: "mini", title: "💃Flirty Mini" },
         { id: "office", title: "Executive Cool 👔" },
         { id: "plunge", title: "🔥Plunging Passion" },
-        { id: "sultry", title: "🔥Sultry Seduction" },
+        { id: "lowcut", title: "🎀Low-Cut Luxe" },
         { id: "sweater", title: "🌌 Velvet Twilight" },
     ].map(item => ({ ...item, cover: genJpg1(GH_bb, `xybodycon/main/${item.id}`)[0] })),
     sub_xycheongsam: [
