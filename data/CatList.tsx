@@ -7,6 +7,21 @@ const GH_bb = "aidres8"
 const GH_sb = "silkbeauty"
 
 export const CatList: Cat2SubMap = {
+    abstunning: [
+        { id: "blooming_beauty", title: "🌺 Blooming Beauty" },
+        { id: "cutout", title: "Cutout Couture ✂️" },
+        { id: "elite_queen", title: "🦵 Elite Queen" },
+        { id: "exoticgrace", title: "🕌 Exotic Grace" },
+        { id: "forever_divine", title: "👼 Forever Divine" },
+        { id: "minimal", title: "💃Flirty Minimal" },
+        { id: "naturally_seductive", title: "💃 Naturally Seductive" },
+        { id: "pure_enchantment", title: "💖 Pure Enchantment" },
+        { id: "sensual_warrior", title: "🩰 Sensual Warriors" },
+        { id: "vintage_vixens", title: "🔥 Vintage Vixens" },
+        { id: "ai_grace", title: "💄 AI Grace" },
+        { id: "bikini", title: "👙 Bikini Beauty"},
+    ].map(item => ({ ...item, cover: genJpg1(GH_sb, `abstunning/main/${item.id}`)[0] })),
+
 
     sart: [
         { id: "sub_ssketch", title: "🎨Artistic Sketches👚" },
@@ -32,21 +47,6 @@ export const CatList: Cat2SubMap = {
         { id: "stunning", title: "🔥 Breathtaking & Stunning" },
     ].map(item => ({ ...item, cover: genJpg1(GH_sb, `sai/main/${item.id}`)[0] })),
 
-
-    abstunning: [
-        { id: "blooming_beauty", title: "🌺 Blooming Beauty" },
-        { id: "cutout", title: "Cutout Couture ✂️" },
-        { id: "elite_queen", title: "🦵 Elite Queen" },
-        { id: "exoticgrace", title: "🕌 Exotic Grace" },
-        { id: "forever_divine", title: "👼 Forever Divine" },
-        { id: "minimal", title: "💃Flirty Minimal" },
-        { id: "naturally_seductive", title: "💃 Naturally Seductive" },
-        { id: "pure_enchantment", title: "💖 Pure Enchantment" },
-        { id: "sensual_warrior", title: "🩰 Sensual Warriors" },
-        { id: "vintage_vixens", title: "🔥 Vintage Vixens" },
-        { id: "ai_grace", title: "💄 AI Grace" },
-        { id: "bikini", title: "👙 Bikini Beauty"},
-    ].map(item => ({ ...item, cover: genJpg1(GH_sb, `abstunning/main/${item.id}`)[0] })),
 
     ccmain: [
         { id: "sub_cc1shoulder", title: " 🩰 One Shoulder" },
