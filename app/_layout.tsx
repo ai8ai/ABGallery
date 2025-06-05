@@ -17,6 +17,7 @@ export default function Layout() {
                     <Drawer.Screen name="rate" options={{ drawerLabel: '⭐ Rate This App', title: 'Rate' }} />
                     <Drawer.Screen name="contact" options={{ drawerLabel: '📩 Contact Us', title: 'Contact' }} />
                     <Drawer.Screen name="privacy" options={{ drawerLabel: '🔒 Privacy Policy', title: 'Privacy Policy' }} />
+                    <Drawer.Screen name="kofi" options={{ drawerLabel: '☕ Buy Me a Coffee', title: 'Buy Me a Coffee' }} />
                 </Drawer>
             </GestureHandlerRootView>
             <StatusBar style="light" translucent />
