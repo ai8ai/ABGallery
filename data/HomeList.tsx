@@ -32,7 +32,7 @@ export const HomeList: CatInterface[] = [
     { id: "abss", gh: "ai8ai", title: "Signature Styles 🔥" },
     { id: "abplaces", gh: "ai8ai", title: "Scenarios 🌆" },
 
-    { id: "sart", gh: "silkbeauty", title: "🎨 Artistic Elegance" },
+    { id: "ssart", gh: "silkbeauty", title: "🎨 Arts " },
     { id: "sai",  gh: "silkbeauty", title: "DeepSeek Generated🎉" },
 
     

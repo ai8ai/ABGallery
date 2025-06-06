@@ -58,14 +58,16 @@ export const SubList: Cat2SubMap = {
         { id: "bombshells", title: "💃Bomb Shells" },
         { id: "camisole", title: "🌸Chic Camisole" },
         { id: "cosy", title: "☀️ Cozy Glow" },
+
         { id: "glass", title: "Clear 👓 Beautiful" },
+        { id: "keyhole", title: "Keyhole Temptation 🔑" },
         { id: "plunge", title: "🍝Plunging Passion" },
         { id: "s", title: "🔥S-Style Seduction" },
         { id: "seethrough", title: "✨Sheer Sensation" },
         { id: "split", title: "💋Split Siren" },
-        { id: "xstrap", title: "💫 Crisscross Desire" },
+        { id: "stripper", title: "👠Sultry Stripper" },
         { id: "tubetop", title: "🎀 Tube Top" },
-        { id: "stripper", title: "👠Sultry Stripper" }
+        { id: "xstrap", title: "💫 Crisscross Desire" },
 
     ].map(item => ({ ...item, cover: genJpg1(GH_bb, `ccsultry/main/${item.id}`)[0] })),
     sub_ccdemin: [
