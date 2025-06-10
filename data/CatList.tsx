@@ -1,6 +1,6 @@
 // Category
 import { Cat2SubMap } from '@/config/type';
-import { genJpg1, genGifList, genJpgList } from '@/utils/genImageList'
+import { genJpg1, } from '@/utils/genImageList'
 
 const GH_ab = "ai8ai"
 const GH_bb = "aidres8"
