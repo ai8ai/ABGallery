@@ -13,16 +13,19 @@ export const CatList: Cat2SubMap = {
         { id: "stunning", title: "💫 Really Stunning" },
         { id: "sensual_warrior", title: "🩰 Sensual Warriors" },
         { id: "pure_enchantment", title: "💖 Pure Enchantment" },
+
         { id: "naturally_seductive", title: "💃 Naturally Seductive" },
         { id: "minimal", title: "💃Flirty Minimal" },
         { id: "forever_divine", title: "👼 Forever Divine" },
         { id: "elite_queen", title: "🦵 Elite Queen" },
         { id: "exoticgrace", title: "🕌 Exotic Grace" },
+
         { id: "cutout", title: "Cutout Couture ✂️" },
         { id: "blooming_beauty", title: "🌺 Blooming Beauty" },
         { id: "bikini", title: "👙 Bikini Beauty" },
         { id: "bankunyuu", title: "Bankunyuu 🌰" },
         { id: "backless", title: "💫Bare Backless" },
+
         { id: "ai_grace", title: "💄 AI Grace" },
     ].map(item => ({ ...item, cover: genJpg1(GH_sb, `abstunning/main/${item.id}`)[0] })),
 
@@ -47,7 +50,6 @@ export const CatList: Cat2SubMap = {
     ].map(item => ({ ...item, cover: genJpg1(GH_sb, `ssart/main/${item.id}`)[0] })),
 
 
-
     sai: [
         { id: "backless", title: "💫Bare Backless" },
         { id: "bakunyuu", title: "🍈 Voluptuous Curves" },
@@ -69,17 +71,16 @@ export const CatList: Cat2SubMap = {
         { id: "sub_ccbankunyuu", title: "Bankunyuu 🌰" },
         { id: "sub_ccbody", title: "🦵Goddess Body" },
         { id: "sub_ccbodycon", title: "💄Sculpted Bodycon" },
-
         { id: "sub_ccche", title: "Cheongsam 🌸" },
+
         { id: "sub_cccos", title: "Cosplay Fantasy 🎭", },
         { id: "sub_ccdemin", title: "👖Demin👖" },
-
         { id: "sub_ccelegance", title: "Elegance🌸" },
         { id: "sub_ccformal", title: "💼 Classic" },
         { id: "sub_ccgarage", title: " Garage 🚗" },
+
         { id: "sub_cchalter", title: "🎀 Allure en Halter" },
         { id: "sub_cchighneck", title: "👗 Chic in High-Neck" },
-
         { id: "sub_ccleggy", title: "Bare Legs👠腿控" },
         { id: "sub_cclowcut", title: "Sultry Lowcut 💄" },
         { id: "sub_ccnextdoor", title: "Irresistible🌺Next Door" },
@@ -98,6 +99,7 @@ export const CatList: Cat2SubMap = {
         { id: "sub_xysultry", title: "Simply Irresistible 💘" },
         { id: "sub_xybodycon", title: "👗Curves in Command💄" },
         { id: "sub_xycheongsam", title: "Elegant in Cheongsam 🏮" },
+        
         { id: "sub_xyclassic", title: "Enchanting 💼 Classic" },
         { id: "sub_xyseethrough", title: "Teasing Transparency 🔍" },
         { id: "sub_xycos", title: "Cosplay Queens 🎭" },
