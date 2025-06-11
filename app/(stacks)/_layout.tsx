@@ -1,9 +1,10 @@
 // (stacks)/_layout.tsx ✅ ✅ Save Image ▶️ Start Slideshow ⏳ Set Interval Time (use a simple slider or dropdown)⏹️ Switch to Manual Mode
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Stack, useNavigation, useLocalSearchParams } from "expo-router";
+import { StatusBar } from 'expo-status-bar';
 
 const StacksLayout = () => {
-    const { title,  } = useLocalSearchParams();  // Get the itemid from route params
+    const { title, } = useLocalSearchParams();  // Get the itemid from route params
     const navigation = useNavigation();
 
     useEffect(() => {

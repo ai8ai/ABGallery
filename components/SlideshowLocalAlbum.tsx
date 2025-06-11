@@ -76,7 +76,7 @@ const AlbumSlideshow: React.FC<{ album: MediaLibrary.Album }> = ({ album }) => {
                     </View>
                 </View>
             </Modal>
-            <StatusBar style="light" translucent />
+            <StatusBar style="dark" translucent />
         </View>
     );
 };

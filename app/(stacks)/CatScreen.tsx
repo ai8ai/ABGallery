@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, FlatList, Image, Text, TouchableOpacity, ActivityIndicator } from 'react-native';
 import { router, useLocalSearchParams } from 'expo-router';
 import styles from '@/config/styles';
+import { StatusBar } from 'expo-status-bar';
 
 import { CatInterface } from '@/config/type';
 import { CatList } from '@/data/CatList';
@@ -64,7 +65,10 @@ const CategoryScreen: React.FC = () => {
                 renderItem={renderItem}
                 contentContainerStyle={styles.mainGrid}
             />
+            <StatusBar style="dark" translucent />
+
         </View>
+
     );
 };
 

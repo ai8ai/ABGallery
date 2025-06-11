@@ -1,6 +1,7 @@
 import { View, Text, Image, Animated, Alert, TouchableOpacity, ActivityIndicator  } from 'react-native';
 import { ToastAndroid, Platform } from 'react-native';
 import React, { useState, useEffect, useRef } from 'react';
+import { StatusBar } from 'expo-status-bar';
 
 import { useLocalSearchParams, useNavigation } from 'expo-router';
 import * as FileSystem from 'expo-file-system';
@@ -199,6 +200,9 @@ export default function SlideshowScreen() {
                     </TouchableOpacity>
                 </View>
             )}
+            <StatusBar style="dark" translucent />
+
         </View>
+        
     );
 }

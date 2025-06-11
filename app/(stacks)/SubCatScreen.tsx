@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, FlatList, Image, Text, TouchableOpacity, ActivityIndicator } from 'react-native';
 import { router, useLocalSearchParams } from 'expo-router';
 import styles from '@/config/styles';
+import { StatusBar } from 'expo-status-bar';
 
 import { CatInterface } from '@/config/type';
 import { CatList } from '@/data/CatList';
@@ -29,10 +30,10 @@ const CategoryScreen: React.FC = () => {
         console.log("SubCat Pressed:");
         router.push({
             pathname: "/cat2img", params: {
-                gh:     gh,
-                repo:   itemid.slice(4),      //repo
+                gh: gh,
+                repo: itemid.slice(4),      //repo
                 folder: item.id,         // id is folder
-                title:  item.title,
+                title: item.title,
             }
         });
     };
@@ -58,6 +59,9 @@ const CategoryScreen: React.FC = () => {
                 renderItem={renderItem}
                 contentContainerStyle={styles.mainGrid}
             />
+            <StatusBar style="dark" translucent />
+
+
         </View>
     );
 };

@@ -6,7 +6,24 @@
 const tintColorLight = '#0a7ea4';
 const tintColorDark = '#fff';
 
+
+    // statusBarLight: '#B33A3A',
+    // statusBarLight: '#4B1A1A',
+    // headerLight: '#712828',
+    // mainCatLight: '#8E3B3B',
+    // subCatLight: '#E26767',
+
+
+    
 export const Colors = {
+    statusBarLight: '#4B1A1A',
+    headerLight: '#4B1A1A',
+    mainCatLight: '#8E3B3B',
+    subCatLight: '#712828',
+
+    headerFont:"#E6C28B",
+    catFont:"#F8EBD7",
+
     light: {
         text: '#11181C',
         background: '#fff',

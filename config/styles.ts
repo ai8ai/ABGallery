@@ -1,11 +1,12 @@
-import { Modal, View, Text, TextInput, Pressable, StyleSheet, Dimensions } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
+import { Colors } from './Colors';
 
 const screenWidth = Dimensions.get('window').width;
 
 const styles = StyleSheet.create({
     mainContainer: {
         flex: 1,
-        backgroundColor: '#f9f9f9',
+        backgroundColor: Colors.mainCatLight,
         padding: 10,
     },
     mainGrid: {
@@ -31,7 +32,7 @@ const styles = StyleSheet.create({
     catTitle: {
         marginTop: 5,
         fontSize: 14,
-        color: '#333',
+        color: Colors.catFont,
         textAlign: 'center',
     },
 

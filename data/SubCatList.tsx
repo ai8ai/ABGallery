@@ -265,10 +265,7 @@ export const SubList: Cat2SubMap = {
         { id: "nurse", title: "🛏️ Serene Nurse" },
         { id: "chef", title: "🌿 Naturally Chef" },
     ].map(item => ({ ...item, cover: genJpg1(GH_bb, `cccos/main/${item.id}`)[0] })),
-    sub_ccwedding: [
-        { id: "outdoor", title: "Floral Escape 🍃" },
-        { id: "indoor", title: "👑 Fantasy & Queens" },
-    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `ccwedding/main/${item.id}`)[0] })),
+    
 
     sub_xycos: [
         { id: "sultry", title: "🛁 Spa Siren" },

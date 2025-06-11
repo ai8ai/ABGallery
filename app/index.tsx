@@ -4,6 +4,7 @@ import { router } from 'expo-router';
 import { View, FlatList, Image, Text, TouchableOpacity } from 'react-native';
 import { CatInterface } from '@/config/type';
 import styles from '@/config/styles';
+import { Colors } from '@/config/Colors';
 import { HomeList } from '@/data/HomeList';
 
 const HomeScreen = () => {
