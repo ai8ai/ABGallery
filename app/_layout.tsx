@@ -13,8 +13,9 @@ export default function Layout() {
             <GestureHandlerRootView style={{ flex: 1, backgroundColor: '#000' }}>
                 <Drawer screenOptions={({ route }) => ({
                     drawerItemStyle: hiddenScreens.includes(route.name) ? { display: "none" } : {},
-                    drawerLabelStyle: { color: '#F8EBD7', fontSize: 16, fontWeight: '600' },
+                    drawerLabelStyle: { color: Colors.catFont, fontSize: 16, fontWeight: '600' },
                     headerTintColor: Colors.headerFont,
+                    drawerStyle: { backgroundColor: Colors.headerLight, width: '70%' },
                 })}>
                     <Drawer.Screen name="index" options={{
                         drawerLabel: 'Home', title: '💖 Beautiful Asian Girls 👑',
