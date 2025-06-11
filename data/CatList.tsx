@@ -167,6 +167,7 @@ export const CatList: Cat2SubMap = {
         { id: "sparkling", title: "✨ Dazzling in Sparkling" },
         { id: "slip", title: "🪶 Silken Slip Dress" },
         { id: "plunge", title: "🔥Plunging Passion" },
+        
         { id: "office", title: "🏢 Chic at Work" },
 
         { id: "lace", title: "🕊️ Timeless Grace in Silk & Lace" },
@@ -288,10 +289,11 @@ export const CatList: Cat2SubMap = {
 
     abmini: [
         { id: "bakunyuu", title: "🍑 Lush & Voluptuous Curves" },
-        { id: "deco", title: "💖 Tempting Décolleté & Sultry Glamour" },
         { id: "bodycon", title: "🔥 Sculpted Seduction in Bodycon" },
+        { id: "deco", title: "💖 Tempting Décolleté & Sultry Glamour" },
         { id: "haltertop", title: "🌿 Bare & Bold: The Halter Look" },
         { id: "nextdoor", title: "🏡 Irresistible Charm of the Girl Next Door" },
+
         { id: "spaghetti", title: "✨ Delicate Beauty in Slender Straps" },
         { id: "strapless", title: "👗 Bare Elegance in Strapless Styles" },
         { id: "suite", title: "🏨 Suite Seduction & Luxe Sophistication" },
