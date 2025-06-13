@@ -5,7 +5,7 @@ import { useNavigation } from 'expo-router';
 export default function Privacy() {
     const navigation = useNavigation();
     useEffect(() => {
-        Linking.openURL('https://aidres8.github.io/aidres8/privacypolicy');
+        Linking.openURL('https://aidres.com/privacypolicy');
         navigation.goBack();
     }, []);
 

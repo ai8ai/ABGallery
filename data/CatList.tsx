@@ -50,6 +50,25 @@ export const CatList: Cat2SubMap = {
     ].map(item => ({ ...item, cover: genJpg1(GH_sb, `ssart/main/${item.id}`)[0] })),
 
 
+
+    ssocialite: [
+        { id: "fashionista", title: "Fashionista 👠👗" },
+        { id: "night", title: "Nightlife Queen 🌃🍸" },
+        { id: "jet", title: "Jetsetter ✈️👜" },
+        { id: "redcarpet", title: "Red Carpet Look 🎬✨" },
+        { id: "elegance", title: "Elegant Vibes 💅🕊️" },
+
+        { id: "boss", title: "Boss Babe 👑📱" },
+        { id: "citychic", title: "City Chic 🏙️👡" },
+        { id: "brunch", title: "Brunch Date 🥐☕" },
+        { id: "poolside", title: "Poolside 👙🌴" },
+        { id: "luxury", title: "Luxury Life 💎🚗" },
+
+        { id: "spotlight", title: "In the Spotlight 🎤📷" },
+        { id: "goldenhour", title: "🌇Golden Hour 🌅" },
+        
+    ].map(item => ({ ...item, cover: genJpg1(GH_sb, `ssart/main/${item.id}`)[0] })),
+
     sai: [
         { id: "backless", title: "💫Bare Backless" },
         { id: "bakunyuu", title: "🍈 Voluptuous Curves" },
@@ -106,18 +125,17 @@ export const CatList: Cat2SubMap = {
     ].map(item => ({ ...item, cover: genJpg1(GH_bb, `${item.id.slice(4)}/main/cat`)[0] })),
 
 
-    byey: [
-        { id: "sultry", title: "Simply Irresistible 💘" },
-        { id: "stunning", title: "🔥 Daily Fresh & Hot Trends" },
-        { id: "che", title: "👘 Elegant in Cheongsam" },
-        { id: "oneshoulder", title: "👑 Fantasy & Queens" },
-    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `byey/main/${item.id}`)[0] })),
 
 
     abinfluencer: [
         { id: "akasha", title: "Akasha's Allure 🔥" },
         { id: "anonymous", title: "Mystique Anonymous 🕶️" },
         { id: "bailu", title: "Bailu's Grace 🌿" },
+        { id: "ccc", title: "ChengCheng 💃 程程程" },
+        { id: "chumengyao", title: "Chu Mengyao 💋 初梦瑶" },
+        { id: "nabi", title: "Yeon 娜比 🌸", },
+
+
         { id: "duxiaoyu", title: "👗 Timeless Du Xiaoyu" },
         { id: "liruoxi", title: "Liruoxi's Charm 💫" },
         { id: "luxuanxuan", title: "Lu Xuanxuan 💫" },
@@ -129,6 +147,8 @@ export const CatList: Cat2SubMap = {
         { id: "wangyuchun", title: "Wang Yuchun's Radiance ✨" },
         { id: "xuanzi", title: "👑 Fantasy Xuanzi" },
         { id: "yanmo", title: "Yanmo's Enigma 🔮" },
+        { id: "yey", title: "Yue Er yue💃玥儿玥" },
+
         { id: "zhangxinxin", title: "Zhang Xinxin's Glow 🌟" },
         { id: "zhouyuxi", title: "Zhou Yuxi's Elegance 🎀" },
     ].map(item => ({ ...item, cover: genJpg1(GH_ab, `abinfluencer/main/${item.id}`)[0] })),
@@ -140,12 +160,6 @@ export const CatList: Cat2SubMap = {
         { id: "bodycon", title: "💃 Curves in Command" },
     ].map(item => ({ ...item, cover: genJpg1(GH_bb, `bnabi/main/${item.id}`)[0] })),
 
-    bcmy: [
-        { id: "halter", title: "🌶️ Halter Neck Elegance" },
-        { id: "cutout", title: "Cutout Couture ✂️" },
-        { id: "oneshoulder", title: "One-Shoulder Icon 💃" },
-        { id: "sparkling", title: "💎 Dazzling in Sparkling" },
-    ].map(item => ({ ...item, cover: genJpg1(GH_bb, `bcmy/main/${item.id}`)[0] })),
 
     absyz: [
         { id: "stunning", title: "🔥 Daily Fresh & Hot Trends" },
@@ -167,7 +181,7 @@ export const CatList: Cat2SubMap = {
         { id: "sparkling", title: "✨ Dazzling in Sparkling" },
         { id: "slip", title: "🪶 Silken Slip Dress" },
         { id: "plunge", title: "🔥Plunging Passion" },
-        
+
         { id: "office", title: "🏢 Chic at Work" },
 
         { id: "lace", title: "🕊️ Timeless Grace in Silk & Lace" },
@@ -177,17 +191,6 @@ export const CatList: Cat2SubMap = {
         { id: "bodycon", title: "🎭 Sculpted Seduction" },
 
     ].map(item => ({ ...item, cover: genJpg1(GH_ab, `abanran/main/${item.id}`)[0] })),
-
-    abccc: [
-        { id: "stunning", title: "🔥 Daily Fresh & Hot Trends" },
-        { id: "strapless", title: "👗 Bare & Beautiful" },
-        { id: "sexy", title: "🌶️ Sultry Temptations" },
-
-        { id: "briliant", title: "💎 Brilliant Glamour" },
-        { id: "bbs", title: "🛏️ Cozy & Seductive Moments" },
-
-    ].map(item => ({ ...item, cover: genJpg1(GH_ab, `abccc/main/${item.id}`)[0] })),
-
 
     ablxl: [
         { id: "afterbath", title: "🛏️ Just Stepped Out" },
@@ -211,14 +214,6 @@ export const CatList: Cat2SubMap = {
     ].map(item => ({ ...item, cover: genJpg1(GH_ab, `ablxl/main/${item.id}`)[0] })),
 
 
-    abzyx: [
-        { id: "bodycon", title: "💃 Sensual & Sculpted Bodycon" },
-        { id: "cheongsam", title: "🀄 Elegant in Cheongsam" },
-        { id: "haltertop", title: "🎀 The Allure of Halter Styles" },
-        { id: "seethrough", title: "👀 Seethrough Sensations" },
-        { id: "slip", title: "🎀 Sultry Slip" },
-    ].map(item => ({ ...item, cover: genJpg1(GH_ab, `abzyx/main/${item.id}`)[0] })),
-
     abxlz: [
         { id: "butt", title: "🛏️ Cozy & Seductive Moments" },
         { id: "cheongsam", title: "💃 Elegant in Timeless Cheongsam" },
@@ -231,7 +226,7 @@ export const CatList: Cat2SubMap = {
         { id: "oneshoulder", title: "One-Shoulder Icon 💃" },
         { id: "plunge", title: "🔥Plunging Passion" },
         { id: "seethrough", title: "👀 Seethrough Sensations" },
-        
+
         { id: "slip", title: "🎀 Sultry Slip" },
         { id: "weddings", title: "💍 Angelically Innocent" },
         { id: "sultry", title: "🔥 Sultry Allure" },
