@@ -16,14 +16,19 @@ export const CatList: Cat2SubMap = {
 
         { id: "naturally_seductive", title: "💃 Naturally Seductive" },
         { id: "minimal", title: "💃Flirty Minimal" },
+
+        { id: "haltertop", title: "Halter Dream 💭" },
+        { id: "keyhole", title: "Keyhole Temptation 🔑" },
+
         { id: "forever_divine", title: "👼 Forever Divine" },
+        { id: "exquisite", title: "🥂 Exquisite" },
         { id: "elite_queen", title: "🦵 Elite Queen" },
         { id: "exoticgrace", title: "🕌 Exotic Grace" },
 
         { id: "cutout", title: "Cutout Couture ✂️" },
         { id: "blooming_beauty", title: "🌺 Blooming Beauty" },
         { id: "bikini", title: "👙 Bikini Beauty" },
-        { id: "bankunyuu", title: "Bankunyuu 🌰" },
+        { id: "bakunyuu", title: "Bakunyuu 🌰" },
         { id: "backless", title: "💫Bare Backless" },
 
         { id: "ai_grace", title: "💄 AI Grace" },
@@ -66,7 +71,7 @@ export const CatList: Cat2SubMap = {
 
         { id: "spotlight", title: "In the Spotlight 🎤📷" },
         { id: "goldenhour", title: "🌇Golden Hour 🌅" },
-        
+
     ].map(item => ({ ...item, cover: genJpg1(GH_sb, `ssart/main/${item.id}`)[0] })),
 
     sai: [
